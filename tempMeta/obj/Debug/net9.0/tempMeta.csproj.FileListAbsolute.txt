@@ -1,0 +1,14 @@
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\bin\Debug\net9.0\tempMeta.exe
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\bin\Debug\net9.0\tempMeta.deps.json
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\bin\Debug\net9.0\tempMeta.runtimeconfig.json
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\bin\Debug\net9.0\tempMeta.dll
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\bin\Debug\net9.0\tempMeta.pdb
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\obj\Debug\net9.0\tempMeta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\obj\Debug\net9.0\tempMeta.AssemblyInfoInputs.cache
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\obj\Debug\net9.0\tempMeta.AssemblyInfo.cs
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\obj\Debug\net9.0\tempMeta.csproj.CoreCompileInputs.cache
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\obj\Debug\net9.0\tempMeta.dll
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\obj\Debug\net9.0\refint\tempMeta.dll
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\obj\Debug\net9.0\tempMeta.pdb
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\obj\Debug\net9.0\tempMeta.genruntimeconfig.cache
+C:\Users\Joe\Documents\Astro Lupine\tempMeta\obj\Debug\net9.0\ref\tempMeta.dll

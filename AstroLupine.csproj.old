@@ -1,0 +1,28 @@
+<Project Sdk="Godot.NET.Sdk/4.6.3">
+  
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net9.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'ios' ">net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="sts2\**" />
+    <None Include="sts2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="sts2">
+      <HintPath>sts2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    
+    <PackageReference Include="Alchyr.Sts2.BaseLib" Version="*" />
+  </ItemGroup>
+  
+</Project>

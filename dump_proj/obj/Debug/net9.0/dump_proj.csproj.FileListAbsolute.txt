@@ -1,0 +1,14 @@
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\bin\Debug\net9.0\dump_proj.exe
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\bin\Debug\net9.0\dump_proj.deps.json
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\bin\Debug\net9.0\dump_proj.runtimeconfig.json
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\bin\Debug\net9.0\dump_proj.dll
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\bin\Debug\net9.0\dump_proj.pdb
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\obj\Debug\net9.0\dump_proj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\obj\Debug\net9.0\dump_proj.AssemblyInfoInputs.cache
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\obj\Debug\net9.0\dump_proj.AssemblyInfo.cs
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\obj\Debug\net9.0\dump_proj.csproj.CoreCompileInputs.cache
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\obj\Debug\net9.0\dump_proj.dll
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\obj\Debug\net9.0\refint\dump_proj.dll
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\obj\Debug\net9.0\dump_proj.pdb
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\obj\Debug\net9.0\dump_proj.genruntimeconfig.cache
+C:\Users\Joe\Documents\Astro Lupine\dump_proj\obj\Debug\net9.0\ref\dump_proj.dll
