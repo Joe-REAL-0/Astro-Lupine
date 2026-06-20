@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -29,7 +29,7 @@ namespace AstroLupine.Cards.Common
             if (Owner != null)
             {
                 int drawAmount = await DrawReadCards(choiceContext, this.DynamicVars["Magic"]);
-                WriteDrawRegister(drawAmount);
+                await WriteDrawRegister(drawAmount);
 
                 // Reduce cost for the rest of combat
                 this.EnergyCost.AddThisCombat(-1);

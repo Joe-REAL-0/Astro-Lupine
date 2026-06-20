@@ -27,8 +27,8 @@ namespace AstroLupine.Cards.Common
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             int blockGained = (int)this.DynamicVars.Block.PreviewValue;
-            await GainReadBlock(cardPlay, this.DynamicVars.Block);
-            WriteDefenseRegister(blockGained);
+            await GainReadBlock(cardPlay, this.DynamicVars.Block.BaseValue);
+            await WriteDefenseRegister(blockGained);
         }
 
         protected override void OnUpgrade()

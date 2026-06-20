@@ -1,4 +1,4 @@
-using HarmonyLib;
+﻿using HarmonyLib;
 using MegaCrit.Sts2.Core.Nodes.Combat;
 using Godot;
 

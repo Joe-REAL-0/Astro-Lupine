@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -32,7 +32,7 @@ namespace AstroLupine.Cards.Common
             {
                 await PlayerCmd.GainEnergy(this.DynamicVars["Magic"].PreviewValue, Owner);
                 await CreatureCmd.GainBlock(Owner.Creature, this.DynamicVars.Block.PreviewValue, ValueProp.Move, cardPlay);
-                WriteDefenseRegister((int)this.DynamicVars.Block.PreviewValue);
+                await WriteDefenseRegister((int)this.DynamicVars.Block.PreviewValue);
             }
         }
 

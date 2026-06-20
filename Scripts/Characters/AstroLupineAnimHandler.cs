@@ -1,4 +1,4 @@
-using Godot;
+﻿using Godot;
 using MegaCrit.Sts2.Core.Nodes.Combat;
 using System.Collections.Generic;
 
@@ -7,7 +7,9 @@ namespace AstroLupine.Characters
     public partial class AstroLupineAnimHandler : Node
     {
         public NCreatureVisuals Visuals;
+        [Export]
         public Sprite2D Sprite;
+        [Export]
         public Node2D VisualsRoot;
         
         private Dictionary<string, Texture2D> _textures = new();
@@ -16,8 +18,18 @@ namespace AstroLupine.Characters
         public override void _Ready()
         {
             base._Ready();
+
+            // Auto-fetch nodes if not assigned in Editor
+            if (VisualsRoot == null)
+            {
+                VisualsRoot = GetNodeOrNull<Node2D>("%Visuals");
+            }
+            if (Sprite == null)
+            {
+                Sprite = GetNodeOrNull<Sprite2D>("%Visuals/Sprite2D");
+            }
             
-            // Load textures
+            // Load textures manually because Godot Modding prevents attaching C# scripts to .tscn files
             _textures["idle"] = GD.Load<Texture2D>("res://assets/texture/character/anim/standing.png");
             _textures["attack"] = GD.Load<Texture2D>("res://assets/texture/character/anim/attack.png");
             _textures["cast"] = GD.Load<Texture2D>("res://assets/texture/character/anim/cast.png");
@@ -26,8 +38,7 @@ namespace AstroLupine.Characters
             if (Sprite != null)
             {
                 Sprite.Texture = _textures["idle"];
-                // 限制贴图尺寸，0.35 是一个缩小比例，你可以按需调整大小
-                Sprite.Scale = new Vector2(0.15f, 0.15f);
+                // 缩放比例去除了硬编码，你可以直接在Godot引擎的 Sprite2D 节点中调整 Scale
             }
         }
 
@@ -39,7 +50,10 @@ namespace AstroLupine.Characters
             if (key == "powerup" || key == "power_up") key = "powerup";
             else if (!_textures.ContainsKey(key)) key = "idle";
 
-            Sprite.Texture = _textures[key];
+            if (_textures.TryGetValue(key, out Texture2D tex))
+            {
+                Sprite.Texture = tex;
+            }
 
             if (_jumpTween != null && _jumpTween.IsValid())
             {
@@ -59,11 +73,22 @@ namespace AstroLupine.Characters
                 _jumpTween.TweenInterval(0.3f);
                 _jumpTween.TweenCallback(Callable.From(() => 
                 {
-                    if (Sprite.Texture == _textures[key])
+                    if (_textures.ContainsKey("idle") && Sprite.Texture == tex)
                     {
                         Sprite.Texture = _textures["idle"];
                     }
                 }));
+            }
+        }
+
+        public override void _Input(InputEvent @event)
+        {
+            // 当你单独运行这个场景时，按下键盘按键即可预览动画
+            if (@event is InputEventKey keyEvent && keyEvent.Pressed && !keyEvent.Echo)
+            {
+                if (keyEvent.Keycode == Key.A) PlayAnimation("attack");
+                else if (keyEvent.Keycode == Key.S) PlayAnimation("cast");
+                else if (keyEvent.Keycode == Key.D) PlayAnimation("powerup");
             }
         }
     }

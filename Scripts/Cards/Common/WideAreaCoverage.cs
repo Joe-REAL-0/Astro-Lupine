@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -29,7 +29,7 @@ namespace AstroLupine.Cards.Common
             await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_slash_fast");
 
             // Write to Attack Register
-            WriteAttackRegister((int)this.DynamicVars.Damage.PreviewValue);
+            await WriteAttackRegister((int)this.DynamicVars.Damage.PreviewValue);
         }
 
         protected override void OnUpgrade()

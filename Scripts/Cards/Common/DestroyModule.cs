@@ -38,7 +38,7 @@ namespace AstroLupine.Cards.Common
             {
                 await CardCmd.Exhaust(choiceContext, card);
             }
-            await GainReadBlock(cardPlay, this.DynamicVars.Block);
+            await GainReadBlock(cardPlay, this.DynamicVars.Block.BaseValue);
         }
 
         protected override void OnUpgrade()

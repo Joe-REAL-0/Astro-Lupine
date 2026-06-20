@@ -8,32 +8,33 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AstroLupine.Cards.Common
 {
-    public class SynapseStrike : BaseAstroLupineCard
+    public class MimicIronWave : BaseAstroLupineCard
     {
-        public const string CardId = "AstroLupine_Card_SynapseStrike";
-
-        protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag> { CardTag.Strike };
+        public const string CardId = "AstroLupine_Card_MimicIronWave";
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new AstroReadDamageVar(4m) 
+            new AstroReadDamageVar(0m),
+            new AstroReadBlockVar(0m)
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
 
-        public SynapseStrike()
+        public MimicIronWave()
             : base(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
         {
         }
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage);
+            await GainReadBlock(cardPlay, this.DynamicVars.Block.BaseValue);
+            await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_heavy");
         }
 
         protected override void OnUpgrade()
         {
             this.DynamicVars.Damage.UpgradeValueBy(2m);
+            this.DynamicVars.Block.UpgradeValueBy(2m);
         }
     }
 }

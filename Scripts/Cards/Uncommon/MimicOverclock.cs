@@ -1,0 +1,49 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using AstroLupine.Powers;
+
+namespace AstroLupine.Cards.Uncommon
+{
+    public class MimicOverclock : BaseAstroLupineCard
+    {
+        public const string CardId = "ASTROLUPINE-MIMIC_OVERCLOCK";
+
+        protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
+        { 
+            new MagicVar(3m),
+            new EnergyVar(2)
+        };
+
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
+
+        public MimicOverclock()
+            : base(0, CardType.Skill, CardRarity.Uncommon, TargetType.None)
+        {
+        }
+
+        protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+        {
+            if (Owner == null) return;
+
+            await CardPileCmd.Draw(choiceContext, this.DynamicVars["Magic"].IntValue, Owner);
+            await PlayerCmd.GainEnergy(this.DynamicVars.Energy.IntValue, Owner);
+
+            if (Owner.Creature != null)
+            {
+                await PowerCmd.Apply<AttackOverwritePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+                await PowerCmd.Apply<DefenseOverwritePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+                await PowerCmd.Apply<DrawOverwritePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+            }
+        }
+
+        protected override void OnUpgrade()
+        {
+            this.DynamicVars["Magic"].UpgradeValueBy(1m);
+            this.DynamicVars.Energy.UpgradeValueBy(1m);
+        }
+    }
+}

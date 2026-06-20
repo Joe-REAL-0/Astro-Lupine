@@ -12,5 +12,10 @@ namespace AstroLupine.Powers
         public DrawRegisterPower() : base(2)
         {
         }
+
+        protected override int GetMinThreshold()
+        {
+            return 1;
+        }
     }
 }

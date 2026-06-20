@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://astrolupine_visuals"]
+[gd_scene format=3 uid="uid://dn32jlffdiu8"]
 
 [node name="AstroLupineVisuals" type="Node2D"]
 
@@ -7,6 +7,7 @@ unique_name_in_owner = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
 position = Vector2(0, -140)
+scale = Vector2(0.15, 0.15)
 
 [node name="Bounds" type="Control" parent="."]
 unique_name_in_owner = true
@@ -15,7 +16,6 @@ anchors_preset = 0
 offset_left = -100.0
 offset_top = -280.0
 offset_right = 100.0
-offset_bottom = 0.0
 
 [node name="IntentPos" type="Marker2D" parent="."]
 unique_name_in_owner = true

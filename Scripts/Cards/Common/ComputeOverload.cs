@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -41,14 +41,14 @@ namespace AstroLupine.Cards.Common
                 }
 
                 // Write Attack Register
-                WriteAttackRegister((int)this.DynamicVars.Damage.BaseValue);
+                await WriteAttackRegister((int)this.DynamicVars.Damage.BaseValue);
 
                 // Draw 1 card
                 int drawAmount = (int)this.DynamicVars["Magic"].PreviewValue;
                 await CardPileCmd.Draw(choiceContext, drawAmount, Owner);
 
                 // Write Draw Register to 1
-                WriteDrawRegister(1);
+                await WriteDrawRegister(1);
             }
         }
 

@@ -29,7 +29,7 @@ namespace AstroLupine.Cards.Starter
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             // Call our custom hook from the base class to gain Read Block
-            await GainReadBlock(cardPlay, this.DynamicVars.Block);
+            await GainReadBlock(cardPlay, this.DynamicVars.Block.BaseValue);
         }
 
         protected override void OnUpgrade()

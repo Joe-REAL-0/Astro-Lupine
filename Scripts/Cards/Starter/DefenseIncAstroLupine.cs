@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -35,7 +35,7 @@ namespace AstroLupine.Cards.Starter
         {
             // Increment the defense register by Magic amount
             int amount = (int)this.DynamicVars["Magic"].BaseValue;
-            IncDefenseRegister(amount);
+            await IncDefenseRegister(amount);
             
             if (base.Owner?.Creature != null)
             {

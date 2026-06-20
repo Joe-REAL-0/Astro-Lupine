@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using BaseLib.Abstracts;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -19,6 +20,7 @@ namespace AstroLupine.Cards
     [Pool(typeof(AstroLupineCardPool))]
     public abstract class BaseAstroLupineCard : CustomCardModel
     {
+        public bool HasWriteTag { get; set; } = false;
         public override CardPoolModel Pool => ModelDb.CardPool<AstroLupineCardPool>();
         public override CardPoolModel VisualCardPool => ModelDb.CardPool<AstroLupineCardPool>();
 
@@ -31,11 +33,11 @@ namespace AstroLupine.Cards
         /// Reads the Attack Register and deals damage.
         /// This ensures the register bonus is added AFTER all normal debuffs (like Weak).
         /// </summary>
-        protected async Task DealReadDamage(PlayerChoiceContext choiceContext, CardPlay cardPlay, DynamicVar damageVar, string hitVfx = "vfx/vfx_attack_slash")
+        protected async Task<AttackCommand> DealReadDamage(PlayerChoiceContext choiceContext, CardPlay cardPlay, DynamicVar damageVar, string hitVfx = "vfx/vfx_attack_slash")
         {
             if (cardPlay.Target == null || Owner == null)
             {
-                return;
+                return null;
             }
 
             // Calculate the base damage normally, applying Strength, Weak, etc.
@@ -57,7 +59,7 @@ namespace AstroLupine.Cards
             decimal finalDamage = modifiedBase + regAmount;
 
             // Deal final damage using Unpowered to prevent hooks from applying again
-            await DamageCmd.Attack(finalDamage)
+            return await DamageCmd.Attack(finalDamage)
                 .FromCard(this)
                 .Targeting(cardPlay.Target)
                 .Unpowered()
@@ -69,7 +71,7 @@ namespace AstroLupine.Cards
         /// Reads the Defense Register and gains block.
         /// This ensures the register bonus is added AFTER all normal debuffs (like Frail).
         /// </summary>
-        protected async Task GainReadBlock(CardPlay? cardPlay, DynamicVar blockVar)
+        protected async Task GainReadBlock(CardPlay? cardPlay, decimal baseBlockValue)
         {
             if (Owner == null)
             {
@@ -80,7 +82,7 @@ namespace AstroLupine.Cards
             decimal modifiedBase = Hook.ModifyBlock(
                 CombatState!, 
                 Owner.Creature, 
-                blockVar.BaseValue, 
+                baseBlockValue, 
                 ValueProp.Move, 
                 this, 
                 cardPlay, 
@@ -116,61 +118,55 @@ namespace AstroLupine.Cards
         /// <summary>
         /// Writes the specified value to the Attack Register.
         /// </summary>
-        protected void WriteAttackRegister(int value)
+        protected async Task WriteAttackRegister(int value, PlayerChoiceContext? choiceContext = null)
         {
-            Owner?.Creature?.GetPower<AttackRegisterPower>()?.Write(value);
+            var power = Owner?.Creature?.GetPower<AttackRegisterPower>();
+            if (power != null) await power.Write(value, choiceContext);
         }
 
         /// <summary>
         /// Increments the Attack Register by the specified amount.
         /// </summary>
-        protected void IncAttackRegister(int amount)
+        protected async Task IncAttackRegister(int amount, PlayerChoiceContext? choiceContext = null)
         {
             var power = Owner?.Creature?.GetPower<AttackRegisterPower>();
-            if (power != null)
-            {
-                power.Increment(amount);
-            }
+            if (power != null) await power.Increment(amount, choiceContext);
         }
 
         /// <summary>
         /// Writes the specified value to the Defense Register.
         /// </summary>
-        protected void WriteDefenseRegister(int value)
+        protected async Task WriteDefenseRegister(int value, PlayerChoiceContext? choiceContext = null)
         {
-            Owner?.Creature?.GetPower<DefenseRegisterPower>()?.Write(value);
+            var power = Owner?.Creature?.GetPower<DefenseRegisterPower>();
+            if (power != null) await power.Write(value, choiceContext);
         }
 
         /// <summary>
         /// Increments the Defense Register by the specified amount.
         /// </summary>
-        protected void IncDefenseRegister(int amount)
+        protected async Task IncDefenseRegister(int amount, PlayerChoiceContext? choiceContext = null)
         {
             var power = Owner?.Creature?.GetPower<DefenseRegisterPower>();
-            if (power != null)
-            {
-                power.Increment(amount);
-            }
+            if (power != null) await power.Increment(amount, choiceContext);
         }
 
         /// <summary>
         /// Writes the specified value to the Draw Register.
         /// </summary>
-        protected void WriteDrawRegister(int value)
+        protected async Task WriteDrawRegister(int value, PlayerChoiceContext? choiceContext = null)
         {
-            Owner?.Creature?.GetPower<DrawRegisterPower>()?.Write(value);
+            var power = Owner?.Creature?.GetPower<DrawRegisterPower>();
+            if (power != null) await power.Write(value, choiceContext);
         }
 
         /// <summary>
         /// Increments the Draw Register by the specified amount.
         /// </summary>
-        protected void IncDrawRegister(int amount)
+        protected async Task IncDrawRegister(int amount, PlayerChoiceContext? choiceContext = null)
         {
             var power = Owner?.Creature?.GetPower<DrawRegisterPower>();
-            if (power != null)
-            {
-                power.Increment(amount);
-            }
+            if (power != null) await power.Increment(amount, choiceContext);
         }
     }
 }
