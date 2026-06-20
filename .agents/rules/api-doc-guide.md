@@ -3,6 +3,6 @@ trigger: always_on
 ---
 
 由于《Slay the Spire 2》没有官方的模组API接口，我们采用了社区开源的BaseLib框架进行模组开发。
-我clone了BaseLib的源码，放在根目录的BaseLib-StS2下，当你要查看具体的API时可以从源码中翻找。
-同时我直接反编译了官方的sts2.dll，反编译后的完整代码在项目根目录的sts2目录下，你可以去其中参考官方提供的各种类和接口。
+我clone了BaseLib的源码，放在根目录的depends/BaseLib-StS2下，当你要查看具体的API时可以从源码中翻找。
+同时我直接反编译了官方的sts2.dll，反编译后的完整代码在项目根目录的depends/sts2目录下，你可以去其中参考官方提供的各种类和接口。
 当编写代码时，一定要从源码中获取正确的API，避免自己杜撰接口。在查阅API时候，请逐级进行查阅，尽量使用搜索，不要平白无故消耗token。

@@ -8,17 +8,7 @@ using HarmonyLib;
 
 namespace AstroLupine.Characters
 {
-    [HarmonyPatch(typeof(CharacterModel), nameof(CharacterModel.CharacterSelectTransitionPath), MethodType.Getter)]
-    public static class CharacterTransitionPathPatch
-    {
-        public static void Postfix(CharacterModel __instance, ref string __result)
-        {
-            if (__instance is AstroLupineCharacter)
-            {
-                __result = "res://materials/transitions/ironclad_transition_mat.tres";
-            }
-        }
-    }
+
 
     public class AstroLupineCharacter : CustomCharacterModel
     {
@@ -26,7 +16,7 @@ namespace AstroLupine.Characters
 
         public override int StartingHp => 60;
         public override int StartingGold => 99;
-        public override Godot.Color NameColor => new Godot.Color("B5B9C8FF");
+        public override Godot.Color NameColor => new Godot.Color("2D3B4FFF");
         
         public override CharacterGender Gender => default;
         
@@ -63,11 +53,13 @@ namespace AstroLupine.Characters
         // =============================================
 
         // 角色选择界面 - 背景场景
-        public override string? CustomCharacterSelectBg => "res://scenes/screens/char_select/char_select_bg_ironclad.tscn";
+        public override string? CustomCharacterSelectBg => "res://scenes/screens/char_select/char_select_bg_astrolupine.tscn";
+        // 角色选择界面 - 角色切换转场特效
+        public override string? CustomCharacterSelectTransitionPath => "res://materials/transitions/ironclad_transition_mat.tres";
         // 角色选择界面 - 头像图标
-        public override string? CustomCharacterSelectIconPath => "res://images/packed/character_select/char_select_ironclad.png";
+        public override string? CustomCharacterSelectIconPath => "res://assets/texture/character/choose_character_head.png";
         // 战斗中角色立绘/动画
-        public override string? CustomVisualPath => "res://scenes/creature_visuals/ironclad.tscn";
+        public override string? CustomVisualPath => "res://scenes/creature_visuals/astrolupine_visuals.tscn";
         // 卡牌拖尾特效
         public override string? CustomTrailPath => "res://scenes/vfx/card_trail_ironclad.tscn";
         // 左上角运行图标场景
@@ -77,7 +69,7 @@ namespace AstroLupine.Characters
         // 多人游戏地图上的图标轮廓
         public override string? CustomIconOutlineTexturePath => "res://images/ui/top_panel/character_icon_ironclad_outline.png";
         // 未解锁时的选人头像
-        public override string? CustomCharacterSelectLockedIconPath => "res://images/packed/character_select/char_select_ironclad_locked.png";
+        public override string? CustomCharacterSelectLockedIconPath => "res://assets/texture/character/choose_character_head.png"; // 暂时复用已解锁时的头像
         // 地图标记图标
         protected override string MapMarkerPath => "res://images/packed/map/icons/map_marker_ironclad.png";
 
@@ -92,13 +84,13 @@ namespace AstroLupine.Characters
         public override float CastAnimDelay => 0.25f;
         public override string CharacterTransitionSfx => "event:/sfx/ui/wipe_ironclad";
 
-        // 色彩设置（淡灰色主题）
-        public override Godot.Color EnergyLabelOutlineColor => new Godot.Color("B5B9C8FF");
-        public override Godot.Color DialogueColor => new Godot.Color("666666FF");
+        // 色彩设置（深蓝灰色主题）
+        public override Godot.Color EnergyLabelOutlineColor => new Godot.Color("2D3B4FFF");
+        public override Godot.Color DialogueColor => new Godot.Color("2D3B4FFF");
         public override MegaCrit.Sts2.Core.Nodes.Vfx.VfxColor SpeechBubbleColor => MegaCrit.Sts2.Core.Nodes.Vfx.VfxColor.DarkGray;
-        public override Godot.Color MapDrawingColor => new Godot.Color("B3B3B3FF");
-        public override Godot.Color RemoteTargetingLineColor => new Godot.Color("CCCCCCFF");
-        public override Godot.Color RemoteTargetingLineOutline => new Godot.Color("4D4D4DFF");
+        public override Godot.Color MapDrawingColor => new Godot.Color("2D3B4FFF");
+        public override Godot.Color RemoteTargetingLineColor => new Godot.Color("2D3B4FFF");
+        public override Godot.Color RemoteTargetingLineOutline => new Godot.Color("1A2230FF"); // 使用更深的同色系作为描边
 
         // UI音效
         public override string CharacterSelectSfx => "event:/sfx/characters/ironclad/ironclad_select";

@@ -12,11 +12,11 @@ namespace AstroLupine.Cards.Common
     {
         public const string CardId = "AstroLupine_Card_Preload";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Write };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new MagicVar(2m) 
+            new MagicVar(1m) 
         };
 
         public Preload()
@@ -28,8 +28,9 @@ namespace AstroLupine.Cards.Common
         {
             if (Owner != null)
             {
-                await CardPileCmd.Draw(choiceContext, (int)this.DynamicVars["Magic"].PreviewValue, Owner);
-                WriteDrawRegister((int)this.DynamicVars["Magic"].PreviewValue);
+                int amount = (int)this.DynamicVars["Magic"].PreviewValue;
+                await CardPileCmd.Draw(choiceContext, amount, Owner);
+                WriteDrawRegister(amount);
             }
         }
 

@@ -1,0 +1,8 @@
+{
+  "ASTROLUPINE-ATTACK_REGISTER_POWER.title": "Attack Register (RA)",
+  "ASTROLUPINE-ATTACK_REGISTER_POWER.smartDescription": "#Can be [Read] and [Written] by attack cards. Current Read: Deal {Amount} extra damage.",
+  "ASTROLUPINE-DEFENSE_REGISTER_POWER.title": "Defense Register (RD)",
+  "ASTROLUPINE-DEFENSE_REGISTER_POWER.smartDescription": "#Can be [Read] and [Written] by defense cards. Current Read: Gain {Amount} extra block.",
+  "ASTROLUPINE-DRAW_REGISTER_POWER.title": "Draw Register (RP)",
+  "ASTROLUPINE-DRAW_REGISTER_POWER.smartDescription": "#Can be [Read] and [Written] by draw cards. Current Read: Draw {Amount} extra cards."
+}

@@ -1,0 +1,6 @@
+{
+  "ASTROLUPINE-READ.title": "Read",
+  "ASTROLUPINE-READ.description": "The value of this card is additionally increased by the target Register's current level. This effect is unaffected by any debuffs.",
+  "ASTROLUPINE-WRITE.title": "Write",
+  "ASTROLUPINE-WRITE.description": "When this card is played, the target Register's level is set to this card's value."
+}

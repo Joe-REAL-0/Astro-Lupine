@@ -20,7 +20,7 @@ namespace AstroLupine.Cards
     public abstract class BaseAstroLupineCard : CustomCardModel
     {
         public override CardPoolModel Pool => ModelDb.CardPool<AstroLupineCardPool>();
-        public override CardPoolModel VisualCardPool => ModelDb.CardPool<MegaCrit.Sts2.Core.Models.CardPools.IroncladCardPool>();
+        public override CardPoolModel VisualCardPool => ModelDb.CardPool<AstroLupineCardPool>();
 
         protected BaseAstroLupineCard(int canonicalEnergyCost, CardType type, CardRarity rarity, TargetType targetType, bool shouldShowInCardLibrary = true) 
             : base(canonicalEnergyCost, type, rarity, targetType, shouldShowInCardLibrary)
@@ -93,6 +93,24 @@ namespace AstroLupine.Cards
 
             // Gain block using Unpowered to prevent hooks from applying again
             await CreatureCmd.GainBlock(Owner.Creature, finalBlock, ValueProp.Unpowered | ValueProp.Move, cardPlay);
+        }
+
+        /// <summary>
+        /// Reads the Draw Register and draws cards.
+        /// </summary>
+        protected async Task<int> DrawReadCards(PlayerChoiceContext choiceContext, DynamicVar magicVar)
+        {
+            if (Owner == null)
+            {
+                return 0;
+            }
+
+            int baseAmount = (int)magicVar.BaseValue;
+            int regAmount = Owner.Creature.GetPower<DrawRegisterPower>()?.Read() ?? 0;
+            int finalDraw = baseAmount + regAmount;
+
+            await CardPileCmd.Draw(choiceContext, finalDraw, Owner);
+            return finalDraw;
         }
 
         /// <summary>

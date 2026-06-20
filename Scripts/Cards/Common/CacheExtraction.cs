@@ -28,7 +28,7 @@ namespace AstroLupine.Cards.Common
         {
             if (Owner != null)
             {
-                await CardPileCmd.Draw(choiceContext, (int)this.DynamicVars["Magic"].PreviewValue, Owner);
+                await DrawReadCards(choiceContext, this.DynamicVars["Magic"]);
             }
         }
 

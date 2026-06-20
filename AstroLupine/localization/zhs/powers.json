@@ -1,0 +1,8 @@
+{
+  "ASTROLUPINE-ATTACK_REGISTER_POWER.title": "攻击寄存器(RA)",
+  "ASTROLUPINE-ATTACK_REGISTER_POWER.smartDescription": "#可被有攻击伤害的卡牌【读取】和【写入】。当前读取：额外造成{Amount}点伤害",
+  "ASTROLUPINE-DEFENSE_REGISTER_POWER.title": "防御寄存器(RD)",
+  "ASTROLUPINE-DEFENSE_REGISTER_POWER.smartDescription": "#可被有防御能力的卡牌【读取】和【写入】。当前读取：额外获得{Amount}点格挡",
+  "ASTROLUPINE-DRAW_REGISTER_POWER.title": "抽牌寄存器(RP)",
+  "ASTROLUPINE-DRAW_REGISTER_POWER.smartDescription": "#可被有抽牌能力的卡牌【读取】和【写入】。当前读取：额外抽{Amount}张牌"
+}

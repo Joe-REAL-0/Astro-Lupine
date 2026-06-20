@@ -1,7 +1,7 @@
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -26,28 +26,27 @@ namespace AstroLupine.Cards.Common
 
             if (this.IsUpgraded)
             {
-                // Upgrade: Apply Read to all cards in hand
-                if (Owner.PlayerCombatState != null)
-                {
-                    foreach (CardModel card in Owner.PlayerCombatState.Hand.Cards)
-                    {
-                    if (card != this && !card.Keywords.Contains(AstroLupineKeywords.Read))
-                    {
-                        CardCmd.ApplyKeyword(card, AstroLupineKeywords.Read);
-                    }
-                }
-                }
-            }
-            else
-            {
-                // Basic: Select 1 card in hand to apply Read
+                // Upgrade: Select 1 card in hand to apply Write
                 var prefs = new CardSelectorPrefs(new LocString("gameplay_ui", "CHOOSE_CARD_UPGRADE_HEADER"), 1);
-                var selectedCards = await CardSelectCmd.FromHand(choiceContext, Owner, prefs, c => c != this && !c.Keywords.Contains(AstroLupineKeywords.Read), this);
+                var selectedCards = await CardSelectCmd.FromHand(choiceContext, Owner, prefs, c => c != this && !c.Keywords.Contains(AstroLupineKeywords.Write), this);
                 
                 var targetCard = selectedCards.FirstOrDefault();
                 if (targetCard != null)
                 {
-                    CardCmd.ApplyKeyword(targetCard, AstroLupineKeywords.Read);
+                    CardCmd.ApplyKeyword(targetCard, AstroLupineKeywords.Write);
+                }
+            }
+            else
+            {
+                // Basic: Apply Write to a random card in hand
+                var validCards = Owner.PlayerCombatState.Hand.Cards.Where(c => c != this && !c.Keywords.Contains(AstroLupineKeywords.Write)).ToList();
+                if (validCards.Count > 0)
+                {
+                    var targetCard = validCards.TakeRandom(1, Owner.RunState.Rng.CombatCardSelection).FirstOrDefault();
+                    if (targetCard != null)
+                    {
+                        CardCmd.ApplyKeyword(targetCard, AstroLupineKeywords.Write);
+                    }
                 }
             }
         }

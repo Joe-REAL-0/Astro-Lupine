@@ -32,7 +32,7 @@ namespace AstroLupine.Cards.Common
             if (Owner != null)
             {
                 await PlayerCmd.GainEnergy(this.DynamicVars["Magic2"].PreviewValue, Owner);
-                await CardPileCmd.Draw(choiceContext, (int)this.DynamicVars["Magic"].PreviewValue, Owner);
+                await DrawReadCards(choiceContext, this.DynamicVars["Magic"]);
             }
         }
 

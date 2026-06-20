@@ -12,14 +12,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="sts2\**" />
-    <None Include="sts2\**" />
+    <Compile Remove="depends\sts2\**" />
+    <None Include="depends\sts2\**" />
     <Compile Remove="tempMeta\**" />
     <None Include="tempMeta\**" />
     <Compile Remove="FindPool\**" />
     <None Include="FindPool\**" />
-    <Compile Remove="BaseLib-StS2\**" />
-    <None Include="BaseLib-StS2\**" />
+    <Compile Remove="depends\BaseLib-StS2\**" />
+    <None Include="depends\BaseLib-StS2\**" />
   </ItemGroup>
 
   <ItemGroup>

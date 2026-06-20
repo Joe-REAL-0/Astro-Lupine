@@ -1,6 +1,0 @@
-{
-  "ASTROLUPINE-READ.title": "读取",
-  "ASTROLUPINE-READ.description": "这张牌的数值额外附加目标寄存器的当前层数。这一效果不受任何减益影响。",
-  "ASTROLUPINE-WRITE.title": "写入",
-  "ASTROLUPINE-WRITE.description": "这张牌打出时，将目标寄存器的层数设定为该牌的数值。"
-}

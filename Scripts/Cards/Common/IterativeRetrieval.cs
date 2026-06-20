@@ -14,7 +14,7 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new AstroReadMagicVar(1m) 
+            new AstroReadMagicVar(0m) 
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.Write };
@@ -28,8 +28,7 @@ namespace AstroLupine.Cards.Common
         {
             if (Owner != null)
             {
-                int drawAmount = (int)this.DynamicVars["Magic"].PreviewValue;
-                await CardPileCmd.Draw(choiceContext, drawAmount, Owner);
+                int drawAmount = await DrawReadCards(choiceContext, this.DynamicVars["Magic"]);
                 WriteDrawRegister(drawAmount);
 
                 // Reduce cost for the rest of combat

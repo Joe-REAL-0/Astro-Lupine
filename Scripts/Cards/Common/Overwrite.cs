@@ -18,7 +18,7 @@ namespace AstroLupine.Cards.Common
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
 
         public Overwrite()
-            : base(1, CardType.Skill, CardRarity.Common, TargetType.None)
+            : base(0, CardType.Skill, CardRarity.Common, TargetType.None)
         {
         }
 

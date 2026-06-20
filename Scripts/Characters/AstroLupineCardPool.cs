@@ -1,14 +1,18 @@
 using Godot;
 using MegaCrit.Sts2.Core.Models;
+using BaseLib.Abstracts;
 
 namespace AstroLupine.Characters
 {
-    public class AstroLupineCardPool : CardPoolModel
+    public class AstroLupineCardPool : CustomCardPoolModel
     {
         public override string Title => "AstroLupine";
         public override string EnergyColorName => "AstroLupine_Energy";
-        public override string CardFrameMaterialPath => "card_frame_astrolupine"; 
-        public override Color DeckEntryCardColor => new Color("B5B9C8FF");
+        
+        // 使用 BaseLib 提供的方法，自动根据给定的颜色生成着色器材质，无需手动创建文件
+        public override Color ShaderColor => new Color("2D3B4FFF");
+        
+        public override Color DeckEntryCardColor => new Color("2D3B4FFF");
         public override bool IsColorless => false;
 
         protected override CardModel[] GenerateAllCards()

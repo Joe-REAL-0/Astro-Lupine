@@ -30,7 +30,6 @@ namespace AstroLupine.Cards.Common
             var targetCard = selectedCards.FirstOrDefault();
             if (targetCard != null)
             {
-                if (!targetCard.Keywords.Contains(AstroLupineKeywords.Read)) CardCmd.ApplyKeyword(targetCard, AstroLupineKeywords.Read);
                 if (!targetCard.Keywords.Contains(AstroLupineKeywords.Write)) CardCmd.ApplyKeyword(targetCard, AstroLupineKeywords.Write);
                 if (!targetCard.Keywords.Contains(CardKeyword.Exhaust)) CardCmd.ApplyKeyword(targetCard, CardKeyword.Exhaust);
             }

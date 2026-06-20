@@ -44,7 +44,7 @@ namespace AstroLupine.Cards.Common
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Damage.UpgradeValueBy(3m);
+            this.DynamicVars.Damage.UpgradeValueBy(2m);
         }
     }
 }

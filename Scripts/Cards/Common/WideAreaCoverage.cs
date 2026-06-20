@@ -14,7 +14,7 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new AstroReadDamageVar(8m) 
+            new AstroReadDamageVar(7m) 
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
@@ -34,7 +34,7 @@ namespace AstroLupine.Cards.Common
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Damage.UpgradeValueBy(3m);
+            this.DynamicVars.Damage.UpgradeValueBy(2m);
         }
     }
 }

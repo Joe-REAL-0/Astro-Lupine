@@ -19,7 +19,7 @@ namespace AstroLupine.Cards.Starter
             new AstroReadBlockVar(0m) 
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
 
         public DefendAstroLupine()
             : base(1, CardType.Skill, CardRarity.Basic, TargetType.None)

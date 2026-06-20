@@ -21,7 +21,7 @@ namespace AstroLupine.Cards.Common
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
 
         public DualThread()
-            : base(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+            : base(2, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
         {
         }
 
