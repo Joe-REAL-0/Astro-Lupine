@@ -29,7 +29,6 @@ namespace AstroLupine.Cards.Uncommon
             if (Owner == null) return;
 
             await CardPileCmd.Draw(choiceContext, this.DynamicVars["Magic"].IntValue, Owner);
-            await PlayerCmd.GainEnergy(this.DynamicVars.Energy.IntValue, Owner);
 
             if (Owner.Creature != null)
             {
