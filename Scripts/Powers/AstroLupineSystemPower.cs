@@ -52,12 +52,6 @@ namespace AstroLupine.Powers
                     out _
                 );
                 int finalValue = (int)modifiedBase;
-                if (card.DynamicVars["Block"] is AstroReadBlockVar)
-                {
-                    int readVal = card.Owner.Creature.GetPower<DefenseRegisterPower>()?.Read() ?? 0;
-                    finalValue += readVal;
-                    Godot.GD.Print($"[AstroLupineSystemPower] Block is ReadBlockVar. Added {readVal} from register.");
-                }
                 _cachedBlockValues[card] = finalValue;
                 Godot.GD.Print($"[AstroLupineSystemPower] Cached Block value: {finalValue}");
             }
@@ -79,12 +73,6 @@ namespace AstroLupine.Powers
                     out _
                 );
                 int finalValue = (int)modifiedBase;
-                if (card.DynamicVars["Damage"] is AstroReadDamageVar)
-                {
-                    int readVal = card.Owner.Creature.GetPower<AttackRegisterPower>()?.Read() ?? 0;
-                    finalValue += readVal;
-                    Godot.GD.Print($"[AstroLupineSystemPower] Damage is ReadDamageVar. Added {readVal} from register.");
-                }
                 _cachedDamageValues[card] = finalValue;
                 Godot.GD.Print($"[AstroLupineSystemPower] Cached Damage value: {finalValue}");
             }

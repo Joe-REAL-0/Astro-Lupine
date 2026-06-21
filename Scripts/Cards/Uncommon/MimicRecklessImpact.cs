@@ -1,4 +1,4 @@
-﻿using MegaCrit.Sts2.Core.ValueProps;
+using MegaCrit.Sts2.Core.ValueProps;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
@@ -11,44 +11,17 @@ using AstroLupine.Powers;
 
 namespace AstroLupine.Cards.Uncommon
 {
-    public class RecklessDamageVar : DamageVar
-    {
-        private decimal _multiplier;
-        public RecklessDamageVar(decimal multiplier) : base(0m, ValueProp.Move)
-        {
-            _multiplier = multiplier;
-        }
-
-        public override void UpdateCardPreview(CardModel card, CardPreviewMode previewMode, Creature? target, bool runGlobalHooks)
-        {
-            base.UpdateCardPreview(card, previewMode, target, runGlobalHooks);
-            if (card.Owner?.Creature != null)
-            {
-                int defReg = card.Owner.Creature.GetPower<DefenseRegisterPower>()?.Read() ?? 0;
-                this.PreviewValue = defReg * _multiplier;
-            }
-        }
-        
-        public void UpgradeMultiplierBy(decimal addend)
-        {
-            _multiplier += addend;
-            this.WasJustUpgraded = true;
-        }
-        
-        public decimal GetMultiplier() => _multiplier;
-    }
-
     public class MimicRecklessImpact : BaseAstroLupineCard
     {
         public const string CardId = "ASTROLUPINE-MIMIC_RECKLESS_IMPACT";
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new RecklessDamageVar(2m),
+            new MimicRecklessImpactDamageVar(),
             new MagicVar(5m)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.DefenseOverwrite };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.DefenseOverwrite };
 
         public MimicRecklessImpact()
             : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
@@ -59,11 +32,7 @@ namespace AstroLupine.Cards.Uncommon
         {
             if (cardPlay.Target == null || Owner == null) return;
 
-            int defReg = Owner.Creature.GetPower<DefenseRegisterPower>()?.Read() ?? 0;
-            decimal multiplier = ((RecklessDamageVar)this.DynamicVars.Damage).GetMultiplier();
-            decimal baseDmg = defReg * multiplier;
-
-            await DamageCmd.Attack(baseDmg)
+            await DamageCmd.Attack(this.DynamicVars.Damage.IntValue)
                 .FromCard(this)
                 .Targeting(cardPlay.Target)
                 .WithHitFx("vfx/vfx_attack_blunt")
@@ -74,10 +43,27 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override void OnUpgrade()
         {
-            ((RecklessDamageVar)this.DynamicVars.Damage).UpgradeMultiplierBy(1m);
             this.DynamicVars["Magic"].UpgradeValueBy(3m);
         }
     }
+
+    public class MimicRecklessImpactDamageVar : DamageVar
+    {
+        public MimicRecklessImpactDamageVar() : base(0m, 0)
+        {
+        }
+
+        public override void UpdateCardPreview(CardModel card, CardPreviewMode previewMode, Creature? target, bool runGlobalHooks)
+        {
+            base.UpdateCardPreview(card, previewMode, target, runGlobalHooks);
+            if (card.Owner?.Creature != null)
+            {
+                var register = card.Owner.Creature.GetPower<DefenseRegisterPower>();
+                if (register != null)
+                {
+                    this.PreviewValue += register.Read();
+                }
+            }
+        }
+    }
 }
-
-

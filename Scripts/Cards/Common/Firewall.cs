@@ -15,7 +15,7 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new BlockVar(6m, ValueProp.Move) 
+            new BlockVar(8m, ValueProp.Move) 
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
@@ -36,7 +36,7 @@ namespace AstroLupine.Cards.Common
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Block.UpgradeValueBy(2m);
+            this.DynamicVars.Block.UpgradeValueBy(4m);
         }
     }
 }

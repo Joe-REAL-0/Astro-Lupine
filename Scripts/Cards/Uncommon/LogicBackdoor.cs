@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -30,7 +30,7 @@ namespace AstroLupine.Cards.Uncommon
             if (cardPlay.Target != null && Owner?.Creature != null)
             {
                 await PowerCmd.Apply<ZeroDayExploitPower>(choiceContext, cardPlay.Target, this.DynamicVars["Debuff"].IntValue, Owner.Creature, this);
-                await CardPileCmd.Draw(choiceContext, this.DynamicVars["Magic"].IntValue, Owner);
+                await DrawReadCards(choiceContext, this.DynamicVars["Magic"]);
             }
         }
 

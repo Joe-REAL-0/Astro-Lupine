@@ -20,16 +20,20 @@ namespace AstroLupine.Powers
 
         public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            if (cardPlay.Card.Owner.Creature == this.Owner)
+            if (cardPlay.Card.Owner != null && cardPlay.Card.Owner.Creature == this.Owner)
             {
-                if (cardPlay.Card is BaseAstroLupineCard astroCard && astroCard.HasWriteTag)
+                bool hasWrite = false;
+                if (cardPlay.Card is BaseAstroLupineCard astroCard && astroCard.HasWriteTag) hasWrite = true;
+                if (cardPlay.Card.Keywords.Contains(AstroLupineKeywords.Write)) hasWrite = true;
+
+                if (hasWrite)
                 {
                     Flash();
                     var combatState = this.Owner?.CombatState;
                     if (combatState != null && this.Owner != null)
                     {
                         await CreatureCmd.Damage(
-                            new ThrowingPlayerChoiceContext(),
+                            choiceContext,
                             combatState.HittableEnemies,
                             this.Amount,
                             ValueProp.Unpowered,

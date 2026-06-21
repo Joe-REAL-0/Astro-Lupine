@@ -8,7 +8,7 @@ $ZipName = "$OutputDir\$ModName`_v$Version.zip"
 Write-Host "🐺 Starting Astro Lupine Release Build Process..." -ForegroundColor Cyan
 
 # 1. Build the C# DLL
-Write-Host "`n[1/3] Building C# project in ExportRelease mode..." -ForegroundColor Yellow
+Write-Host "`n[1/4] Building C# project in ExportRelease mode..." -ForegroundColor Yellow
 dotnet build -c ExportRelease
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Build failed! Please check the errors above."
@@ -16,7 +16,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 # 2. Check for required files
-Write-Host "`n[2/3] Checking required files..." -ForegroundColor Yellow
+Write-Host "`n[2/4] Checking required files..." -ForegroundColor Yellow
 $DllPath = ".godot\mono\temp\bin\ExportRelease\$ModName.dll"
 $PckPath = "$ModName.pck"
 $JsonPath = "$ModName.json"
@@ -36,7 +36,7 @@ if ($MissingFiles.Count -gt 0) {
 }
 
 # 3. Create the Release Zip
-Write-Host "`n[3/3] Creating Release Archive ($ZipName)..." -ForegroundColor Yellow
+Write-Host "`n[3/4] Creating Release Archive ($ZipName)..." -ForegroundColor Yellow
 
 if (-Not (Test-Path $OutputDir)) {
     New-Item -ItemType Directory -Path $OutputDir | Out-Null
@@ -61,5 +61,18 @@ Compress-Archive -Path "$TempStage\$ModName" -DestinationPath $ZipName -Force
 # Clean up staging
 Remove-Item -Recurse -Force $TempStage
 
+# 4. Copy to ModUploader workspace
+Write-Host "`n[4/4] Copying files to ModUploader workspace..." -ForegroundColor Yellow
+$UploaderContentDir = "ModUploader-win-x64\NewModWorkspace\content"
+
+if (-Not (Test-Path $UploaderContentDir)) {
+    New-Item -ItemType Directory -Path $UploaderContentDir -Force | Out-Null
+}
+
+Copy-Item $DllPath -Destination $UploaderContentDir -Force
+Copy-Item $PckPath -Destination $UploaderContentDir -Force
+Copy-Item $JsonPath -Destination $UploaderContentDir -Force
+
 Write-Host "`n✅ Successfully created release package at $ZipName!" -ForegroundColor Green
+Write-Host "✅ Successfully copied files to ModUploader workspace!" -ForegroundColor Green
 Write-Host "You can now distribute this zip file to players or upload it to mod platforms." -ForegroundColor Cyan

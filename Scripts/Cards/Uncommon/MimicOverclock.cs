@@ -15,7 +15,6 @@ namespace AstroLupine.Cards.Uncommon
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
             new MagicVar(3m),
-            new EnergyVar(2)
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
@@ -42,7 +41,6 @@ namespace AstroLupine.Cards.Uncommon
         protected override void OnUpgrade()
         {
             this.DynamicVars["Magic"].UpgradeValueBy(1m);
-            this.DynamicVars.Energy.UpgradeValueBy(1m);
         }
     }
 }
