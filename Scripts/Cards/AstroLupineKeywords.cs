@@ -24,15 +24,7 @@ namespace AstroLupine.Cards
         [CustomEnum("attack_overwrite")] public static CardKeyword AttackOverwrite;
         [CustomEnum("defense_overwrite")] public static CardKeyword DefenseOverwrite;
         [CustomEnum("draw_overwrite")] public static CardKeyword DrawOverwrite;
+        [CustomEnum("overwrite")] public static CardKeyword Overwrite;
         [CustomEnum("kernel_hardening")] public static CardKeyword KernelHardening;
-        [CustomEnum("exception_handling")] public static CardKeyword ExceptionHandling;
-        [CustomEnum("botnet")] public static CardKeyword Botnet;
-        [CustomEnum("cooling_architecture")] public static CardKeyword CoolingArchitecture;
-        [CustomEnum("exploit_anomaly")] public static CardKeyword ExploitAnomaly;
-        [CustomEnum("lupine_intuition")] public static CardKeyword LupineIntuition;
-        [CustomEnum("operator_overloading")] public static CardKeyword OperatorOverloading;
-        [CustomEnum("parallel_processing")] public static CardKeyword ParallelProcessing;
-        [CustomEnum("privilege_escalation")] public static CardKeyword PrivilegeEscalation;
-        [CustomEnum("read_only_lock")] public static CardKeyword ReadOnlyLock;
     }
 }

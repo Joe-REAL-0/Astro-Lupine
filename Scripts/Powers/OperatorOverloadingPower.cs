@@ -15,6 +15,8 @@ namespace AstroLupine.Powers
         public const string PowerId = "AstroLupine_OperatorOverloading";
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
+        
+        public override string? CustomPackedIconPath => "res://assets/texture/power/operator_overloading.png";
 
         public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {

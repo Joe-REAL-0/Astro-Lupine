@@ -14,6 +14,8 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new MagicVar(6) };
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.AttackRegister };
+
         public ReadOnlyLock() : base(2, CardType.Power, CardRarity.Uncommon, TargetType.None) {}
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

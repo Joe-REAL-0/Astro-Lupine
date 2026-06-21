@@ -14,7 +14,7 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_CronJob";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.DrawOverwrite, AstroLupineKeywords.AttackOverwrite, AstroLupineKeywords.DefenseOverwrite };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new[]
         {
@@ -24,7 +24,7 @@ namespace AstroLupine.Cards.Rare
         };
 
         public CronJob()
-            : base(3, CardType.Skill, CardRarity.Rare, TargetType.Self)
+            : base(1, CardType.Skill, CardRarity.Rare, TargetType.Self)
         {
         }
 
@@ -42,7 +42,7 @@ namespace AstroLupine.Cards.Rare
 
         protected override void OnUpgrade()
         {
-            base.EnergyCost.SetCustomBaseCost(2);
+            base.EnergyCost.SetCustomBaseCost(0);
         }
     }
 }

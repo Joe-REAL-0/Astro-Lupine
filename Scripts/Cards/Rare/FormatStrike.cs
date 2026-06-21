@@ -20,7 +20,7 @@ namespace AstroLupine.Cards.Rare
 
         private decimal _extraDamage;
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.TrojanHorseVirus };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new[]
         {

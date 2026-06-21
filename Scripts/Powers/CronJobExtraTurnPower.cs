@@ -12,6 +12,8 @@ namespace AstroLupine.Powers
         public const string PowerId = "AstroLupine_Power_CronJobExtraTurn";
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
+        
+        public override string? CustomPackedIconPath => "res://assets/texture/power/cron_job.png";
 
         public override bool ShouldTakeExtraTurn(Player player)
         {

@@ -18,6 +18,8 @@ namespace AstroLupine.Cards.Uncommon
             new MagicVar(2m)
         };
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.AutoMaintenance };
+
         public Daemon()
             : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
         {

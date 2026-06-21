@@ -19,7 +19,7 @@ namespace AstroLupine.Cards.Uncommon
             new BlockVar(6m, ValueProp.Move)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.AutoMaintenance };
 
         public MimicDodgeRoll()
             : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)

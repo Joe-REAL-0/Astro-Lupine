@@ -18,7 +18,7 @@ namespace AstroLupine.Cards.Uncommon
             new AstroReadDamageVar(2m) 
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.AttackRegister };
 
         public DullCrystalSmash()
             : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
@@ -32,7 +32,7 @@ namespace AstroLupine.Cards.Uncommon
 
             for (int i = 0; i < times; i++)
             {
-                await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_heavy");
+                await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_blunt");
             }
         }
 

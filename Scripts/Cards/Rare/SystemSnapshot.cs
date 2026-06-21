@@ -27,7 +27,13 @@ namespace AstroLupine.Cards.Rare
         {
             if (Owner != null && Owner.Creature != null)
             {
-                await PowerCmd.Apply<SystemSnapshotPower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+                int atkAmount = Owner.Creature.GetPower<AttackRegisterPower>()?.Amount ?? 1;
+                int defAmount = Owner.Creature.GetPower<DefenseRegisterPower>()?.Amount ?? 1;
+                int drwAmount = Owner.Creature.GetPower<DrawRegisterPower>()?.Amount ?? 1;
+
+                await PowerCmd.Apply<AttackOverwritePower>(choiceContext, Owner.Creature, atkAmount, Owner.Creature, this);
+                await PowerCmd.Apply<DefenseOverwritePower>(choiceContext, Owner.Creature, defAmount, Owner.Creature, this);
+                await PowerCmd.Apply<DrawOverwritePower>(choiceContext, Owner.Creature, drwAmount, Owner.Creature, this);
             }
         }
 

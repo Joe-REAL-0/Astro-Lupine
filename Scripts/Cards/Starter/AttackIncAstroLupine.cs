@@ -18,6 +18,8 @@ namespace AstroLupine.Cards.Starter
             new DynamicVar("Magic", 1m) 
         };
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.AttackRegister };
+
         public AttackIncAstroLupine()
             : base(1, CardType.Skill, CardRarity.Basic, TargetType.None)
         {

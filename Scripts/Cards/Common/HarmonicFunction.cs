@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -16,8 +16,7 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new AstroReadMagicVar(0m),
-            new MagicVar(2m) // Energy gain
+            new AstroReadMagicVar(0m)
         };
 
 
@@ -31,7 +30,7 @@ namespace AstroLupine.Cards.Common
         {
             if (Owner != null)
             {
-                await PlayerCmd.GainEnergy(this.DynamicVars["Magic2"].PreviewValue, Owner);
+                await PlayerCmd.GainEnergy(2, Owner);
                 await DrawReadCards(choiceContext, this.DynamicVars["Magic"]);
             }
         }

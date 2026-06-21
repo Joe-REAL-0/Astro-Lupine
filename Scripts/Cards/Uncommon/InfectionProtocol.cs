@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -18,7 +18,7 @@ namespace AstroLupine.Cards.Uncommon
             new MagicVar(2m)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.ZeroDayExploit, AstroLupineKeywords.TrojanHorseVirus };
 
         public InfectionProtocol()
             : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.AllEnemies)

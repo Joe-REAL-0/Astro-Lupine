@@ -23,10 +23,28 @@ namespace AstroLupine.Cards
         public bool HasWriteTag { get; set; } = false;
         public override CardPoolModel Pool => ModelDb.CardPool<AstroLupineCardPool>();
         public override CardPoolModel VisualCardPool => ModelDb.CardPool<AstroLupineCardPool>();
+        public override string? CustomPortraitPath
+        {
+            get
+            {
+                string path = $"res://assets/texture/card/{Id.Entry}.png";
+                if (Godot.ResourceLoader.Exists(path))
+                {
+                    return path;
+                }
+                return null;
+            }
+        }
 
         protected BaseAstroLupineCard(int canonicalEnergyCost, CardType type, CardRarity rarity, TargetType targetType, bool shouldShowInCardLibrary = true) 
             : base(canonicalEnergyCost, type, rarity, targetType, shouldShowInCardLibrary)
         {
+        }
+
+        public override async Task OnEnqueuePlayVfx(Creature? target)
+        {
+            SfxCmd.Play("event:/sfx/characters/ironclad/ironclad_attack");
+            await base.OnEnqueuePlayVfx(target);
         }
 
         /// <summary>
@@ -40,61 +58,49 @@ namespace AstroLupine.Cards
                 return null;
             }
 
-            // Calculate the base damage normally, applying Strength, Weak, etc.
-            decimal modifiedBase = Hook.ModifyDamage(
-                RunState!, 
-                CombatState, 
-                cardPlay.Target, 
-                Owner.Creature, 
-                damageVar.BaseValue, 
-                ValueProp.Move, 
-                this, 
-                ModifyDamageHookType.All, 
-                CardPreviewMode.Normal, 
-                out IEnumerable<AbstractModel> _
-            );
-
-            // Add the attack register value
-            int regAmount = Owner.Creature.GetPower<AttackRegisterPower>()?.Read() ?? 0;
-            decimal finalDamage = modifiedBase + regAmount;
-
-            // Deal final damage using Unpowered to prevent hooks from applying again
-            return await DamageCmd.Attack(finalDamage)
+            return await DamageCmd.Attack(damageVar.BaseValue)
                 .FromCard(this)
                 .Targeting(cardPlay.Target)
-                .Unpowered()
                 .WithHitFx(hitVfx)
                 .Execute(choiceContext);
+        }
+
+        /// <summary>
+        /// Reads the Attack Register and deals damage to all enemies.
+        /// </summary>
+        protected async Task DealReadDamageToAll(PlayerChoiceContext choiceContext, DynamicVar damageVar, string hitVfx = "vfx/vfx_attack_slash")
+        {
+            if (Owner == null || CombatState == null)
+            {
+                return;
+            }
+
+            // Play the attacker animation once
+            await CreatureCmd.TriggerAnim(Owner.Creature, "Attack", Owner.Character.AttackAnimDelay);
+
+            AttackCommand attackCmd = DamageCmd.Attack(damageVar.BaseValue)
+                .FromCard(this)
+                .TargetingAllOpponents(CombatState)
+                .WithHitFx(hitVfx)
+                .WithNoAttackerAnim();
+
+            await attackCmd.Execute(choiceContext);
         }
 
         /// <summary>
         /// Reads the Defense Register and gains block.
         /// This ensures the register bonus is added AFTER all normal debuffs (like Frail).
         /// </summary>
-        protected async Task GainReadBlock(CardPlay? cardPlay, decimal baseBlockValue)
+        protected async Task<int> GainReadBlock(CardPlay? cardPlay, decimal baseBlockValue)
         {
             if (Owner == null)
             {
-                return;
+                return 0;
             }
 
-            // Calculate base block normally, applying Dexterity, Frail, etc.
-            decimal modifiedBase = Hook.ModifyBlock(
-                CombatState!, 
-                Owner.Creature, 
-                baseBlockValue, 
-                ValueProp.Move, 
-                this, 
-                cardPlay, 
-                out IEnumerable<AbstractModel> _
-            );
+            decimal finalBlock = await CreatureCmd.GainBlock(Owner.Creature, baseBlockValue, ValueProp.Move, cardPlay);
 
-            // Add the defense register value
-            int regAmount = Owner.Creature.GetPower<DefenseRegisterPower>()?.Read() ?? 0;
-            decimal finalBlock = modifiedBase + regAmount;
-
-            // Gain block using Unpowered to prevent hooks from applying again
-            await CreatureCmd.GainBlock(Owner.Creature, finalBlock, ValueProp.Unpowered | ValueProp.Move, cardPlay);
+            return (int)finalBlock;
         }
 
         /// <summary>

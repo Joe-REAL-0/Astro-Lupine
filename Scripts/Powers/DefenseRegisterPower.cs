@@ -1,4 +1,4 @@
-﻿using BaseLib.Abstracts;
+using BaseLib.Abstracts;
 
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -16,7 +16,7 @@ namespace AstroLupine.Powers
         public const string PowerId = "AstroLupine_DefenseRegister";
 
         // 临时占位：使用敏捷(Dexterity)图标
-        public override string? CustomPackedIconPath => "res://assets/texture/power/defence_register.png";
+        public override string? CustomPackedIconPath => "res://assets/texture/power/defense_register.png";
 
         public DefenseRegisterPower() : base(5)
         {
@@ -26,22 +26,18 @@ namespace AstroLupine.Powers
         {
             if (cardSource != null && cardSource.Keywords.Contains(AstroLupineKeywords.Read))
             {
-                bool isNativeRead = (cardSource is BaseAstroLupineCard astroCard) && astroCard.CanonicalKeywords.Contains(AstroLupineKeywords.Read);
-                if (!isNativeRead)
+                decimal multiplier = 1m;
+                if (Owner?.CombatState != null)
                 {
-                    decimal multiplier = 1m;
-                    if (Owner?.CombatState != null)
+                    foreach (AbstractModel item in Owner.CombatState.IterateHookListeners())
                     {
-                        foreach (AbstractModel item in Owner.CombatState.IterateHookListeners())
-                        {
-                            multiplier *= item.ModifyBlockMultiplicative(target, 1m, props, cardSource, cardPlay);
-                        }
+                        multiplier *= item.ModifyBlockMultiplicative(target, 1m, props, cardSource, cardPlay);
                     }
+                }
 
-                    if (multiplier > 0)
-                    {
-                        return Read() / multiplier;
-                    }
+                if (multiplier > 0)
+                {
+                    return Read() / multiplier;
                 }
             }
             return 0m;

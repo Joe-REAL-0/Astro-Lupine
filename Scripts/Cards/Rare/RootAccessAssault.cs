@@ -16,7 +16,7 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_RootAccessAssault";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.DefenseRegister };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new[]
         {

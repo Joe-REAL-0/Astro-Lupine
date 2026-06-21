@@ -1,6 +1,6 @@
 {
   "ASTROLUPINE-READ.title": "读取",
-  "ASTROLUPINE-READ.description": "这张牌的数值额外附加目标寄存器的当前层数这一效果不受任何减益影响",
+  "ASTROLUPINE-READ.description": "这张牌的数值额外附加目标寄存器的当前层数（这一效果不受任何减益的影响）",
   "ASTROLUPINE-WRITE.title": "写入",
   "ASTROLUPINE-WRITE.description": "这张牌打出时，将目标寄存器的层数设定为该牌的数值",
   "ASTROLUPINE-ATTACK_REGISTER.title": "攻击寄存器",
@@ -24,5 +24,7 @@
   "ASTROLUPINE-DEFENSE_OVERWRITE.title": "防御覆写",
   "ASTROLUPINE-DEFENSE_OVERWRITE.description": "下回合开始时，将【防御寄存器】的数值强制设置为指定值",
   "ASTROLUPINE-DRAW_OVERWRITE.title": "抽牌覆写",
-  "ASTROLUPINE-DRAW_OVERWRITE.description": "下回合开始时，将【抽牌寄存器】的数值强制设置为指定值"
+  "ASTROLUPINE-DRAW_OVERWRITE.description": "下回合开始时，将【抽牌寄存器】的数值强制设置为指定值",
+  "ASTROLUPINE-OVERWRITE.title": "覆写效果",
+  "ASTROLUPINE-OVERWRITE.description": "包含攻击覆写，防御覆写，抽牌覆写"
 }

@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,6 +13,8 @@ namespace AstroLupine.Cards.Uncommon
         public const string CardId = "ASTROLUPINE-LUPINE_INTUITION";
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new MagicVar(3) };
+
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.TrojanHorseVirus, AstroLupineKeywords.ZeroDayExploit };
 
         public LupineIntuition() : base(1, CardType.Power, CardRarity.Uncommon, TargetType.None) {}
 

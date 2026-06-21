@@ -15,7 +15,7 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_LowLevelRefactoring";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, CardKeyword.Retain };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[0];
 
@@ -35,8 +35,7 @@ namespace AstroLupine.Cards.Rare
                     {
                         if (card.Type == CardType.Attack)
                         {
-                            card.AddKeyword(CardKeyword.Retain);
-                            card.AddKeyword(AstroLupineKeywords.Write);
+                            CardCmd.ApplyKeyword(card, AstroLupineKeywords.Write);
                             if (card is BaseAstroLupineCard astroCard)
                             {
                                 astroCard.HasWriteTag = true;

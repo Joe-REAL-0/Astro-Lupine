@@ -1,4 +1,4 @@
-﻿using MegaCrit.Sts2.Core.ValueProps;
+using MegaCrit.Sts2.Core.ValueProps;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
@@ -18,6 +18,8 @@ namespace AstroLupine.Cards.Uncommon
             new DamageVar(6m, ValueProp.Move) 
         };
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.TrojanHorseVirus };
+
         public GetToken()
             : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
         {
@@ -30,7 +32,7 @@ namespace AstroLupine.Cards.Uncommon
             await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue)
                 .FromCard(this)
                 .Targeting(cardPlay.Target)
-                .WithHitFx("vfx/vfx_attack_slash_fast")
+                .WithHitFx("vfx/vfx_attack_slash")
                 .Execute(choiceContext);
 
             if (cardPlay.Target.GetPower<TrojanHorseVirusPower>() != null)

@@ -1,4 +1,4 @@
-﻿using BaseLib.Abstracts;
+using BaseLib.Abstracts;
 using System.Collections.Generic;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
@@ -16,7 +16,7 @@ namespace AstroLupine.Characters
 
         public override int StartingHp => 60;
         public override int StartingGold => 99;
-        public override Godot.Color NameColor => new Godot.Color("2D4F3BFF");
+        public override Godot.Color NameColor => Godot.Color.FromHtml("#00FFCCFF");
         
         public override CharacterGender Gender => default;
         
@@ -65,7 +65,31 @@ namespace AstroLupine.Characters
         // 左上角运行图标场景
         public override string? CustomIconPath => "res://scenes/ui/character_icons/ironclad_icon.tscn";
         // 左上角运行图标纹理
-        public override string? CustomIconTexturePath => "res://images/ui/top_panel/character_icon_ironclad.png";
+        public override string? CustomIconTexturePath => "res://assets/texture/character/head_icon.png";
+
+        public override Godot.Control? CustomIcon
+        {
+            get
+            {
+                var iconControl = MegaCrit.Sts2.Core.Assets.PreloadManager.Cache.GetScene("res://scenes/ui/character_icons/ironclad_icon.tscn").Instantiate<Godot.Control>();
+                var texture = Godot.ResourceLoader.Load<Godot.Texture2D>(CustomIconTexturePath);
+
+                ReplaceTextureRecursive(iconControl, texture);
+                return iconControl;
+            }
+        }
+
+        private void ReplaceTextureRecursive(Godot.Node node, Godot.Texture2D texture)
+        {
+            if (node is Godot.TextureRect tr)
+            {
+                tr.Texture = texture;
+            }
+            foreach (var child in node.GetChildren())
+            {
+                ReplaceTextureRecursive(child, texture);
+            }
+        }
         // 多人游戏地图上的图标轮廓
         public override string? CustomIconOutlineTexturePath => "res://images/ui/top_panel/character_icon_ironclad_outline.png";
         // 未解锁时的选人头像
@@ -74,7 +98,12 @@ namespace AstroLupine.Characters
         protected override string MapMarkerPath => "res://images/packed/map/icons/map_marker_ironclad.png";
 
         // 能量计数器
-        public override string? CustomEnergyCounterPath => "res://scenes/combat/energy_counters/ironclad_energy_counter.tscn";
+        public override string? CustomEnergyCounterPath => null;
+        public override CustomEnergyCounter? CustomEnergyCounter => new CustomEnergyCounter(
+            layer => "res://assets/texture/character/energy_icon.png", 
+            Godot.Color.FromHtml("#2D3B4FFF"), 
+            Godot.Color.FromHtml("#00FFCCFF")
+        );
         // 篝火休息动画
         public override string? CustomRestSiteAnimPath => "res://scenes/rest_site/characters/ironclad_rest_site.tscn";
         // 商店动画
@@ -85,12 +114,12 @@ namespace AstroLupine.Characters
         public override string CharacterTransitionSfx => "event:/sfx/ui/wipe_ironclad";
 
         // 色彩设置（深蓝灰色主题）
-        public override Godot.Color EnergyLabelOutlineColor => new Godot.Color("2D3B4FFF");
-        public override Godot.Color DialogueColor => new Godot.Color("2D3B4FFF");
+        public override Godot.Color EnergyLabelOutlineColor => Godot.Color.FromHtml("#2D3B4FFF");
+        public override Godot.Color DialogueColor => Godot.Color.FromHtml("#2D3B4FFF");
         public override MegaCrit.Sts2.Core.Nodes.Vfx.VfxColor SpeechBubbleColor => MegaCrit.Sts2.Core.Nodes.Vfx.VfxColor.DarkGray;
-        public override Godot.Color MapDrawingColor => new Godot.Color("2D3B4FFF");
-        public override Godot.Color RemoteTargetingLineColor => new Godot.Color("2D3B4FFF");
-        public override Godot.Color RemoteTargetingLineOutline => new Godot.Color("1A2230FF"); // 使用更深的同色系作为描边
+        public override Godot.Color MapDrawingColor => Godot.Color.FromHtml("#2D3B4FFF");
+        public override Godot.Color RemoteTargetingLineColor => Godot.Color.FromHtml("#2D3B4FFF");
+        public override Godot.Color RemoteTargetingLineOutline => Godot.Color.FromHtml("#1A2230FF"); // 使用更深的同色系作为描边
 
         // UI音效
         public override string CharacterSelectSfx => "event:/sfx/characters/ironclad/ironclad_select";

@@ -36,7 +36,7 @@ namespace AstroLupine.Cards.Common
                     await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue)
                         .FromCard(this)
                         .Targeting(cardPlay.Target)
-                        .WithHitFx("vfx/vfx_attack_heavy")
+                        .WithHitFx("vfx/vfx_attack_blunt")
                         .Execute(choiceContext);
                 }
 

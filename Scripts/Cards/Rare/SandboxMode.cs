@@ -30,13 +30,13 @@ namespace AstroLupine.Cards.Rare
         {
             if (Owner != null && Owner.Creature != null)
             {
-                await PowerCmd.Apply<SandboxModePower>(choiceContext, Owner.Creature, (int)base.DynamicVars["Magic"].BaseValue, Owner.Creature, this);
+                await PowerCmd.Apply<SandboxModePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
             }
         }
 
         protected override void OnUpgrade()
         {
-            base.DynamicVars["Magic"].UpgradeValueBy(1m);
+            base.EnergyCost.SetCustomBaseCost(1);
         }
     }
 }

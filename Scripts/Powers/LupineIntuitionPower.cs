@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using BaseLib.Abstracts;
@@ -10,6 +10,8 @@ namespace AstroLupine.Powers
         public const string PowerId = "AstroLupine_LupineIntuition";
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
+        
+        public override string? CustomPackedIconPath => "res://assets/texture/power/lupine_intuition.png";
 
         public async Task TriggerIntuition()
         {

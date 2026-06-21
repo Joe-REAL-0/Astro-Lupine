@@ -19,7 +19,7 @@ namespace AstroLupine.Cards.Uncommon
             new MagicVar(5m)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.DefenseOverwrite };
 
         public Backstep()
             : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)

@@ -19,6 +19,8 @@ namespace AstroLupine.Cards.Rare
             new DynamicVar("Magic", 2m)
         };
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.Overwrite };
+
         public OpenSourceProtocol()
             : base(1, CardType.Power, CardRarity.Rare, TargetType.Self)
         {

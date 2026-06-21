@@ -11,7 +11,7 @@ namespace AstroLupine.Cards.Uncommon
     {
         public const string CardId = "ASTROLUPINE-EXCHANGE_TOKEN";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.AttackRegister };
 
         public ExchangeToken()
             : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.None)

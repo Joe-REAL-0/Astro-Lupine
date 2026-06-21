@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Extensions;
@@ -27,7 +27,7 @@ namespace AstroLupine.Cards.Common
             if (this.IsUpgraded)
             {
                 // Upgrade: Select 1 card in hand to apply Write
-                var prefs = new CardSelectorPrefs(new LocString("gameplay_ui", "CHOOSE_CARD_UPGRADE_HEADER"), 1);
+                var prefs = new CardSelectorPrefs(new LocString("gameplay_ui", "ASTROLUPINE-CHOOSE_CARD_TO_WRITE"), 1);
                 var selectedCards = await CardSelectCmd.FromHand(choiceContext, Owner, prefs, c => c != this && !c.Keywords.Contains(AstroLupineKeywords.Write), this);
                 
                 var targetCard = selectedCards.FirstOrDefault();

@@ -26,7 +26,7 @@ namespace AstroLupine.Cards.Common
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_slash_fast");
+            await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_slash");
 
             // Add a copy to the discard pile
             if (Owner != null)

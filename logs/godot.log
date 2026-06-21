@@ -14,12 +14,12 @@ FMOD Sound System: Successfully initialized
 [INFO] Current save versions: PrefsSave v2; ProfileSave v2; SerializableProgress v21; RunHistory v9; SerializableRun v16; SettingsSave v5
 [INFO] Found mod manifest file D:\SteamLibrary\steamapps\common\Slay the Spire 2\mods\AstroLupine\AstroLupine.json
 [INFO] Found mod manifest file D:\SteamLibrary\steamapps\common\Slay the Spire 2\mods\BaseLib\BaseLib.json
-[INFO] Looking for mods to load from Steam Workshop mod 3737335127 in D:\SteamLibrary\steamapps\workshop\content\2868840\3737335127 (size 1021670, last modified 1781826303)
+[INFO] Looking for mods to load from Steam Workshop mod 3737335127 in D:\SteamLibrary\steamapps\workshop\content\2868840\3737335127 (size 1022694, last modified 1782035257)
 [INFO] Found mod manifest file D:\SteamLibrary\steamapps\workshop\content\2868840\3737335127\BaseLib\BaseLib.json
 [Sentry.GDExtension] Initialized: env=playtesters, release=v0.107.1
-[INFO] MuteInBackground: FocusIn received [tween=False, msSinceFocusOut=1746, windowFocused=True]
+[INFO] MuteInBackground: FocusIn received [tween=False, msSinceFocusOut=1667, windowFocused=True]
 [INFO] === Godot OS Debug Information ===
-Timestamp: 06/19/2026 23:11:55
+Timestamp: 06/21/2026 20:10:26
 OS: Windows
 OS Version: 10.0.26200
 Distribution Name: Windows
@@ -59,14 +59,14 @@ Screen info (primary 0):
 Video Memory Used: 0.0B
 Memory Info:
   physical: 31.6GB
-  free: 7.2GB
-  available: 45.8GB
+  free: 11.8GB
+  available: 41.8GB
   stack: 8.0MB
   Static Memory Usage: 0.0B
   Static Memory Peak Usage: 0.0B
 Disk Info:
-  Index 0: Name: C:\ Type: Fixed Format: NTFS Available: 182.1GB Total Free: 182.1GB Total Size: 476.0GB
-  Index 1: Name: D:\ Type: Fixed Format: NTFS Available: 476.0GB Total Free: 476.0GB Total Size: 1.0TB
+  Index 0: Name: C:\ Type: Fixed Format: NTFS Available: 174.4GB Total Free: 174.4GB Total Size: 476.0GB
+  Index 1: Name: D:\ Type: Fixed Format: NTFS Available: 475.9GB Total Free: 475.9GB Total Size: 1.0TB
   Index 2: Name: E:\ Type: Fixed Format: NTFS Available: 0.7TB Total Free: 0.7TB Total Size: 0.9TB
 Important Environment Variables:
   PATH: C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Bandizip;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\mingw64\bin;C:\Program Files\GnuPG\bin;C:\Program Files\AskLink;%USERPROFILE%\miniconda3;%USERPROFILE%\miniconda3\Library\mingw-w64\bin;%USERPROFILE%\miniconda3\Library\usr\bin;%USERPROFILE%\miniconda3\Library\bin;%USERPROFILE%\miniconda3\Scripts;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;%USERPROFILE%\AppData\Local\Python\bin;%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin;%USERPROFILE%\.lmstudio\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.2\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;%USERPROFILE%\AppData\Local\Programs\Antigravity IDE\bin;%USERPROFILE%\.dotnet\tools;
@@ -133,17 +133,17 @@ Important Environment Variables:
 [INFO] Found loc table from mod: zhs relics.json. Merging with base loc table
 [INFO] Found loc table from mod: zhs settings_ui.json. Merging with base loc table
 [INFO] Found loc table from mod: zhs static_hover_tips.json. Merging with base loc table
-[INFO] [BaseLib] Starting custom enum generation for 1046 modded types
+[INFO] [BaseLib] Starting custom enum generation for 1236 modded types
 [INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Entities.Cards.TargetType with starting value 10 | IsFlag: False | Half-Size: 16
+[INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Entities.Cards.CardKeyword with starting value 8 | IsFlag: False | Half-Size: 16
 [INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Rewards.RewardType with starting value 7 | IsFlag: False | Half-Size: 16
 [INFO] [BaseLib] Registering CustomReward deserializer for BaseLib.Common.Rewards.CardTransformReward
 [INFO] [BaseLib] Registering RewardType CardTransform
 [INFO] [BaseLib] Registering CustomReward deserializer for BaseLib.Common.Rewards.CardUpgradeReward
 [INFO] [BaseLib] Registering RewardType CardUpgrade
-[INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Entities.Cards.CardKeyword with starting value 8 | IsFlag: False | Half-Size: 16
 [INFO] [BaseLib] Registering CustomReward deserializer for BaseLib.Common.Rewards.RandomCardUpgradeReward
 [INFO] [BaseLib] Registering RewardType RandomCardUpgrade
-[INFO] ModelIdSerializationCache initialized. Categories: 20 Entries: 1653 Epochs: 57 Hash: 3600883049
+[INFO] ModelIdSerializationCache initialized. Categories: 20 Entries: 1736 Epochs: 57 Hash: 3094984408
 [INFO] [BaseLib] Adjusting keys of custom message wrappers.
 [INFO] [BaseLib] Using IDs 128 and 129 for custom message wrappers.
 [INFO] Profile-scoped data path initialized: user://steam/76561198862905280/modded/profile1
@@ -151,98 +151,11 @@ Important Environment Variables:
 [INFO] [Sentry.NET] Shutting down because event reporting is disabled.
 [INFO] [Sentry.NET] Shutting down
 [Sentry.GDExtension] Shutting down
-ERROR: Sentry: Failed to close native SDK cleanly. Error code: 1
-   at: sentry::native::NativeSDK::close (src\sentry\native\native_sdk.cpp:489)
-   GDScript backtrace (most recent call first):
-       [0] shutdown (res://addons/sentry/SentryInit.gd:189)
-   C# backtrace (most recent call first):
-       [0] Godot.Variant Godot.GodotObject.Call(Godot.StringName, Godot.Variant[])
-       [1] void MegaCrit.Sts2.Core.Debug.SentryService.Shutdown()
-       [2] void MegaCrit.Sts2.Core.Debug.SentryService.AfterGameInit(string, string, Godot.Node)
-       [3] void MegaCrit.Sts2.Core.Nodes.NGame+<GameStartup>d__117.MoveNext()
-       [4] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
-       [5] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
-       [6] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
-       [7] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
-       [8] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
-       [9] void System.Threading.Tasks.Task.RunContinuations(object)
-       [10] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
-       [11] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
-       [12] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-       [13] void MegaCrit.Sts2.Core.Helpers.OneTimeInitialization+<ExecuteVeryEarly>d__7.MoveNext()
-       [14] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
-       [15] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
-       [16] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
-       [17] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
-       [18] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
-       [19] void System.Threading.Tasks.Task.RunContinuations(object)
-       [20] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
-       [21] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
-       [22] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-       [23] void MegaCrit.Sts2.Core.Modding.ModManager+<Initialize>d__22.MoveNext()
-       [24] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
-       [25] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
-       [26] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
-       [27] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
-       [28] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
-       [29] void System.Threading.Tasks.Task.RunContinuations(object)
-       [30] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
-       [31] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
-       [32] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-       [33] void MegaCrit.Sts2.Core.Modding.ModManager+<ReadSteamMods>d__29.MoveNext()
-       [34] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
-       [35] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
-       [36] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
-       [37] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
-       [38] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
-       [39] void System.Threading.Tasks.Task.RunContinuations(object)
-       [40] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
-       [41] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
-       [42] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-       [43] void MegaCrit.Sts2.Core.Modding.ModManager+<TryReadModFromSteam>d__30.MoveNext()
-       [44] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
-       [45] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
-       [46] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
-       [47] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
-       [48] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
-       [49] void System.Threading.Tasks.Task.RunContinuations(object)
-       [50] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
-       [51] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
-       [52] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-       [53] void MegaCrit.Sts2.Core.Modding.ModManager+<CheckSteamBranchSupport>d__31.MoveNext()
-       [54] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
-       [55] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
-       [56] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
-       [57] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
-       [58] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
-       [59] void System.Threading.Tasks.Task.RunContinuations(object)
-       [60] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
-       [61] bool System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(TResult)
-       [62] void System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult)
-       [63] void MegaCrit.Sts2.Core.Multiplayer.Transport.Steam.SteamCallResult`1.OnCallResult(T, bool)
-       [64] void Steamworks.CallResult`1.OnRunCallResult(nint, bool, ulong)
-       [65] void Steamworks.CallbackDispatcher.RunFrame(bool)
-       [66] void Steamworks.SteamAPI.RunCallbacks()
-       [67] void MegaCrit.Sts2.Core.Platform.Steam.SteamInitializer+<RunCallbacksAsync>d__22.MoveNext()
-       [68] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
-       [69] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
-       [70] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
-       [71] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
-       [72] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
-       [73] void System.Threading.Tasks.Task.RunContinuations(object)
-       [74] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
-       [75] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
-       [76] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)
-       [77] void MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil+<AwaitProcessFrame>d__0.MoveNext()
-       [78] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
-       [79] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
-       [80] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
-       [81] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
-       [82] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*)
 [INFO] [BaseLib] Adding 0 custom acts to act list.
-[INFO] [BaseLib] Result: ACT.OVERGROWTH (12864760),ACT.UNDERDOCKS (48673977),ACT.HIVE (35412610),ACT.GLORY (50278036)
+[INFO] [BaseLib] Result: ACT.OVERGROWTH (13636365),ACT.UNDERDOCKS (55618422),ACT.HIVE (30803756),ACT.GLORY (8798351)
 [INFO] AtlasManager: Loaded controller_atlas with 112 sprites
 [INFO] SteamStatsManager: User stats received
+[INFO] SteamStatsManager: Global stats received (found=True), architect damage = 272702491445
 [INFO] Applying display settings...
   FULLSCREEN: True
   ASPECT_RATIO: (SixteenByNine)
@@ -255,19 +168,12 @@ ERROR: Sentry: Failed to close native SDK cleanly. Error code: 1
 [INFO] Window changed! New size: (1934, 1119)
 [INFO] Window changed! New size: (1920, 1080)
 [INFO] VSync: Adaptive
-[INFO] MuteInBackground: environment [displayServer=Windows, os=Windows]
-[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
-[INFO] Limiting background FPS to 30
 [INFO] Preloading 'IntroLogo' assets... count=3 vfx=0
-[INFO] Preloading 'IntroLogo' Complete: assets=3 time_elapsed=67ms
+[INFO] Preloading 'IntroLogo' Complete: assets=3 time_elapsed=29ms
 [INFO] Preloading 'MainMenuEssentials' assets... count=5 vfx=0
-[INFO] Preloading 'MainMenuEssentials' Complete: assets=5 time_elapsed=285ms
-[INFO] SteamStatsManager: Global stats received (found=True), architect damage = 269368787480
+[INFO] Preloading 'MainMenuEssentials' Complete: assets=5 time_elapsed=182ms
 [WARN] Asset not cached: res://debug_audio/SOTE_Logo_Echoing_ShortTail.mp3
-[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=5747, windowFocused=True]
-[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
-[INFO] Restored foreground FPS
-[INFO] [Startup] Time to main menu (Godot ticks): 16709ms
+[INFO] [Startup] Time to main menu (Godot ticks): 15827ms
 [INFO] [BaseLib] Adding custom save data to SerializableRun.
 [INFO] [BaseLib] Added 0 new properties to SerializableRun
 [INFO] [BaseLib] Adding custom save data to SerializableCard.
@@ -280,9 +186,15 @@ ERROR: Sentry: Failed to close native SDK cleanly. Error code: 1
 [INFO] [BaseLib] Added 0 new properties to SerializableRelic
 [INFO] [BaseLib] Adding custom save data to SerializableReward.
 [INFO] [BaseLib] Added 0 new properties to SerializableReward
-[WARN] Asset not cached: res://images/ui/top_panel/character_icon_ironclad.png
-[INFO] [Startup] Time to main menu: 16,891ms
-[INFO] [Startup] Resource stats (main menu loaded (essential)): StaticMem=0B, VRAM=565.2MB, Objects=8,839, Resources=667, Nodes=1,519, CachedAssets=12
+[WARN] Asset not cached: res://assets/texture/character/head_icon.png
+[INFO] MuteInBackground: environment [displayServer=Windows, os=Windows]
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=11, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
+[INFO] Restored foreground FPS
+[INFO] [Startup] Time to main menu: 16,050ms
+[INFO] [Startup] Resource stats (main menu loaded (essential)): StaticMem=0B, VRAM=465.6MB, Objects=8,854, Resources=669, Nodes=1,519, CachedAssets=12
 [INFO] AtlasManager: Loaded epoch_atlas with 57 sprites
 [INFO] AtlasManager: Loaded relic_atlas with 341 sprites
 [INFO] AtlasManager: Loaded relic_outline_atlas with 341 sprites
@@ -293,69 +205,214 @@ ERROR: Sentry: Failed to close native SDK cleanly. Error code: 1
 [INFO] AtlasManager: Loaded stats_screen_atlas with 16 sprites
 [INFO] AtlasManager: Loaded intent_atlas with 310 sprites
 [INFO] AtlasManager: Loaded era_atlas with 27 sprites
-[INFO] [BaseLib] Registered scene 'res://scenes/creature_visuals/astrolupine_visuals.tscn' for auto-conversion to NCreatureVisuals
-[INFO] [BaseLib] Registered scene 'res://scenes/rest_site/characters/ironclad_rest_site.tscn' for auto-conversion to NRestSiteCharacter
-[INFO] [BaseLib] Registered scene 'res://scenes/merchant/characters/ironclad_merchant.tscn' for auto-conversion to NMerchantCharacter
-[INFO] [BaseLib] Registered scene 'res://scenes/combat/energy_counters/ironclad_energy_counter.tscn' for auto-conversion to NEnergyCounter
-[INFO] Unloading 5 missed cache assets
-[INFO] Preloading 'Common' assets... count=688 vfx=92
-[INFO] [Startup] Resource stats (main menu loaded (complete)): StaticMem=0B, VRAM=705MB, Objects=8,832, Resources=665, Nodes=1,517, CachedAssets=5
-[INFO] Preloading 'Common' Complete: assets=780 time_elapsed=4,338ms
-[INFO] Wrote 44373 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
-[INFO] Wrote 44373 bytes to modded/profile1/saves/current_run.save in steam remote store
+ERROR: No loader found for resource: res://assets/texture/card/ASTROLUPINE-KERNEL_HARDENING.png (expected type: unknown)
+   at: _load (core/io/resource_loader.cpp:328)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1180(nint, nint, string, string, int)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode)
+       [3] bool BaseLib.Abstracts.CustomCardPortraitPath.UseAltTexture(MegaCrit.Sts2.Core.Models.CardModel, System.String&)
+       [4] string <unknown>.MegaCrit.Sts2.Core.Models.CardModel.get_PortraitPath_Patch1(MegaCrit.Sts2.Core.Models.CardModel)
+       [5] System.Collections.Generic.IEnumerable`1[System.String] MegaCrit.Sts2.Core.Models.CardModel.get_AllPortraitPaths()
+       [6] void <unknown>.MegaCrit.Sts2.Core.Models.ModelDb.Preload_Patch1()
+       [7] void MegaCrit.Sts2.Core.Helpers.OneTimeInitialization.ExecuteDeferred()
+       [8] void MegaCrit.Sts2.Core.Nodes.NGame+<LoadDeferredStartupAssetsAsync>d__132.MoveNext()
+       [9] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(TStateMachine&)
+       [10] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<TStateMachine>(TStateMachine&)
+       [11] System.Threading.Tasks.Task MegaCrit.Sts2.Core.Nodes.NGame.LoadDeferredStartupAssetsAsync()
+       [12] void MegaCrit.Sts2.Core.Nodes.NGame+<LaunchMainMenu>d__131.MoveNext()
+       [13] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [14] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [15] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [16] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [17] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [18] void System.Threading.Tasks.Task.RunContinuations(object)
+       [19] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [20] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
+       [21] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [22] void MegaCrit.Sts2.Core.Nodes.NTransition+<FadeOut>d__16.MoveNext()
+       [23] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [24] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [25] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [26] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [27] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [28] void System.Threading.Tasks.Task.RunContinuations(object)
+       [29] void MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil+<AwaitProcessFrame>d__0.MoveNext()
+       [30] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [31] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [32] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*)
+ERROR: Error loading resource: 'res://assets/texture/card/ASTROLUPINE-KERNEL_HARDENING.png'.
+   at: load (core/core_bind.cpp:74)
+   C# backtrace (most recent call first):
+       [0] Godot.GodotObject Godot.NativeCalls.godot_icall_3_1180(nint, nint, string, string, int)
+       [1] Godot.Resource Godot.ResourceLoader.Load(string, string, Godot.ResourceLoader+CacheMode)
+       [2] T Godot.ResourceLoader.Load<T>(string, string, Godot.ResourceLoader+CacheMode)
+       [3] bool BaseLib.Abstracts.CustomCardPortraitPath.UseAltTexture(MegaCrit.Sts2.Core.Models.CardModel, System.String&)
+       [4] string <unknown>.MegaCrit.Sts2.Core.Models.CardModel.get_PortraitPath_Patch1(MegaCrit.Sts2.Core.Models.CardModel)
+       [5] System.Collections.Generic.IEnumerable`1[System.String] MegaCrit.Sts2.Core.Models.CardModel.get_AllPortraitPaths()
+       [6] void <unknown>.MegaCrit.Sts2.Core.Models.ModelDb.Preload_Patch1()
+       [7] void MegaCrit.Sts2.Core.Helpers.OneTimeInitialization.ExecuteDeferred()
+       [8] void MegaCrit.Sts2.Core.Nodes.NGame+<LoadDeferredStartupAssetsAsync>d__132.MoveNext()
+       [9] void System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start<TStateMachine>(TStateMachine&)
+       [10] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<TStateMachine>(TStateMachine&)
+       [11] System.Threading.Tasks.Task MegaCrit.Sts2.Core.Nodes.NGame.LoadDeferredStartupAssetsAsync()
+       [12] void MegaCrit.Sts2.Core.Nodes.NGame+<LaunchMainMenu>d__131.MoveNext()
+       [13] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [14] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [15] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [16] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [17] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [18] void System.Threading.Tasks.Task.RunContinuations(object)
+       [19] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [20] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
+       [21] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [22] void MegaCrit.Sts2.Core.Nodes.NTransition+<FadeOut>d__16.MoveNext()
+       [23] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [24] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [25] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [26] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [27] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [28] void System.Threading.Tasks.Task.RunContinuations(object)
+       [29] void MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil+<AwaitProcessFrame>d__0.MoveNext()
+       [30] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [31] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [32] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*)
+[ERROR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at BaseLib.Abstracts.CustomCardPortraitPath.UseAltTexture(CardModel __instance, String& __result)
+   at MegaCrit.Sts2.Core.Models.CardModel.get_PortraitPath_Patch1(CardModel this)
+   at MegaCrit.Sts2.Core.Models.CardModel.get_AllPortraitPaths()
+   at MegaCrit.Sts2.Core.Models.ModelDb.Preload_Patch1()
+   at MegaCrit.Sts2.Core.Helpers.OneTimeInitialization.ExecuteDeferred()
+   at MegaCrit.Sts2.Core.Nodes.NGame.LoadDeferredStartupAssetsAsync()
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.RunSafely(Task task)
+   at MegaCrit.Sts2.Core.Nodes.NGame.LaunchMainMenu(Boolean skipLogo)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at MegaCrit.Sts2.Core.Nodes.NTransition.FadeOut(Single time, String transitionPath, Nullable`1 cancelToken)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+
+[INFO] Wrote 42244 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 42244 bytes to modded/profile1/saves/current_run.save in steam remote store
 [INFO] Continuing run with character: CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER
-[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' assets... count=38 vfx=6
-[WARN] AtlasResourceLoader: Missing sprite 'card/energy_astrolupine_energy' in ui_atlas (requested: res://images/atlases/ui_atlas.sprites/card/energy_astrolupine_energy.tres)
-[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' Complete: assets=44 time_elapsed=283ms
+[WARN] Asset not cached: res://materials/transitions/ironclad_transition_mat.tres
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' assets... count=594 vfx=97
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' Complete: assets=691 time_elapsed=3,899ms
 [INFO] Preloading 'Act=OVERGROWTH' assets... count=8 vfx=0
-[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=8 time_elapsed=36ms
-[WARN] AtlasResourceLoader: Missing sprite 'astrolupine-astro_lupine_starter_relic' in relic_atlas (requested: res://images/atlases/relic_atlas.sprites/astrolupine-astro_lupine_starter_relic.tres)
-[WARN] AtlasResourceLoader: Missing sprite 'astrolupine-astro_lupine_starter_relic' in relic_outline_atlas (requested: res://images/atlases/relic_outline_atlas.sprites/astrolupine-astro_lupine_starter_relic.tres)
-[INFO] Preloading 'Combat Room' assets... count=9 vfx=0
-[INFO] Preloading 'Combat Room' Complete: assets=9 time_elapsed=62ms
-[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=SHRINKER_BEETLE_WEAK.
-[INFO] [BaseLib] Auto-converted 'res://scenes/creature_visuals/astrolupine_visuals.tscn' from Node2D to NCreatureVisuals
-[WARN] AtlasResourceLoader: Missing sprite 'astrolupine/astrolupine-defend_astro_lupine' in card_atlas (requested: res://images/atlases/card_atlas.sprites/astrolupine/astrolupine-defend_astro_lupine.tres)
-[WARN] AtlasResourceLoader: Missing sprite 'astrolupine/astrolupine-strike_astro_lupine' in card_atlas (requested: res://images/atlases/card_atlas.sprites/astrolupine/astrolupine-strike_astro_lupine.tres)
-[WARN] AtlasResourceLoader: Missing sprite 'astrolupine/astrolupine-attack_inc_astro_lupine' in card_atlas (requested: res://images/atlases/card_atlas.sprites/astrolupine/astrolupine-attack_inc_astro_lupine.tres)
-[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
-[INFO] Preloading 'Common' assets... count=127 vfx=1
+[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=8 time_elapsed=35ms
+[INFO] Unloading 6 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=17 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=17 time_elapsed=69ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=SLIMES_WEAK.
+ERROR: System.InvalidCastException: Unable to cast object of type 'Godot.Node2D' to type 'MegaCrit.Sts2.Core.Nodes.Combat.NCreatureVisuals'.
+   at MegaCrit.Sts2.Core.Models.CharacterModel.CreateVisuals_Patch1(CharacterModel this)
+   at MegaCrit.Sts2.Core.Entities.Creatures.Creature.CreateVisuals()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NCreature.Create(Creature entity)
+   at MegaCrit.Sts2.Core.Nodes.Rooms.NCombatRoom.AddCreature(Creature creature)
+   at MegaCrit.Sts2.Core.Nodes.Rooms.NCombatRoom.CreateAllyNodes()
+   at MegaCrit.Sts2.Core.Nodes.Rooms.NCombatRoom._Ready()
+   at Godot.Node.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Control.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.Rooms.NCombatRoom.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Bridge.CSharpInstanceBridge.Call(IntPtr godotObjectGCHandle, godot_string_name* method, godot_variant** args, Int32 argCount, godot_variant_call_error* refCallError, godot_variant* ret)
+   at: void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception) (:0)
+   C# backtrace (most recent call first):
+       [0] void Godot.GD.PushError(string)
+       [1] void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception)
+       [2] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*)
+       [3] void Godot.NativeInterop.NativeFuncs.godotsharp_method_bind_ptrcall(nint, nint, System.Void**, System.Void*)
+       [4] void Godot.NativeCalls.godot_icall_3_864(nint, nint, nint, Godot.NativeInterop.godot_bool, int)
+       [5] void Godot.Node.AddChild(Godot.Node, bool, Godot.Node+InternalMode)
+       [6] void MegaCrit.Sts2.Core.Helpers.GodotTreeExtensions.AddChildSafely(Godot.Node, Godot.Node)
+       [7] void MegaCrit.Sts2.Core.Nodes.NSceneContainer.SetCurrentScene(Godot.Control)
+       [8] void MegaCrit.Sts2.Core.Nodes.NRun.SetCurrentRoom(Godot.Control)
+       [9] void MegaCrit.Sts2.Core.Rooms.CombatRoom+<StartCombat>d__46.MoveNext()
+       [10] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [11] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [12] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [13] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [14] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [15] void System.Threading.Tasks.Task.RunContinuations(object)
+       [16] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [17] void MegaCrit.Sts2.Core.Assets.PreloadManager+<LoadRoomCombatAssets>d__14.MoveNext()
+       [18] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [19] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [20] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [21] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [22] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [23] void System.Threading.Tasks.Task.RunContinuations(object)
+       [24] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [25] void MegaCrit.Sts2.Core.Assets.PreloadManager+<LoadRoomAssets>d__18.MoveNext()
+       [26] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [27] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [28] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [29] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [30] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [31] void System.Threading.Tasks.Task.RunContinuations(object)
+       [32] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [33] bool System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(TResult)
+       [34] void MegaCrit.Sts2.Core.Assets.AssetLoadingSession.Process()
+       [35] void MegaCrit.Sts2.Core.Nodes.NAssetLoader._Process(double)
+       [36] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&)
+       [37] bool MegaCrit.Sts2.Core.Nodes.NAssetLoader.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&)
+       [38] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*)
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'Common' assets... count=128 vfx=1
 [WARN] Warning: Packet writer is growing from 1024 bytes to 2048 bytes!
 [WARN] Asset not cached: res://scenes/screens/main_menu.tscn
-[INFO] [Startup] Time to main menu (Godot ticks): 63064ms
-[INFO] Preloading 'Common' Complete: assets=127 time_elapsed=666ms
+[INFO] [Startup] Time to main menu (Godot ticks): 36705ms
+[INFO] Preloading 'Common' Complete: assets=128 time_elapsed=718ms
 [INFO] Abandoning run from main menu
 [INFO] Player already has Epoch: NEOW_EPOCH
 [INFO] Player already has Epoch: OROBAS_EPOCH
-[INFO] Wrote 18399 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
-[INFO] Wrote 18399 bytes to modded/profile1/saves/progress.save in steam remote store
-[INFO] Wrote 6625 bytes to path=user://steam/76561198862905280/modded/profile1\saves\history\1781881478.run save_dir=user://steam/76561198862905280
-[INFO] Wrote 6625 bytes to modded/profile1/saves/history/1781881478.run in steam remote store
-[INFO] Saved run history: 1781881478.run
+[INFO] Wrote 28929 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 28929 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 6265 bytes to path=user://steam/76561198862905280/modded/profile1\saves\history\1782043191.run save_dir=user://steam/76561198862905280
+[INFO] Wrote 6265 bytes to modded/profile1/saves/history/1782043191.run in steam remote store
+[INFO] Saved run history: 1782043191.run
 [INFO] Created Run History entry!
 [WARN] Asset not cached: res://scenes/screens/singleplayer_submenu.tscn
 [INFO] Max ascension changed to 0
 [INFO] Max ascension changed to 0
 [INFO] [StartRunLobby (1)] CHARACTER.IRONCLAD has not revealed the Ascension Epoch, disabling Ascension.
-[WARN] AtlasResourceLoader: Missing sprite 'astrolupine-astro_lupine_starter_relic' in relic_atlas (requested: res://images/atlases/relic_atlas.sprites/astrolupine-astro_lupine_starter_relic.tres)
-[WARN] AtlasResourceLoader: Missing sprite 'astrolupine-astro_lupine_starter_relic' in relic_outline_atlas (requested: res://images/atlases/relic_outline_atlas.sprites/astrolupine-astro_lupine_starter_relic.tres)
 [INFO] Max ascension changed to 0
 [INFO] [StartRunLobby (1)] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has no progress, disabling Ascension.
 [INFO] [StartRunLobby (1)] Local player 1 is ready
-[INFO] Embarking on a singleplayer ASTROLUPINE-ASTRO_LUPINE_CHARACTER run. Ascension: 0 Seed: JBM25C4R51
+[INFO] Embarking on a singleplayer ASTROLUPINE-ASTRO_LUPINE_CHARACTER run. Ascension: 0 Seed: K4R6DB1BQ7
 [INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' assets... count=38 vfx=6
-[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' Complete: assets=44 time_elapsed=277ms
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' Complete: assets=44 time_elapsed=273ms
 [INFO] Preloading 'Act=OVERGROWTH' assets... count=8 vfx=0
-[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=8 time_elapsed=26ms
+[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=8 time_elapsed=32ms
 [INFO] Preloading 'Act=OVERGROWTH' assets... count=0 vfx=0
-[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=0 time_elapsed=27ms
-[INFO] Wrote 18399 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
-[INFO] Wrote 18399 bytes to modded/profile1/saves/progress.save in steam remote store
-[INFO] Wrote 37282 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
-[INFO] Wrote 37282 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=0 time_elapsed=18ms
+[INFO] Wrote 28929 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 28929 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 40701 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 40701 bytes to modded/profile1/saves/current_run.save in steam remote store
 [INFO] Unloading 2 missed cache assets
 [INFO] Preloading 'Event Room' assets... count=2 vfx=0
-[INFO] Preloading 'Event Room' Complete: assets=2 time_elapsed=292ms
+[INFO] Preloading 'Event Room' Complete: assets=2 time_elapsed=239ms
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
@@ -488,12 +545,74 @@ ERROR: Sentry: Failed to close native SDK cleanly. Error code: 1
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
-[WARN] AtlasResourceLoader: Missing sprite 'astrolupine/astrolupine-strike_astro_lupine' in card_atlas (requested: res://images/atlases/card_atlas.sprites/astrolupine/astrolupine-strike_astro_lupine.tres)
-[WARN] AtlasResourceLoader: Missing sprite 'astrolupine/astrolupine-defend_astro_lupine' in card_atlas (requested: res://images/atlases/card_atlas.sprites/astrolupine/astrolupine-defend_astro_lupine.tres)
-[INFO] Wrote 18428 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
-[INFO] Wrote 18428 bytes to modded/profile1/saves/progress.save in steam remote store
+[WARN] Asset not cached: res://scenes/ui/card_hover_tip.tscn
+[INFO] Wrote 28929 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 28929 bytes to modded/profile1/saves/progress.save in steam remote store
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
 [WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[INFO] Wrote 42720 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 42720 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (2, 1))
+[INFO] Wrote 28929 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 28929 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 42782 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 42782 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Unloading 2 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=11 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=11 time_elapsed=84ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=SLIMES_WEAK.
+ERROR: System.InvalidCastException: Unable to cast object of type 'Godot.Node2D' to type 'MegaCrit.Sts2.Core.Nodes.Combat.NCreatureVisuals'.
+   at MegaCrit.Sts2.Core.Models.CharacterModel.CreateVisuals_Patch1(CharacterModel this)
+   at MegaCrit.Sts2.Core.Entities.Creatures.Creature.CreateVisuals()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NCreature.Create(Creature entity)
+   at MegaCrit.Sts2.Core.Nodes.Rooms.NCombatRoom.AddCreature(Creature creature)
+   at MegaCrit.Sts2.Core.Nodes.Rooms.NCombatRoom.CreateAllyNodes()
+   at MegaCrit.Sts2.Core.Nodes.Rooms.NCombatRoom._Ready()
+   at Godot.Node.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Control.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.Rooms.NCombatRoom.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Bridge.CSharpInstanceBridge.Call(IntPtr godotObjectGCHandle, godot_string_name* method, godot_variant** args, Int32 argCount, godot_variant_call_error* refCallError, godot_variant* ret)
+   at: void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception) (:0)
+   C# backtrace (most recent call first):
+       [0] void Godot.GD.PushError(string)
+       [1] void Godot.NativeInterop.ExceptionUtils.LogException(System.Exception)
+       [2] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*)
+       [3] void Godot.NativeCalls.godot_icall_3_864(nint, nint, nint, Godot.NativeInterop.godot_bool, int)
+       [4] void MegaCrit.Sts2.Core.Helpers.GodotTreeExtensions.AddChildSafely(Godot.Node, Godot.Node)
+       [5] void MegaCrit.Sts2.Core.Nodes.NSceneContainer.SetCurrentScene(Godot.Control)
+       [6] void MegaCrit.Sts2.Core.Nodes.NRun.SetCurrentRoom(Godot.Control)
+       [7] void MegaCrit.Sts2.Core.Rooms.CombatRoom+<StartCombat>d__46.MoveNext()
+       [8] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [9] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [10] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [11] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [12] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [13] void System.Threading.Tasks.Task.RunContinuations(object)
+       [14] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [15] void MegaCrit.Sts2.Core.Assets.PreloadManager+<LoadRoomCombatAssets>d__14.MoveNext()
+       [16] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [17] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [18] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [19] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [20] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [21] void System.Threading.Tasks.Task.RunContinuations(object)
+       [22] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [23] void MegaCrit.Sts2.Core.Assets.PreloadManager+<LoadRoomAssets>d__18.MoveNext()
+       [24] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [25] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [26] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [27] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [28] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [29] void System.Threading.Tasks.Task.RunContinuations(object)
+       [30] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [31] bool System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(TResult)
+       [32] void MegaCrit.Sts2.Core.Assets.AssetLoadingSession.Process()
+       [33] void MegaCrit.Sts2.Core.Nodes.NAssetLoader._Process(double)
+       [34] bool Godot.Node.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&)
+       [35] bool MegaCrit.Sts2.Core.Nodes.NAssetLoader.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name&, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant&)
+       [36] Godot.NativeInterop.godot_bool Godot.Bridge.CSharpInstanceBridge.Call(nint, Godot.NativeInterop.godot_string_name*, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_variant_call_error*, Godot.NativeInterop.godot_variant*)
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres

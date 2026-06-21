@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
@@ -24,7 +24,7 @@ namespace AstroLupine.Cards.Common
         {
             if (Owner == null) return;
 
-            var prefs = new CardSelectorPrefs(new LocString("gameplay_ui", "CHOOSE_CARD_UPGRADE_HEADER"), 1);
+            var prefs = new CardSelectorPrefs(new LocString("gameplay_ui", "ASTROLUPINE-CHOOSE_CARD_TO_WRITE_AND_EXHAUST"), 1);
             var selectedCards = await CardSelectCmd.FromHand(choiceContext, Owner, prefs, c => c != this, this);
             
             var targetCard = selectedCards.FirstOrDefault();

@@ -1,4 +1,4 @@
-using Godot;
+﻿using Godot;
 using MegaCrit.Sts2.Core.Models;
 using BaseLib.Abstracts;
 
@@ -7,12 +7,16 @@ namespace AstroLupine.Characters
     public class AstroLupineCardPool : CustomCardPoolModel
     {
         public override string Title => "AstroLupine";
-        public override string EnergyColorName => "AstroLupine_Energy";
+        
+        public override string? BigEnergyIconPath => "res://assets/texture/character/energy_icon.png";
+        public override string? TextEnergyIconPath => "res://assets/texture/character/text_energy_icon.png";
         
         // 使用 BaseLib 提供的方法，自动根据给定的颜色生成着色器材质，无需手动创建文件
-        public override Color ShaderColor => new Color("2D3B4FFF");
+        public override Color ShaderColor => Godot.Color.FromHtml("#2D3B4FFF");
+        public override float V => 1.0f; // 强制调高亮度，防止卡牌边框因为暗色变成纯黑
         
-        public override Color DeckEntryCardColor => new Color("2D3B4FFF");
+        public override Color DeckEntryCardColor => Godot.Color.FromHtml("#2D3B4FFF");
+        public override Color EnergyOutlineColor => Godot.Color.FromHtml("#2D3B4FFF");
         public override bool IsColorless => false;
 
         protected override CardModel[] GenerateAllCards()
@@ -84,7 +88,6 @@ namespace AstroLupine.Characters
                 ModelDb.Card<Cards.Uncommon.OperatorImpact>(),
                 ModelDb.Card<Cards.Uncommon.OperatorOverloading>(),
                 ModelDb.Card<Cards.Uncommon.ParallelProcessing>(),
-                ModelDb.Card<Cards.Uncommon.PoweredArmor>(),
                 ModelDb.Card<Cards.Uncommon.PrivilegeEscalation>(),
                 ModelDb.Card<Cards.Uncommon.ReadOnlyLock>(),
                 ModelDb.Card<Cards.Uncommon.RhombusSlicer>(),
@@ -110,7 +113,7 @@ namespace AstroLupine.Characters
                 ModelDb.Card<Cards.Rare.DynamicLinking>(),
                 
                 ModelDb.Card<Cards.Rare.KnowledgeGraph>(),
-                ModelDb.Card<Cards.Rare.SelfCorrection>(),
+                ModelDb.Card<Cards.Rare.DAConversion>(),
                 ModelDb.Card<Cards.Rare.DeepLearning>(),
                 ModelDb.Card<Cards.Rare.Root>(),
                 ModelDb.Card<Cards.Rare.HyperThreadingForm>(),

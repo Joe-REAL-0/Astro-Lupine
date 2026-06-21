@@ -14,7 +14,7 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_ZeroDayBlast";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.ZeroDayExploit };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new[]
         {

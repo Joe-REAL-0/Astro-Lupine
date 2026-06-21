@@ -19,7 +19,7 @@ namespace AstroLupine.Cards.Uncommon
             new AstroReadBlockVar(2m, ValueProp.Move)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.DefenseRegister };
 
         public MimicAfterimage()
             : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)

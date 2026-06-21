@@ -19,13 +19,13 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         // Use a placeholder icon, we can reuse generic shield or system icon
-        // public override string? CustomPackedIconPath => "res://assets/texture/power/sandbox_mode.png";
+        public override string? CustomPackedIconPath => "res://assets/texture/power/sandbox_mode.png";
 
         public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
         {
             if (side == CombatSide.Player && participants.Contains(base.Owner))
             {
-                await PowerCmd.Remove(this);
+                await PowerCmd.Decrement(this);
             }
         }
     }

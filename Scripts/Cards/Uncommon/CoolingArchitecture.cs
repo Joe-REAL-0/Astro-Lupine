@@ -14,6 +14,8 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new MagicVar(12) };
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.AttackRegister };
+
         public CoolingArchitecture() : base(1, CardType.Power, CardRarity.Uncommon, TargetType.None) {}
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

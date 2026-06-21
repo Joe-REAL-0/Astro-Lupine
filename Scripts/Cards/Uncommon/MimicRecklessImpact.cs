@@ -48,6 +48,8 @@ namespace AstroLupine.Cards.Uncommon
             new MagicVar(5m)
         };
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.DefenseOverwrite };
+
         public MimicRecklessImpact()
             : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
         {
@@ -64,7 +66,7 @@ namespace AstroLupine.Cards.Uncommon
             await DamageCmd.Attack(baseDmg)
                 .FromCard(this)
                 .Targeting(cardPlay.Target)
-                .WithHitFx("vfx/vfx_attack_heavy")
+                .WithHitFx("vfx/vfx_attack_blunt")
                 .Execute(choiceContext);
 
             await PowerCmd.Apply<DefenseOverwritePower>(choiceContext, Owner.Creature, this.DynamicVars["Magic"].IntValue, Owner.Creature, this);

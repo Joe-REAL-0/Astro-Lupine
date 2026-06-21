@@ -29,7 +29,7 @@
       <Private>false</Private>
     </Reference>
     
-    <PackageReference Include="Alchyr.Sts2.BaseLib" Version="*" />
+    <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.3.0" />
   </ItemGroup>
   
 </Project>

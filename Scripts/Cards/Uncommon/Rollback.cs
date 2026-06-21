@@ -12,6 +12,8 @@ namespace AstroLupine.Cards.Uncommon
     {
         public const string CardId = "ASTROLUPINE-ROLLBACK";
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.AttackOverwrite, AstroLupineKeywords.DefenseOverwrite, AstroLupineKeywords.DrawOverwrite };
+
         public Rollback()
             : base(2, CardType.Skill, CardRarity.Uncommon, TargetType.None)
         {

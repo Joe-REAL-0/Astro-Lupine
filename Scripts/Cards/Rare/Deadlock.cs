@@ -13,7 +13,7 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "ASTROLUPINE-DEADLOCK";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.ZeroDayExploit };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {

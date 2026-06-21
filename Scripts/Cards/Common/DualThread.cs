@@ -29,7 +29,7 @@ namespace AstroLupine.Cards.Common
         {
             for (int i = 0; i < (int)this.DynamicVars["Magic"].PreviewValue; i++)
             {
-                await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_slash_fast");
+                await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_slash");
             }
         }
 

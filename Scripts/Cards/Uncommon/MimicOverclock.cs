@@ -34,9 +34,8 @@ namespace AstroLupine.Cards.Uncommon
 
             if (Owner.Creature != null)
             {
-                await PowerCmd.Apply<AttackOverwritePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
-                await PowerCmd.Apply<DefenseOverwritePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
-                await PowerCmd.Apply<DrawOverwritePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+                await PowerCmd.Apply<AttackOverwritePower>(choiceContext, Owner.Creature, 8, Owner.Creature, this);
+                await PowerCmd.Apply<DefenseOverwritePower>(choiceContext, Owner.Creature, 6, Owner.Creature, this);
             }
         }
 

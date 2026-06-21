@@ -18,7 +18,7 @@ namespace AstroLupine.Cards.Uncommon
             new MagicVar(4m)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.AttackOverwrite };
 
         public BufferOverflow()
             : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
@@ -27,7 +27,7 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_heavy");
+            await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_blunt");
             if (Owner?.Creature != null)
             {
                 await PowerCmd.Apply<AttackOverwritePower>(choiceContext, Owner.Creature, this.DynamicVars["Magic"].IntValue, Owner.Creature, this);

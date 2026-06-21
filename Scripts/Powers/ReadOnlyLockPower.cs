@@ -11,6 +11,8 @@ namespace AstroLupine.Powers
         public const string PowerId = "AstroLupine_ReadOnlyLock";
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
+        
+        public override string? CustomPackedIconPath => "res://assets/texture/power/read_only_lock.png";
 
         public override async Task AfterApplied(Creature? applier, CardModel? cardSource)
         {

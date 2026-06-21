@@ -22,6 +22,8 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
+        public override string? CustomPackedIconPath => "res://assets/texture/power/knowledge_graph.png";
+        
         public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
         {
             if (player.Creature == base.Owner)
@@ -31,7 +33,7 @@ namespace AstroLupine.Powers
                         var pile = PileType.Draw.GetPile(player);
                         if (pile.Cards.Count > 0)
                         {
-                            var cards = await CardSelectCmd.FromCombatPile(choiceContext, pile, player, new CardSelectorPrefs(new LocString("gameplay_ui", "CHOOSE_CARD_UPGRADE_HEADER"), 1, 1));
+                            var cards = await CardSelectCmd.FromCombatPile(choiceContext, pile, player, new CardSelectorPrefs(new LocString("gameplay_ui", "ASTROLUPINE-CHOOSE_CARD_TO_HAND_AND_WRITE"), 1, 1));
                             
                             foreach (var card in cards)
                             {

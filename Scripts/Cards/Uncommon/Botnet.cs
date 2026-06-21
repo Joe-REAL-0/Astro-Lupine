@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,6 +13,8 @@ namespace AstroLupine.Cards.Uncommon
         public const string CardId = "ASTROLUPINE-BOTNET";
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new MagicVar(1) };
+
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.TrojanHorseVirus };
 
         public Botnet() : base(2, CardType.Power, CardRarity.Uncommon, TargetType.None) {}
 

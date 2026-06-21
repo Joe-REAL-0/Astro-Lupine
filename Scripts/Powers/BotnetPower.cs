@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -14,6 +14,8 @@ namespace AstroLupine.Powers
         public const string PowerId = "AstroLupine_Botnet";
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
+        
+        public override string? CustomPackedIconPath => "res://assets/texture/power/botnet.png";
 
         public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
         {

@@ -28,7 +28,7 @@ namespace AstroLupine.Cards.Common
         {
             int damageDone = (int)this.DynamicVars.Damage.PreviewValue;
             
-            await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_blunt_fast");
+            await DealReadDamage(choiceContext, cardPlay, this.DynamicVars.Damage, "vfx/vfx_attack_blunt");
 
             // Write the damage amount we just dealt to the register
             await WriteAttackRegister(damageDone);

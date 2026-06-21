@@ -33,7 +33,7 @@ namespace AstroLupine.Powers
                 var sandbox = this.Owner.GetPower<SandboxModePower>();
                 if (sandbox != null)
                 {
-                    await CreatureCmd.GainBlock(this.Owner, value * sandbox.Amount, MegaCrit.Sts2.Core.ValueProps.ValueProp.Move, null);
+                    await CreatureCmd.GainBlock(this.Owner, value * 2, MegaCrit.Sts2.Core.ValueProps.ValueProp.Move, null);
                     return;
                 }
 

@@ -19,7 +19,7 @@ namespace AstroLupine.Cards.Uncommon
             new MagicVar(2m)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.ZeroDayExploit };
 
         public RhombusSlicer()
             : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
@@ -33,7 +33,7 @@ namespace AstroLupine.Cards.Uncommon
             await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue)
                 .FromCard(this)
                 .Targeting(cardPlay.Target)
-                .WithHitFx("vfx/vfx_attack_heavy")
+                .WithHitFx("vfx/vfx_attack_blunt")
                 .Execute(choiceContext);
 
             await WriteAttackRegister(this.DynamicVars.Damage.IntValue);

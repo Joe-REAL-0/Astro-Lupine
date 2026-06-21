@@ -49,7 +49,7 @@ namespace AstroLupine.Cards.Uncommon
                 .FromCard(this)
                 .Targeting(cardPlay.Target)
                 .Unpowered()
-                .WithHitFx("vfx/vfx_attack_heavy")
+                .WithHitFx("vfx/vfx_attack_blunt")
                 .Execute(choiceContext);
 
             await WriteAttackRegister((int)finalDamage);

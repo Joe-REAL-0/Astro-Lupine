@@ -19,6 +19,8 @@ namespace AstroLupine.Cards.Uncommon
             new BlockVar(8m, ValueProp.Move)
         };
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.ZeroDayExploit };
+
         public Hack()
             : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)
         {

@@ -8,18 +8,41 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 
 namespace AstroLupine.Cards.Rare
 {
+    public class DynamicLinkingEnergyVar : IntVar
+    {
+        public DynamicLinkingEnergyVar() : base("EnergyGain", 0m)
+        {
+        }
+
+        public override void UpdateCardPreview(CardModel card, CardPreviewMode previewMode, Creature? target, bool runGlobalHooks)
+        {
+            base.UpdateCardPreview(card, previewMode, target, runGlobalHooks);
+            if (card.CombatState != null && card.Owner != null)
+            {
+                int readCardsPlayed = MegaCrit.Sts2.Core.Combat.CombatManager.Instance.History.CardPlaysStarted.Count(e => e.HappenedThisTurn(card.CombatState) && e.CardPlay.Card.Owner == card.Owner && e.CardPlay.Card.Keywords.Contains(AstroLupineKeywords.Read));
+                this.PreviewValue = readCardsPlayed;
+            }
+            else
+            {
+                this.PreviewValue = 0;
+            }
+        }
+    }
+
     public class DynamicLinking : BaseAstroLupineCard
     {
         public const string CardId = "AstroLupine_Card_DynamicLinking";
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, CardKeyword.Ethereal, AstroLupineKeywords.Read };
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => new[]
+        protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-            new MagicVar(0m)
+            new MagicVar(0m),
+            new DynamicLinkingEnergyVar()
         };
 
         public DynamicLinking()

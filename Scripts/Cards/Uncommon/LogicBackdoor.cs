@@ -18,7 +18,7 @@ namespace AstroLupine.Cards.Uncommon
             new AstroReadMagicVar(0m)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.ZeroDayExploit };
 
         public LogicBackdoor()
             : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)

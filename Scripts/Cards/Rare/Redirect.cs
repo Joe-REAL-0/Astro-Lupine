@@ -16,7 +16,7 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_Redirect";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Read, AstroLupineKeywords.KernelHardening };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new[]
         {

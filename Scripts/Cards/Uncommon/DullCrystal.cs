@@ -1,4 +1,4 @@
-﻿using MegaCrit.Sts2.Core.ValueProps;
+using MegaCrit.Sts2.Core.ValueProps;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
@@ -18,7 +18,7 @@ namespace AstroLupine.Cards.Uncommon
             new DamageVar(14m, ValueProp.Move) 
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.TrojanHorseVirus };
 
         public DullCrystal()
             : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
