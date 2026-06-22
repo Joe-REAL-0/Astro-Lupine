@@ -90,7 +90,7 @@
   "ASTROLUPINE-COMPUTE_OVERDRAFT.title": "算力透支",
   "ASTROLUPINE-COMPUTE_OVERDRAFT.description": "#造成 !D! 点伤害获得 6 层 攻击覆写 ",
   "ASTROLUPINE-MIMIC_RECKLESS_IMPACT.title": "拟态：舍身撞击",
-  "ASTROLUPINE-MIMIC_RECKLESS_IMPACT.description": "#造成 !D! 点伤害\n获得 防御覆写 !Magic!",
+  "ASTROLUPINE-MIMIC_RECKLESS_IMPACT.description": "#造成相当于你防御寄存器的数值的伤害\n(造成 !D! 点伤害)\n获得 防御覆写 !Magic!",
   "ASTROLUPINE-OPERATOR_IMPACT.title": "算符冲击",
   "ASTROLUPINE-OPERATOR_IMPACT.description": "#造成 !D! 点伤害\n如果你在本回合打出过技能牌，则获得 !B! 点格挡",
   "ASTROLUPINE-GET_TOKEN.title": "窃取密钥",

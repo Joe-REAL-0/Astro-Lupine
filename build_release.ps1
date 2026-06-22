@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$Version = "1.0.0"
+$Version = "1.0.1"
 $ModName = "AstroLupine"
 $OutputDir = "release"
 $ZipName = "$OutputDir\$ModName`_v$Version.zip"

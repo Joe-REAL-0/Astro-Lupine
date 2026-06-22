@@ -90,7 +90,7 @@
   "ASTROLUPINE-COMPUTE_OVERDRAFT.title": "Compute Overdraft",
   "ASTROLUPINE-COMPUTE_OVERDRAFT.description": "#Deal !D! damage.\nGain 6 Attack Overwrite.",
   "ASTROLUPINE-MIMIC_RECKLESS_IMPACT.title": "Mimic: Reckless Impact",
-  "ASTROLUPINE-MIMIC_RECKLESS_IMPACT.description": "#Deal !D! damage.\nGain !Magic! Defense Overwrite.",
+  "ASTROLUPINE-MIMIC_RECKLESS_IMPACT.description": "#Deal damage equal to Defense Register\n(Deal !D! damage)\nGain !Magic! Defense Overwrite.",
   "ASTROLUPINE-OPERATOR_IMPACT.title": "Operator Impact",
   "ASTROLUPINE-OPERATOR_IMPACT.description": "#Deal !D! damage.\nIf you have played a Skill this turn, gain !B! Block.",
   "ASTROLUPINE-GET_TOKEN.title": "Steal Token",
