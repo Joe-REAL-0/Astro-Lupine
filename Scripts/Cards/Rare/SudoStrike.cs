@@ -18,14 +18,14 @@ namespace AstroLupine.Cards.Rare
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.AttackOverwrite };
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => new[]
+        protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
             new DamageVar(32m, ValueProp.Move),
             new DynamicVar("Magic", 1m)
         };
 
         public SudoStrike()
-            : base(9, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
+            : base(6, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
         {
             this.HasWriteTag = true;
             

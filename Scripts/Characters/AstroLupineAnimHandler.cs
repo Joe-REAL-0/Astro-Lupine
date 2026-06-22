@@ -30,10 +30,10 @@ namespace AstroLupine.Characters
             }
             
             // Load textures manually because Godot Modding prevents attaching C# scripts to .tscn files
-            _textures["idle"] = GD.Load<Texture2D>("res://assets/texture/character/anim/standing.png");
-            _textures["attack"] = GD.Load<Texture2D>("res://assets/texture/character/anim/attack.png");
-            _textures["cast"] = GD.Load<Texture2D>("res://assets/texture/character/anim/cast.png");
-            _textures["powerup"] = GD.Load<Texture2D>("res://assets/texture/character/anim/power_up.png");
+            _textures["idle"] = GD.Load<Texture2D>("res://AstroLupine/assets/texture/character/anim/standing.png");
+            _textures["attack"] = GD.Load<Texture2D>("res://AstroLupine/assets/texture/character/anim/attack.png");
+            _textures["cast"] = GD.Load<Texture2D>("res://AstroLupine/assets/texture/character/anim/cast.png");
+            _textures["powerup"] = GD.Load<Texture2D>("res://AstroLupine/assets/texture/character/anim/power_up.png");
 
             if (Sprite != null)
             {

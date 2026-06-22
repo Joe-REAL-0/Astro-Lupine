@@ -8,8 +8,8 @@ namespace AstroLupine.Characters
     {
         public override string Title => "AstroLupine";
         
-        public override string? BigEnergyIconPath => "res://assets/texture/character/energy_icon.png";
-        public override string? TextEnergyIconPath => "res://assets/texture/character/text_energy_icon.png";
+        public override string? BigEnergyIconPath => "res://AstroLupine/assets/texture/character/energy_icon.png";
+        public override string? TextEnergyIconPath => "res://AstroLupine/assets/texture/character/text_energy_icon.png";
         
         // 使用 BaseLib 提供的方法，自动根据给定的颜色生成着色器材质，无需手动创建文件
         public override Color ShaderColor => Godot.Color.FromHtml("#2D3B4FFF");

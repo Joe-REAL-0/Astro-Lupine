@@ -1,12 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using BaseLib.Abstracts;
-using MegaCrit.Sts2.Core.Combat;
-using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Powers;
-using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.Models;
+using BaseLib.Abstracts;
 
 namespace AstroLupine.Powers
 {
@@ -16,13 +12,29 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/kernel_hardening.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/kernel_hardening.png";
 
-        public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
+        public override async Task AfterPowerAmountChanged(MegaCrit.Sts2.Core.GameActions.Multiplayer.PlayerChoiceContext choiceContext, PowerModel power, decimal amount, Creature? applier, CardModel? cardSource)
         {
-            if (side == CombatSide.Player && participants.Contains(base.Owner))
+            if (power == this && this.Owner != null)
             {
-                await PowerCmd.Decrement(this);
+                var atkPower = this.Owner.GetPower<AttackRegisterPower>();
+                if (atkPower != null && atkPower.Amount < this.Amount)
+                {
+                    await atkPower.Write(this.Amount);
+                }
+
+                var defPower = this.Owner.GetPower<DefenseRegisterPower>();
+                if (defPower != null && defPower.Amount < this.Amount)
+                {
+                    await defPower.Write(this.Amount);
+                }
+
+                var drawPower = this.Owner.GetPower<DrawRegisterPower>();
+                if (drawPower != null && drawPower.Amount < this.Amount)
+                {
+                    await drawPower.Write(this.Amount);
+                }
             }
         }
     }

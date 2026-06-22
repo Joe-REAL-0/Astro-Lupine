@@ -18,7 +18,7 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/open_source_protocol.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/open_source_protocol.png";
         
         public async Task TriggerProtocol(PlayerChoiceContext? choiceContext = null)
         {

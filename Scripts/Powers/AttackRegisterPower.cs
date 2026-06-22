@@ -16,7 +16,7 @@ namespace AstroLupine.Powers
         public const string PowerId = "AstroLupine_AttackRegister";
 
         // 临时占位：使用力量(Strength)图标
-        public override string? CustomPackedIconPath => "res://assets/texture/power/attack_register.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/attack_register.png";
 
         public AttackRegisterPower() : base(6)
         {

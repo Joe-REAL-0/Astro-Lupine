@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Combat;
@@ -37,8 +37,7 @@ namespace AstroLupine.Cards.Uncommon
 
             decimal modifiedBase = Hook.ModifyDamage(RunState!, CombatState, cardPlay.Target, Owner.Creature, this.DynamicVars.Damage.BaseValue, ValueProp.Move, this, ModifyDamageHookType.All, CardPreviewMode.Normal, out IEnumerable<AbstractModel> _);
             
-            int regAmount = Owner.Creature.GetPower<AttackRegisterPower>()?.Read() ?? 0;
-            decimal finalDamage = modifiedBase + regAmount;
+            decimal finalDamage = modifiedBase;
 
             if (IsFirstCard)
             {

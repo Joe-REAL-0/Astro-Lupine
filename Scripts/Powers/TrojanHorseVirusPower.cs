@@ -18,7 +18,7 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Debuff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/torjan_horse_virus.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/torjan_horse_virus.png";
 
         public override async Task AfterApplied(Creature? applier, CardModel? cardSource)
         {
@@ -48,13 +48,6 @@ namespace AstroLupine.Powers
                         await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), base.Owner, dmg, ValueProp.Unpowered, null, null);
                     }
                 }
-            }
-        }
-
-        public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
-        {
-            if (side == CombatSide.Enemy && participants.Contains(base.Owner))
-            {
                 await PowerCmd.Decrement(this);
             }
         }

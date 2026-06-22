@@ -41,10 +41,10 @@ namespace AstroLupine.Cards.Rare
                     strGain = atkPower.Read() / (int)base.DynamicVars["Magic"].BaseValue;
                 }
 
-                int blockGain = 0;
+                int dexGain = 0;
                 if (defPower != null)
                 {
-                    blockGain = defPower.Read() / (int)base.DynamicVars["Magic2"].BaseValue;
+                    dexGain = defPower.Read() / (int)base.DynamicVars["Magic2"].BaseValue;
                 }
 
                 if (strGain > 0)
@@ -52,9 +52,9 @@ namespace AstroLupine.Cards.Rare
                     await PowerCmd.Apply<StrengthPower>(choiceContext, Owner.Creature, strGain, Owner.Creature, this);
                 }
 
-                if (blockGain > 0)
+                if (dexGain > 0)
                 {
-                    await CreatureCmd.GainBlock(Owner.Creature, blockGain, ValueProp.Unpowered | ValueProp.Move, cardPlay);
+                    await PowerCmd.Apply<DexterityPower>(choiceContext, Owner.Creature, dexGain, Owner.Creature, this);
                 }
             }
         }

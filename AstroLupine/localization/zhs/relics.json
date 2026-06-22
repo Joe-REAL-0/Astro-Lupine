@@ -1,5 +1,8 @@
 {
   "ASTROLUPINE-ASTRO_LUPINE_STARTER_RELIC.title": "废旧终端",
   "ASTROLUPINE-ASTRO_LUPINE_STARTER_RELIC.description": "在战斗开始时，获得攻击寄存器 6，防御寄存器 5，抽牌寄存器 2",
-  "ASTROLUPINE-ASTRO_LUPINE_STARTER_RELIC.flavor": "即使满是划痕，它的算力依然惊人"
+  "ASTROLUPINE-ASTRO_LUPINE_STARTER_RELIC.flavor": "即使满是划痕，它的算力依然惊人",
+  "ASTROLUPINE-BRAND_NEW_TERMINAL_RELIC.title": "崭新终端",
+  "ASTROLUPINE-BRAND_NEW_TERMINAL_RELIC.description": "在战斗开始时，获得攻击寄存器 9，防御寄存器 8，抽牌寄存器 2",
+  "ASTROLUPINE-BRAND_NEW_TERMINAL_RELIC.flavor": "升级后的核心部件，算力无可匹敌。"
 }

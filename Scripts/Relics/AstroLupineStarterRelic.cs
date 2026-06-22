@@ -13,9 +13,9 @@ namespace AstroLupine.Relics
 
         public override RelicRarity Rarity => RelicRarity.Starter;
 
-        public override string PackedIconPath => "res://assets/texture/relic/relic.png";
-        protected override string PackedIconOutlinePath => "res://assets/texture/relic/relic.png";
-        protected override string BigIconPath => "res://assets/texture/relic/relic.png";
+        public override string PackedIconPath => "res://AstroLupine/assets/texture/relic/old_terminal.png";
+        protected override string PackedIconOutlinePath => "res://AstroLupine/assets/texture/relic/old_terminal.png";
+        protected override string BigIconPath => "res://AstroLupine/assets/texture/relic/old_terminal.png";
 
         public override async System.Threading.Tasks.Task BeforeCombatStart()
         {
@@ -27,6 +27,11 @@ namespace AstroLupine.Relics
                 await MegaCrit.Sts2.Core.Commands.PowerCmd.Apply<Powers.DrawRegisterPower>(choiceCtx, this.Owner.Creature, 2, this.Owner.Creature, null);
                 await MegaCrit.Sts2.Core.Commands.PowerCmd.Apply<Powers.AstroLupineSystemPower>(choiceCtx, this.Owner.Creature, 1, this.Owner.Creature, null);
             }
+        }
+
+        public override MegaCrit.Sts2.Core.Models.RelicModel? GetUpgradeReplacement()
+        {
+            return MegaCrit.Sts2.Core.Models.ModelDb.Relic<BrandNewTerminalRelic>();
         }
     }
 }

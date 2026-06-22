@@ -1,14 +1,40 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
-$Version = "1.0.1"
+$Version = "1.1.0"
+# 每次发布前，请在此输入本次更新的描述信息 (Update Message)
+$UpdateMessage = "补全所有的卡面素材,"
+
 $ModName = "AstroLupine"
 $OutputDir = "release"
 $ZipName = "$OutputDir\$ModName`_v$Version.zip"
 
 Write-Host "🐺 Starting Astro Lupine Release Build Process..." -ForegroundColor Cyan
 
+$Utf8NoBom = New-Object System.Text.UTF8Encoding $False
+
+# 0. Sync version and update message
+Write-Host "`n[1/6] Updating version and update message in configuration files..." -ForegroundColor Yellow
+
+$ManifestPath = "$ModName.json"
+if (Test-Path $ManifestPath) {
+    $ManifestFull = (Get-Item $ManifestPath).FullName
+    $ManifestContent = [System.IO.File]::ReadAllText($ManifestFull)
+    $ManifestContent = $ManifestContent -replace '"version":\s*".*?"', "`"version`": `"$Version`""
+    [System.IO.File]::WriteAllText($ManifestFull, $ManifestContent, $Utf8NoBom)
+    Write-Host "  -> Updated $ManifestPath version to $Version"
+}
+
+$WorkshopJsonPath = "ModUploader-win-x64\NewModWorkspace\workshop.json"
+if (Test-Path $WorkshopJsonPath) {
+    $WorkshopFull = (Get-Item $WorkshopJsonPath).FullName
+    $WorkshopContent = [System.IO.File]::ReadAllText($WorkshopFull)
+    $WorkshopContent = $WorkshopContent -replace '"changeNote":\s*".*?"', "`"changeNote`": `"v$Version - $UpdateMessage`""
+    [System.IO.File]::WriteAllText($WorkshopFull, $WorkshopContent, $Utf8NoBom)
+    Write-Host "  -> Updated $WorkshopJsonPath changeNote"
+}
+
 # 1. Build the C# DLL
-Write-Host "`n[1/4] Building C# project in ExportRelease mode..." -ForegroundColor Yellow
+Write-Host "`n[2/6] Building C# project in ExportRelease mode..." -ForegroundColor Yellow
 dotnet build -c ExportRelease
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Build failed! Please check the errors above."
@@ -16,7 +42,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 # 2. Check for required files
-Write-Host "`n[2/4] Checking required files..." -ForegroundColor Yellow
+Write-Host "`n[3/6] Checking required files..." -ForegroundColor Yellow
 $DllPath = ".godot\mono\temp\bin\ExportRelease\$ModName.dll"
 $PckPath = "$ModName.pck"
 $JsonPath = "$ModName.json"
@@ -36,7 +62,7 @@ if ($MissingFiles.Count -gt 0) {
 }
 
 # 3. Create the Release Zip
-Write-Host "`n[3/4] Creating Release Archive ($ZipName)..." -ForegroundColor Yellow
+Write-Host "`n[4/6] Creating Release Archive ($ZipName)..." -ForegroundColor Yellow
 
 if (-Not (Test-Path $OutputDir)) {
     New-Item -ItemType Directory -Path $OutputDir | Out-Null
@@ -62,7 +88,7 @@ Compress-Archive -Path "$TempStage\$ModName" -DestinationPath $ZipName -Force
 Remove-Item -Recurse -Force $TempStage
 
 # 4. Copy to ModUploader workspace
-Write-Host "`n[4/4] Copying files to ModUploader workspace..." -ForegroundColor Yellow
+Write-Host "`n[5/6] Copying files to ModUploader workspace..." -ForegroundColor Yellow
 $UploaderContentDir = "ModUploader-win-x64\NewModWorkspace\content"
 
 if (-Not (Test-Path $UploaderContentDir)) {
@@ -75,4 +101,24 @@ Copy-Item $JsonPath -Destination $UploaderContentDir -Force
 
 Write-Host "`n✅ Successfully created release package at $ZipName!" -ForegroundColor Green
 Write-Host "✅ Successfully copied files to ModUploader workspace!" -ForegroundColor Green
-Write-Host "You can now distribute this zip file to players or upload it to mod platforms." -ForegroundColor Cyan
+
+# 5. Upload to Steam Workshop
+Write-Host "`n[6/6] Uploading Mod to Steam Workshop..." -ForegroundColor Yellow
+$UploaderExe = ".\ModUploader-win-x64\ModUploader.exe"
+$WorkspaceDir = "ModUploader-win-x64\NewModWorkspace"
+
+if (Test-Path $UploaderExe) {
+    Write-Host "Running ModUploader..." -ForegroundColor Cyan
+    # Use Invoke-Expression or & call operator
+    & $UploaderExe "upload" "-w" $WorkspaceDir
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Mod upload failed! Please check the output above."
+        exit $LASTEXITCODE
+    }
+    Write-Host "`n✅ Successfully uploaded mod to Steam Workshop!" -ForegroundColor Green
+}
+else {
+    Write-Warning "ModUploader.exe not found at $UploaderExe. Skipping upload step."
+}
+
+Write-Host "`n🐺 Release build and upload process completed!" -ForegroundColor Cyan

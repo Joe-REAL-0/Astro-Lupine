@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2stvccj1ax68"]
 
-[ext_resource type="Texture2D" uid="uid://bf3qsov64ojmh" path="res://assets/texture/character/choose_character_bg.png" id="1_bg"]
-[ext_resource type="Texture2D" uid="uid://bdgu8p1550lyd" path="res://assets/texture/character/choose_character_front.png" id="2_front"]
+[ext_resource type="Texture2D" uid="uid://bf3qsov64ojmh" path="res://AstroLupine/assets/texture/character/choose_character_bg.png" id="1_bg"]
+[ext_resource type="Texture2D" uid="uid://bdgu8p1550lyd" path="res://AstroLupine/assets/texture/character/choose_character_front.png" id="2_front"]
 
 [node name="AstroLupineCharacterSelectBg" type="Control"]
 layout_mode = 3

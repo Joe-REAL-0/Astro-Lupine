@@ -16,7 +16,7 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Debuff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/attack_overwrite.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/attack_overwrite.png";
 
         public override async Task AfterApplied(Creature? applier, CardModel? cardSource)
         {

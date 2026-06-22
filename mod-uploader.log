@@ -1,0 +1,34 @@
+Initializing Steam
+=================
+By submitting 'Astro Lupine' to the workshop,
+you agree to the Steam Workshop terms of service:
+https://steamcommunity.com/sharedfiles/workshoplegalagreement
+=================
+Logged in as user '乔伊Joe'.
+Using workshop item ID 3749124327 from mod_id.txt
+Uploading 'Astro Lupine' to the steam workshop with item ID 3749124327...
+Status: k_EItemUpdateStatusPreparingContent
+Status: k_EItemUpdateStatusPreparingContent
+Status: k_EItemUpdateStatusPreparingContent
+Status: k_EItemUpdateStatusPreparingContent, bytes processed: 0/80763280 (0.00%)
+Status: k_EItemUpdateStatusUploadingContent
+Status: k_EItemUpdateStatusUploadingContent
+Status: k_EItemUpdateStatusUploadingContent
+Status: k_EItemUpdateStatusUploadingContent
+Status: k_EItemUpdateStatusUploadingContent
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 0/1942854 (0.00%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 894278/1942854 (46.03%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 1942854/1942854 (100.00%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 1942854/1942854 (100.00%)
+Status: k_EItemUpdateStatusUploadingPreviewFile
+Status: k_EItemUpdateStatusCommittingChanges
+Status: k_EItemUpdateStatusInvalid
+Querying existing app dependencies... 
+Found 1 dependencies.
+Removed dependency on 3737335127
+Successfully uploaded 'Astro Lupine' to the workshop with id 3749124327! Browsing to the item in Steam.

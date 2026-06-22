@@ -22,7 +22,7 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/knowledge_graph.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/knowledge_graph.png";
         
         public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
         {

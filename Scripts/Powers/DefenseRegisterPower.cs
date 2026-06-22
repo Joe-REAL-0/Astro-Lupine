@@ -16,7 +16,7 @@ namespace AstroLupine.Powers
         public const string PowerId = "AstroLupine_DefenseRegister";
 
         // 临时占位：使用敏捷(Dexterity)图标
-        public override string? CustomPackedIconPath => "res://assets/texture/power/defense_register.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/defense_register.png";
 
         public DefenseRegisterPower() : base(5)
         {

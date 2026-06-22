@@ -9,7 +9,7 @@ namespace AstroLupine.Cards
 {
     public class AstroReadDamageVar : DamageVar
     {
-        public AstroReadDamageVar(decimal damage, ValueProp props = 0) : base(damage, props)
+        public AstroReadDamageVar(decimal damage, ValueProp props = ValueProp.Move) : base(damage, props)
         {
         }
 
@@ -22,7 +22,7 @@ namespace AstroLupine.Cards
 
     public class AstroReadBlockVar : BlockVar
     {
-        public AstroReadBlockVar(decimal block, ValueProp props = 0) : base(block, props)
+        public AstroReadBlockVar(decimal block, ValueProp props = ValueProp.Move) : base(block, props)
         {
         }
 

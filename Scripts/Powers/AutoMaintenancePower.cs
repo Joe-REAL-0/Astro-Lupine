@@ -17,7 +17,7 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter; // or none
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/auto_maintenance.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/auto_maintenance.png";
 
         public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
         {

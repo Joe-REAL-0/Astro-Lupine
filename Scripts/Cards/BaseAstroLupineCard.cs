@@ -27,7 +27,7 @@ namespace AstroLupine.Cards
         {
             get
             {
-                string path = $"res://assets/texture/card/{Id.Entry}.png";
+                string path = $"res://AstroLupine/assets/texture/card/{Id.Entry}.png";
                 if (Godot.ResourceLoader.Exists(path))
                 {
                     return path;

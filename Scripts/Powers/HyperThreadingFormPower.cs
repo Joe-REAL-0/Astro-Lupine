@@ -14,7 +14,7 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/hayper_threading_form.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/hayper_threading_form.png";
 
         public bool HasTriggeredThisTurn = false;
 

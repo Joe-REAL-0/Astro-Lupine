@@ -22,7 +22,7 @@ namespace AstroLupine.Cards.Rare
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.TrojanHorseVirus };
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => new[]
+        protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
             new DamageVar(8m, ValueProp.Move),
             new DynamicVar("Increase", 2m)

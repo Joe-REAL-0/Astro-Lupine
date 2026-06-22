@@ -6,7 +6,7 @@ namespace AstroLupine.Powers
     {
         public const string PowerId = "AstroLupine_DrawRegister";
 
-        public override string? CustomPackedIconPath => "res://assets/texture/power/draw_register.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/draw_register.png";
 
         public DrawRegisterPower() : base(2)
         {

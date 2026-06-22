@@ -16,7 +16,7 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/privilege_escalatio.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/privilege_escalatio.png";
 
         public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {

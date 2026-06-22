@@ -16,7 +16,7 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_Redirect";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Read, AstroLupineKeywords.KernelHardening };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Read };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new[]
         {
@@ -35,7 +35,7 @@ namespace AstroLupine.Cards.Rare
             
             if (Owner != null && Owner.Creature != null)
             {
-                await PowerCmd.Apply<KernelHardeningPower>(choiceContext, Owner.Creature, (int)base.DynamicVars["Magic"].BaseValue, Owner.Creature, this);
+                await PowerCmd.Apply<ReadOnlyLockPower>(choiceContext, Owner.Creature, (int)base.DynamicVars["Magic"].BaseValue, Owner.Creature, this);
             }
         }
 

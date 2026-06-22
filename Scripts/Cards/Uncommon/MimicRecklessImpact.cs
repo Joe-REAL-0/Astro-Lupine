@@ -1,4 +1,4 @@
-using MegaCrit.Sts2.Core.ValueProps;
+﻿using MegaCrit.Sts2.Core.ValueProps;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
@@ -24,7 +24,7 @@ namespace AstroLupine.Cards.Uncommon
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.DefenseOverwrite };
 
         public MimicRecklessImpact()
-            : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+            : base(0, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
         {
         }
 

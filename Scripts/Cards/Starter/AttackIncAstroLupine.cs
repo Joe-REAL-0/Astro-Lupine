@@ -21,7 +21,7 @@ namespace AstroLupine.Cards.Starter
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.AttackRegister };
 
         public AttackIncAstroLupine()
-            : base(1, CardType.Skill, CardRarity.Basic, TargetType.None)
+            : base(0, CardType.Skill, CardRarity.Basic, TargetType.None)
         {
         }
 

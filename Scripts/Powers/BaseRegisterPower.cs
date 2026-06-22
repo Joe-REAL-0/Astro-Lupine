@@ -22,7 +22,7 @@ namespace AstroLupine.Powers
         // 写入：覆盖赋值
         public virtual async Task Write(int value, PlayerChoiceContext? choiceContext = null)
         {
-            if (this.Owner != null && this.Owner.GetPower<KernelHardeningPower>() != null)
+            if (this.Owner != null && this.Owner.GetPower<ReadOnlyLockPower>() != null)
             {
                 // 如果拥有内核加固Buff，则所有寄存器被锁定，无法写入
                 return;
@@ -80,7 +80,7 @@ namespace AstroLupine.Powers
         // 自增/自减：基于当前值的增量运算（支持负数）
         public virtual async Task Increment(int delta, PlayerChoiceContext? choiceContext = null)
         {
-            if (this.Owner != null && this.Owner.GetPower<KernelHardeningPower>() != null)
+            if (this.Owner != null && this.Owner.GetPower<ReadOnlyLockPower>() != null)
             {
                 // 如果拥有内核加固Buff，则所有寄存器被锁定，无法自增或自减
                 return;
@@ -110,7 +110,7 @@ namespace AstroLupine.Powers
         {
             if (this.Owner != null)
             {
-                var lockPower = this.Owner.GetPower<ReadOnlyLockPower>();
+                var lockPower = this.Owner.GetPower<KernelHardeningPower>();
                 if (lockPower != null)
                 {
                     return lockPower.Amount;

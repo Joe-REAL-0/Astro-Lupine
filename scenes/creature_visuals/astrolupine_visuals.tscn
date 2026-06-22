@@ -6,7 +6,7 @@
 unique_name_in_owner = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
-position = Vector2(0, -160)
+position = Vector2(0, -170)
 scale = Vector2(0.2, 0.2)
 
 [node name="Bounds" type="Control" parent="."]

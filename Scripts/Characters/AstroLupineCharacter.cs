@@ -1,4 +1,4 @@
-using BaseLib.Abstracts;
+﻿using BaseLib.Abstracts;
 using System.Collections.Generic;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
@@ -26,8 +26,6 @@ namespace AstroLupine.Characters
             ModelDb.Card<StrikeAstroLupine>(),
             ModelDb.Card<StrikeAstroLupine>(),
             ModelDb.Card<StrikeAstroLupine>(),
-            ModelDb.Card<StrikeAstroLupine>(),
-            ModelDb.Card<DefendAstroLupine>(),
             ModelDb.Card<DefendAstroLupine>(),
             ModelDb.Card<DefendAstroLupine>(),
             ModelDb.Card<DefendAstroLupine>(),
@@ -57,7 +55,7 @@ namespace AstroLupine.Characters
         // 角色选择界面 - 角色切换转场特效
         public override string? CustomCharacterSelectTransitionPath => "res://materials/transitions/ironclad_transition_mat.tres";
         // 角色选择界面 - 头像图标
-        public override string? CustomCharacterSelectIconPath => "res://assets/texture/character/choose_character_head.png";
+        public override string? CustomCharacterSelectIconPath => "res://AstroLupine/assets/texture/character/choose_character_head.png";
         // 战斗中角色立绘/动画
         public override string? CustomVisualPath => "res://scenes/creature_visuals/astrolupine_visuals.tscn";
         // 卡牌拖尾特效
@@ -65,7 +63,7 @@ namespace AstroLupine.Characters
         // 左上角运行图标场景
         public override string? CustomIconPath => "res://scenes/ui/character_icons/ironclad_icon.tscn";
         // 左上角运行图标纹理
-        public override string? CustomIconTexturePath => "res://assets/texture/character/head_icon.png";
+        public override string? CustomIconTexturePath => "res://AstroLupine/assets/texture/character/head_icon.png";
 
         public override Godot.Control? CustomIcon
         {
@@ -93,14 +91,14 @@ namespace AstroLupine.Characters
         // 多人游戏地图上的图标轮廓
         public override string? CustomIconOutlineTexturePath => "res://images/ui/top_panel/character_icon_ironclad_outline.png";
         // 未解锁时的选人头像
-        public override string? CustomCharacterSelectLockedIconPath => "res://assets/texture/character/choose_character_head.png"; // 暂时复用已解锁时的头像
+        public override string? CustomCharacterSelectLockedIconPath => "res://AstroLupine/assets/texture/character/choose_character_head.png"; // 暂时复用已解锁时的头像
         // 地图标记图标
         protected override string MapMarkerPath => "res://images/packed/map/icons/map_marker_ironclad.png";
 
         // 能量计数器
         public override string? CustomEnergyCounterPath => null;
         public override CustomEnergyCounter? CustomEnergyCounter => new CustomEnergyCounter(
-            layer => "res://assets/texture/character/energy_icon.png", 
+            layer => "res://AstroLupine/assets/texture/character/energy_icon.png", 
             Godot.Color.FromHtml("#2D3B4FFF"), 
             Godot.Color.FromHtml("#00FFCCFF")
         );

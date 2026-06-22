@@ -15,7 +15,7 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/attack_accumulator.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/attack_accumulator.png";
 
         public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
         {

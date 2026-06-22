@@ -19,11 +19,11 @@ namespace AstroLupine.Powers
         public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
         
-        public override string? CustomPackedIconPath => "res://assets/texture/power/deep_learning.png";
+        public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/deep_learning.png";
         
         public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            if (cardPlay.Card.Owner?.Creature == this.Owner && cardPlay.Card.Keywords.Contains(AstroLupineKeywords.Write))
+            if (cardPlay.Card.Owner?.Creature == this.Owner && (cardPlay.Card.Keywords.Contains(AstroLupineKeywords.Write) || cardPlay.Card.Keywords.Contains(AstroLupineKeywords.Read)))
             {
                 var enemies = this.CombatState.GetCreaturesOnSide(MegaCrit.Sts2.Core.Combat.CombatSide.Enemy).Where(c => !c.IsDead).ToList();
                 if (enemies.Count > 0)
@@ -32,7 +32,9 @@ namespace AstroLupine.Powers
                     // For now, let's just use System.Random for safety or take the first.
                     var rand = new System.Random();
                     var target = enemies[rand.Next(enemies.Count)];
-                    await DamageCmd.Attack(this.Amount).Targeting(target).Execute(choiceContext);
+                    
+                    Flash();
+                    await CreatureCmd.Damage(choiceContext, target, this.Amount, MegaCrit.Sts2.Core.ValueProps.ValueProp.Unpowered, this.Owner, null);
                 }
             }
         }

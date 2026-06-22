@@ -25,6 +25,5 @@ namespace AstroLupine.Cards
         [CustomEnum("defense_overwrite")] public static CardKeyword DefenseOverwrite;
         [CustomEnum("draw_overwrite")] public static CardKeyword DrawOverwrite;
         [CustomEnum("overwrite")] public static CardKeyword Overwrite;
-        [CustomEnum("kernel_hardening")] public static CardKeyword KernelHardening;
     }
 }
