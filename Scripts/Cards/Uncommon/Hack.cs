@@ -16,10 +16,10 @@ namespace AstroLupine.Cards.Uncommon
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
             new DynamicVar("Debuff", 2m),
-            new BlockVar(8m, ValueProp.Move)
+            new BlockVar(10m, ValueProp.Move)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.ZeroDayExploit };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.TrojanHorseVirus };
 
         public Hack()
             : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)
@@ -30,14 +30,14 @@ namespace AstroLupine.Cards.Uncommon
         {
             if (cardPlay.Target != null && Owner?.Creature != null)
             {
-                await PowerCmd.Apply<ZeroDayExploitPower>(choiceContext, cardPlay.Target, this.DynamicVars["Debuff"].IntValue, Owner.Creature, this);
+                await PowerCmd.Apply<TrojanHorseVirusPower>(choiceContext, cardPlay.Target, this.DynamicVars["Debuff"].IntValue, Owner.Creature, this);
                 await CreatureCmd.GainBlock(Owner.Creature, this.DynamicVars.Block, cardPlay);
             }
         }
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Block.UpgradeValueBy(3m);
+            this.DynamicVars.Block.UpgradeValueBy(2m);
         }
     }
 }

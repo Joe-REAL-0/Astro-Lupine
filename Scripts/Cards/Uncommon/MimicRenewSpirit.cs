@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
@@ -17,13 +17,13 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new BlockVar(5m, ValueProp.Move)
+            new AstroReadBlockVar(0m, ValueProp.Move)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
 
         public MimicRenewSpirit()
-            : base(0, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+            : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
         {
         }
 
@@ -31,7 +31,6 @@ namespace AstroLupine.Cards.Uncommon
         {
             if (Owner?.Creature != null)
             {
-                int count = 0;
                 CardPile pile = PileType.Hand.GetPile(Owner);
                 List<CardModel> handCards = pile.Cards.ToList();
                 foreach (CardModel card in handCards)
@@ -40,19 +39,14 @@ namespace AstroLupine.Cards.Uncommon
                     {
                         await CardCmd.Exhaust(choiceContext, card);
                         await CreatureCmd.GainBlock(Owner.Creature, this.DynamicVars.Block, cardPlay);
-                        count++;
                     }
-                }
-                if (count > 0)
-                {
-                    await WriteDefenseRegister(this.DynamicVars.Block.IntValue);
                 }
             }
         }
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Block.UpgradeValueBy(2m);
+            this.DynamicVars.Block.UpgradeValueBy(1m);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using MegaCrit.Sts2.Core.ValueProps;
+using MegaCrit.Sts2.Core.ValueProps;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,10 +17,12 @@ namespace AstroLupine.Cards.Uncommon
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
             new AstroReadDamageVar(2m),
-            new BlockVar(0m, ValueProp.Move)
+            new AstroReadBlockVar(8m)
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
+
+        protected override bool ShouldGlowGoldInternal => CombatManager.Instance.History.CardPlaysStarted.Any(e => e.HappenedThisTurn(base.CombatState) && e.CardPlay.Card.Owner == base.Owner && e.CardPlay.Card.Type == CardType.Skill);
 
         public OperatorImpact()
             : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
@@ -42,7 +44,7 @@ namespace AstroLupine.Cards.Uncommon
         protected override void OnUpgrade()
         {
             this.DynamicVars.Damage.UpgradeValueBy(2m);
-            this.DynamicVars.Block.UpgradeValueBy(2m);
+            this.DynamicVars.Block.UpgradeValueBy(4m);
         }
     }
 }

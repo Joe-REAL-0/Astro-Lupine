@@ -17,6 +17,7 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/attack_overwrite.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public override async Task AfterApplied(Creature? applier, CardModel? cardSource)
         {
@@ -25,7 +26,13 @@ namespace AstroLupine.Powers
                 var openSource = this.Owner.GetPower<OpenSourceProtocolPower>();
                 if (openSource != null)
                 {
-                    await openSource.TriggerProtocol();
+                    await openSource.TriggerProtocol("Attack", this.Amount);
+                }
+
+                var opOverload = this.Owner.GetPower<OperatorOverloadingPower>();
+                if (opOverload != null)
+                {
+                    await opOverload.TriggerProtocol(null);
                 }
             }
         }

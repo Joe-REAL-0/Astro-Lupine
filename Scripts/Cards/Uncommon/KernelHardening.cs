@@ -16,7 +16,7 @@ namespace AstroLupine.Cards.Uncommon
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.AttackRegister };
 
-        public KernelHardening() : base(2, CardType.Power, CardRarity.Uncommon, TargetType.None) {}
+        public KernelHardening() : base(1, CardType.Power, CardRarity.Uncommon, TargetType.None) {}
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {

@@ -23,39 +23,32 @@ namespace AstroLupine.Characters
         {
             return new CardModel[]
             {
+                // Starter Cards
                 ModelDb.Card<Cards.Starter.StrikeAstroLupine>(),
                 ModelDb.Card<Cards.Starter.DefendAstroLupine>(),
                 ModelDb.Card<Cards.Starter.AttackIncAstroLupine>(),
                 ModelDb.Card<Cards.Starter.DefenseIncAstroLupine>(),
                 
-                // Common Attacks
+                // Common Cards
                 ModelDb.Card<Cards.Common.RabbitBomb>(),
                 ModelDb.Card<Cards.Common.MimicIronWave>(),
                 ModelDb.Card<Cards.Common.RewriteSmash>(),
                 ModelDb.Card<Cards.Common.KineticIteration>(),
                 ModelDb.Card<Cards.Common.DualThread>(),
                 ModelDb.Card<Cards.Common.WideAreaCoverage>(),
-                
-                // Common Defends
+                ModelDb.Card<Cards.Common.Meltdown>(),
+                ModelDb.Card<Cards.Common.Lesion>(),
                 ModelDb.Card<Cards.Common.EnergyBarrier>(),
                 ModelDb.Card<Cards.Common.Firewall>(),
                 ModelDb.Card<Cards.Common.StackProtection>(),
                 ModelDb.Card<Cards.Common.Unload>(),
                 ModelDb.Card<Cards.Common.DestroyModule>(),
-                
-                // Common Skills (Draw)
                 ModelDb.Card<Cards.Common.CacheExtraction>(),
                 ModelDb.Card<Cards.Common.Preload>(),
-                ModelDb.Card<Cards.Common.IterativeRetrieval>(),
-                
-                // Common Special Skills
                 ModelDb.Card<Cards.Common.MountHardDrive>(),
-                ModelDb.Card<Cards.Common.Overwrite>(),
                 ModelDb.Card<Cards.Common.InterfaceExtension>(),
                 ModelDb.Card<Cards.Common.FocusEnergy>(),
                 ModelDb.Card<Cards.Common.HarmonicFunction>(),
-                
-                // Common Equilibrium
                 ModelDb.Card<Cards.Common.KineticConversion>(),
                 ModelDb.Card<Cards.Common.ComputeOverload>(),
 
@@ -93,11 +86,13 @@ namespace AstroLupine.Characters
                 ModelDb.Card<Cards.Uncommon.RhombusSlicer>(),
                 ModelDb.Card<Cards.Uncommon.Rollback>(),
                 ModelDb.Card<Cards.Uncommon.SystemUpgrade>(),
+                ModelDb.Card<Cards.Uncommon.PoweredArmor>(),
                 ModelDb.Card<Cards.Uncommon.ExchangeToken>(),
                 ModelDb.Card<Cards.Uncommon.VestAssault>(),
-
-                // Rare Cards
+                ModelDb.Card<Cards.Uncommon.FeedbackSystem>(),
                 ModelDb.Card<Cards.Rare.FormatStrike>(),
+
+                // Rare Card
                 ModelDb.Card<Cards.Rare.RootAccessAssault>(),
                 ModelDb.Card<Cards.Rare.GarbageCollection>(),
                 ModelDb.Card<Cards.Rare.ZeroDayBlast>(),
@@ -118,7 +113,13 @@ namespace AstroLupine.Characters
                 ModelDb.Card<Cards.Rare.Root>(),
                 ModelDb.Card<Cards.Rare.HyperThreadingForm>(),
                 ModelDb.Card<Cards.Rare.OpenSourceProtocol>(),
-                ModelDb.Card<Cards.Rare.TuringComplete>()
+                ModelDb.Card<Cards.Rare.TuringComplete>(),
+                ModelDb.Card<Cards.Rare.ProliferateAlgorithm>(),
+                ModelDb.Card<Cards.Rare.Reuse>(),
+
+                // Ancient Cards
+                ModelDb.Card<Cards.Ancient.MimicBlasphemy>(),
+                ModelDb.Card<Cards.Ancient.MimicCatalyst>()
             };
         }
     }

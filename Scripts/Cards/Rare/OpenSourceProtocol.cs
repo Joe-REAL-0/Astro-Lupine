@@ -14,26 +14,21 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_OpenSourceProtocol";
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => new[]
-        {
-            new DynamicVar("Magic", 2m)
-        };
-
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.Overwrite };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Ethereal, AstroLupineKeywords.AttackRegister, AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.DrawRegister, AstroLupineKeywords.Overwrite };
 
         public OpenSourceProtocol()
-            : base(1, CardType.Power, CardRarity.Rare, TargetType.Self)
+            : base(2, CardType.Power, CardRarity.Rare, TargetType.Self)
         {
         }
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            await PowerCmd.Apply<OpenSourceProtocolPower>(choiceContext, Owner.Creature, (int)base.DynamicVars["Magic"].BaseValue, Owner.Creature, this);
+            await PowerCmd.Apply<OpenSourceProtocolPower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
         }
 
         protected override void OnUpgrade()
         {
-            base.DynamicVars["Magic"].UpgradeValueBy(1m);
+            RemoveKeyword(CardKeyword.Ethereal);
         }
     }
 }

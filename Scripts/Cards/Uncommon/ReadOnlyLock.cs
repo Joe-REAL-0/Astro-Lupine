@@ -11,8 +11,10 @@ namespace AstroLupine.Cards.Uncommon
     {
         public const string CardId = "ASTROLUPINE-READ_ONLY_LOCK";
 
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Retain };
+
         public ReadOnlyLock()
-            : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.None)
+            : base(0, CardType.Skill, CardRarity.Uncommon, TargetType.None)
         {
         }
 
@@ -26,7 +28,7 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override void OnUpgrade()
         {
-            this.EnergyCost.UpgradeBy(-1);
+            this.AddKeyword(CardKeyword.Innate);
         }
     }
 }

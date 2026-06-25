@@ -13,6 +13,7 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/kernel_hardening.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public override async Task AfterPowerAmountChanged(MegaCrit.Sts2.Core.GameActions.Multiplayer.PlayerChoiceContext choiceContext, PowerModel power, decimal amount, Creature? applier, CardModel? cardSource)
         {
@@ -28,12 +29,6 @@ namespace AstroLupine.Powers
                 if (defPower != null && defPower.Amount < this.Amount)
                 {
                     await defPower.Write(this.Amount);
-                }
-
-                var drawPower = this.Owner.GetPower<DrawRegisterPower>();
-                if (drawPower != null && drawPower.Amount < this.Amount)
-                {
-                    await drawPower.Write(this.Amount);
                 }
             }
         }

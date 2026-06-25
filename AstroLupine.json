@@ -3,7 +3,7 @@
   "name": "星际“狼”客",
   "author": "Joe",
   "description": "《杀戮尖塔2》全新角色Mod：星际“狼”客 (The Astro-Lupine)。赛博朋克、废土风格，围绕寄存器系统展开硬核运算战斗机制。",
-  "version": "1.0.16",
+  "version": "1.2.2",
   "has_pck": true,
   "has_dll": true,
   "dependencies": [

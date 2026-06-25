@@ -10,21 +10,24 @@ Uploading 'Astro Lupine' to the steam workshop with item ID 3749124327...
 Status: k_EItemUpdateStatusPreparingContent
 Status: k_EItemUpdateStatusPreparingContent
 Status: k_EItemUpdateStatusPreparingContent
-Status: k_EItemUpdateStatusPreparingContent, bytes processed: 0/80763280 (0.00%)
+Status: k_EItemUpdateStatusPreparingContent
+Status: k_EItemUpdateStatusPreparingContent
 Status: k_EItemUpdateStatusUploadingContent
 Status: k_EItemUpdateStatusUploadingContent
 Status: k_EItemUpdateStatusUploadingContent
 Status: k_EItemUpdateStatusUploadingContent
 Status: k_EItemUpdateStatusUploadingContent
-Status: k_EItemUpdateStatusUploadingContent, bytes processed: 0/1942854 (0.00%)
-Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
-Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
-Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
-Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
-Status: k_EItemUpdateStatusUploadingContent, bytes processed: 470/1942854 (0.02%)
-Status: k_EItemUpdateStatusUploadingContent, bytes processed: 894278/1942854 (46.03%)
-Status: k_EItemUpdateStatusUploadingContent, bytes processed: 1942854/1942854 (100.00%)
-Status: k_EItemUpdateStatusUploadingContent, bytes processed: 1942854/1942854 (100.00%)
+Status: k_EItemUpdateStatusUploadingContent
+Status: k_EItemUpdateStatusUploadingContent
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 0/1873933 (0.00%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 469/1873933 (0.03%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 469/1873933 (0.03%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 469/1873933 (0.03%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 469/1873933 (0.03%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 199125/1873933 (10.63%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 825357/1873933 (44.04%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 1873933/1873933 (100.00%)
+Status: k_EItemUpdateStatusUploadingContent, bytes processed: 1873933/1873933 (100.00%)
 Status: k_EItemUpdateStatusUploadingPreviewFile
 Status: k_EItemUpdateStatusCommittingChanges
 Status: k_EItemUpdateStatusInvalid

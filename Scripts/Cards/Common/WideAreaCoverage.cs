@@ -17,10 +17,11 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new DamageVar(4m, ValueProp.Move) 
+            new AstroReadDamageVar(0m, ValueProp.Move),
+            new MagicVar(1m)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.TrojanHorseVirus };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] {AstroLupineKeywords.Read, AstroLupineKeywords.TrojanHorseVirus };
 
         public WideAreaCoverage()
             : base(1, CardType.Attack, CardRarity.Common, TargetType.AllEnemies)
@@ -44,7 +45,7 @@ namespace AstroLupine.Cards.Common
                 {
                     if (enemy.IsAlive)
                     {
-                        await PowerCmd.Apply<TrojanHorseVirusPower>(choiceContext, enemy, 1, Owner.Creature, this);
+                        await PowerCmd.Apply<TrojanHorseVirusPower>(choiceContext, enemy, (int)this.DynamicVars["Magic"].BaseValue, Owner.Creature, this);
                     }
                 }
             }
@@ -52,7 +53,7 @@ namespace AstroLupine.Cards.Common
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Damage.UpgradeValueBy(4m);
+            this.DynamicVars["Magic"].UpgradeValueBy(1m);
         }
     }
 }

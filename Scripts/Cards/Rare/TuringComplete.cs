@@ -16,22 +16,22 @@ namespace AstroLupine.Cards.Rare
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new[]
         {
-            new DynamicVar("Magic", 1m)
+            new CardsVar(1)
         };
 
         public TuringComplete()
-            : base(3, CardType.Power, CardRarity.Rare, TargetType.Self)
+            : base(1, CardType.Power, CardRarity.Rare, TargetType.Self)
         {
         }
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
-            await PowerCmd.Apply<TuringCompletePower>(choiceContext, Owner.Creature, (int)base.DynamicVars["Magic"].BaseValue, Owner.Creature, this);
+            await PowerCmd.Apply<TuringCompletePower>(choiceContext, Owner.Creature, this.DynamicVars["Cards"].IntValue, Owner.Creature, this);
         }
 
         protected override void OnUpgrade()
         {
-            base.DynamicVars["Magic"].UpgradeValueBy(1m);
+            base.DynamicVars["Cards"].UpgradeValueBy(1m);
         }
     }
 }

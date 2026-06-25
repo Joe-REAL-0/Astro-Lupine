@@ -17,9 +17,9 @@ FMOD Sound System: Successfully initialized
 [INFO] Looking for mods to load from Steam Workshop mod 3749124327 in D:\SteamLibrary\steamapps\workshop\content\2868840\3749124327 (size 80763280, last modified 1782119274)
 [INFO] Found mod manifest file D:\SteamLibrary\steamapps\workshop\content\2868840\3749124327\AstroLupine.json
 [Sentry.GDExtension] Initialized: env=playtesters, release=v0.107.1
-[INFO] MuteInBackground: FocusIn received [tween=False, msSinceFocusOut=1690, windowFocused=True]
+[INFO] MuteInBackground: FocusIn received [tween=False, msSinceFocusOut=1720, windowFocused=True]
 [INFO] === Godot OS Debug Information ===
-Timestamp: 06/22/2026 19:28:14
+Timestamp: 06/23/2026 02:58:46
 OS: Windows
 OS Version: 10.0.26200
 Distribution Name: Windows
@@ -59,13 +59,13 @@ Screen info (primary 0):
 Video Memory Used: 0.0B
 Memory Info:
   physical: 31.6GB
-  free: 12.1GB
-  available: 37.6GB
+  free: 11.8GB
+  available: 37.7GB
   stack: 8.0MB
   Static Memory Usage: 0.0B
   Static Memory Peak Usage: 0.0B
 Disk Info:
-  Index 0: Name: C:\ Type: Fixed Format: NTFS Available: 177.4GB Total Free: 177.4GB Total Size: 476.0GB
+  Index 0: Name: C:\ Type: Fixed Format: NTFS Available: 175.3GB Total Free: 175.3GB Total Size: 476.0GB
   Index 1: Name: D:\ Type: Fixed Format: NTFS Available: 475.7GB Total Free: 475.7GB Total Size: 1.0TB
   Index 2: Name: E:\ Type: Fixed Format: NTFS Available: 0.7TB Total Free: 0.7TB Total Size: 0.9TB
 Important Environment Variables:
@@ -75,65 +75,13 @@ Important Environment Variables:
   DYLD_LIBRARY_PATH: 
   LD_LIBRARY_PATH: 
 
-[INFO] Looking for mods to load from Steam Workshop mod 3747602295 in D:\SteamLibrary\steamapps\workshop\content\2868840\3747602295 (size 11993864, last modified 1782088169)
-[INFO] Found mod manifest file D:\SteamLibrary\steamapps\workshop\content\2868840\3747602295\mod_manifest.json
-[INFO] Looking for mods to load from Steam Workshop mod 3748678645 in D:\SteamLibrary\steamapps\workshop\content\2868840\3748678645 (size 332215, last modified 1782087134)
-[INFO] Found mod manifest file D:\SteamLibrary\steamapps\workshop\content\2868840\3748678645\mod_manifest.json
 [INFO] Looking for mods to load from Steam Workshop mod 3737335127 in D:\SteamLibrary\steamapps\workshop\content\2868840\3737335127 (size 1022694, last modified 1782068851)
 [INFO] Found mod manifest file D:\SteamLibrary\steamapps\workshop\content\2868840\3737335127\BaseLib\BaseLib.json
 [WARN] Mod with ID AstroLupine is loaded both via Steam and local mods directory. Disabling the Steam workshop version.
 [WARN] Mod with ID BaseLib is loaded both via Steam and local mods directory. Disabling the Steam workshop version.
 [INFO] Mods have been re-sorted because we detected a change or dependency order was broken. New sorting order:
-[INFO]   0: RitsuLib (STS2-RitsuLib)
-[INFO]   1: Workshop Uploader (STS2-WorkshopUploader)
-[INFO]   2: BaseLib (BaseLib)
-[INFO]   3: 星际“狼”客 (AstroLupine)
-[INFO] Loading assembly DLL D:\SteamLibrary\steamapps\workshop\content\2868840\3747602295\STS2-RitsuLib.dll
-[INFO] Calling initializer method of type STS2RitsuLib.Loader.Bootstrap for STS2-RitsuLib.Loader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-[INFO] [RitsuLib.Loader] Host version label=v0.107.1 numeric=0.107.1; picked variant 0.107.1.
-[INFO] [com.ritsukage.sts2-RitsuLib] Framework ID: com.ritsukage.sts2-RitsuLib
-[INFO] [com.ritsukage.sts2-RitsuLib] Framework Name: RitsuLib
-[INFO] [com.ritsukage.sts2-RitsuLib] Version: 0.4.33 [compat branch: 0.107.1]
-[INFO] [com.ritsukage.sts2-RitsuLib] Initializing shared framework...
-[INFO] [com.ritsukage.sts2-RitsuLib] [HarmonyInitSetterCompat] Installed on 2 reflection importer entry point(s).
-[INFO] [com.ritsukage.sts2-RitsuLib] [Config] Debug compatibility master is disabled. Sub-flags (only when master on): LocTable=True, UnlockEpoch=True, AncientArchitect=True. Mod Steam cloud mirror: disabled. Config file: user://steam/76561198862905280/mod_data/com.ritsukage.sts2-RitsuLib/settings.json
-[INFO] [com.ritsukage.sts2-RitsuLib] [DebugLogViewer] Local debug log viewer listening at http://127.0.0.1:18742/?token=aa52180eb197993e3883c603829a0fe3
-[INFO] [com.ritsukage.sts2-RitsuLib] [Godot] RitsuGodot node factories initialized.
-[INFO] [com.ritsukage.sts2-RitsuLib] [SmartFormat] Registered Formatter: STS2RitsuLib.Combat.SecondaryResources.SecondaryResourceIconsFormatter (order=0).
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - framework core] Applying 375 patches...
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - framework core] Patch application complete: 375 applied, 0 ignored, 0 failed, 375 total
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - framework core] All patches applied successfully
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - settings ui] Applying 7 patches...
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - settings ui] Patch application complete: 7 applied, 0 ignored, 0 failed, 7 total
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - settings ui] All patches applied successfully
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content assets] Applying 114 patches...
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content assets] Patch application complete: 114 applied, 0 ignored, 0 failed, 114 total
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content assets] All patches applied successfully
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - character assets] Applying 51 patches...
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - character assets] Patch application complete: 51 applied, 0 ignored, 0 failed, 51 total
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - character assets] All patches applied successfully
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content registry] Applying 26 patches...
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content registry] Patch application complete: 26 applied, 0 ignored, 0 failed, 26 total
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content registry] All patches applied successfully
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - persistence] Applying 3 patches...
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - persistence] Patch application complete: 3 applied, 0 ignored, 0 failed, 3 total
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - persistence] All patches applied successfully
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - unlocks] Applying 22 patches...
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - unlocks] Patch application complete: 22 applied, 0 ignored, 0 failed, 22 total
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - unlocks] All patches applied successfully
-[INFO] [com.ritsukage.sts2-RitsuLib] [SteamWorkshopUpdate] Coordinator initialized.
-[INFO] [com.ritsukage.sts2-RitsuLib] Shared framework initialization complete.
-[INFO] Finished mod initialization for 'RitsuLib' (STS2-RitsuLib).
-[INFO] Loading assembly DLL D:\SteamLibrary\steamapps\workshop\content\2868840\3748678645\STS2-WorkshopUploader.dll
-[INFO] Calling initializer method of type STS2WorkshopUploader.Main for STS2-WorkshopUploader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-[INFO] [STS2-WorkshopUploader] Mod ID: STS2-WorkshopUploader
-[INFO] [STS2-WorkshopUploader] Version: 0.1.2
-[INFO] [STS2-WorkshopUploader] Initializing workshop uploader mod...
-[INFO] [STS2-WorkshopUploader] [Patcher - workshop uploader ui] Applying 5 patches...
-[INFO] [STS2-WorkshopUploader] [Patcher - workshop uploader ui] Patch application complete: 5 applied, 0 ignored, 0 failed, 5 total
-[INFO] [STS2-WorkshopUploader] [Patcher - workshop uploader ui] All patches applied successfully
-[INFO] [STS2-WorkshopUploader] Workshop uploader mod initialization complete.
-[INFO] Finished mod initialization for 'Workshop Uploader' (STS2-WorkshopUploader).
+[INFO]   0: BaseLib (BaseLib)
+[INFO]   1: 星际“狼”客 (AstroLupine)
 [WARN] Mod BaseLib does not declare min game version. Assuming that it is supported.
 [INFO] Loading assembly DLL D:\SteamLibrary\steamapps\common\Slay the Spire 2\mods\BaseLib\BaseLib.dll
 [INFO] Loading Godot PCK D:\SteamLibrary\steamapps\common\Slay the Spire 2\mods\BaseLib\BaseLib.pck
@@ -157,20 +105,7 @@ Important Environment Variables:
 [INFO] Loading Godot PCK D:\SteamLibrary\steamapps\common\Slay the Spire 2\mods\AstroLupine\AstroLupine.pck
 [INFO] No ModInitializerAttribute detected. Calling Harmony.PatchAll for AstroLupine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 [INFO] Finished mod initialization for '星际“狼”客' (AstroLupine).
-[INFO] [com.ritsukage.sts2-RitsuLib] 
-=== RitsuLib Mod Debug Information ===
-Host Version: v0.107.1
-RitsuLib Version: 0.4.33 [compat branch: 0.107.1]
-BaseLib: v3.3.0
-Loaded Mods: 4
-Registered Mods: 6
-Mod List:
-  * RitsuLib [STS2-RitsuLib] (0.4.33)
-  * Workshop Uploader [STS2-WorkshopUploader] (0.1.2)
-  * BaseLib (v3.3.0)
-  * 星际“狼”客 [AstroLupine] (1.0.16)
-
-[INFO]  --- RUNNING MODDED! --- Loaded 4 mods (6 total)
+[INFO]  --- RUNNING MODDED! --- Loaded 2 mods (4 total)
 [Sentry.GDExtension] should_sample callable set
 [WARN] Asset not cached: res://scenes/debug/dev_console.tscn
 [INFO] Syncing cloud save files to the local save directory
@@ -178,7 +113,6 @@ Mod List:
 [WARN] Asset not cached: res://scenes/cards/holders/grid_card_holder.tscn
 [INFO] AtlasManager: Loaded ui_atlas with 102 sprites
 [INFO] AtlasManager: Loaded compressed with 45 sprites
-[WARN] [com.ritsukage.sts2-RitsuLib] [ModelDb] ReflectionHelper.ModTypes was already cached before LocManager.Initialize (1436 types). Clearing the cache so post-mod-load scans include all loaded mod types; another mod likely accessed ReflectionHelper.ModTypes before mod loading completed.
 [INFO] [BaseLib] Performing post-mod init patch
 [INFO] [BaseLib] Mod AstroLupine that modifies gameplay has BaseLib dependency; gameplay modification enabled.
 [INFO] [BaseLib] Patching act types for custom encounters and events | DeprecatedAct | Glory | Hive | Overgrowth | Underdocks
@@ -211,13 +145,7 @@ Mod List:
 [INFO] Found loc table from mod: zhs relics.json. Merging with base loc table
 [INFO] Found loc table from mod: zhs settings_ui.json. Merging with base loc table
 [INFO] Found loc table from mod: zhs static_hover_tips.json. Merging with base loc table
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content registry] Applying 25 dynamic patch(es)...
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content registry] Dynamic patch application complete: 25/25 succeeded
-[INFO] [com.ritsukage.sts2-RitsuLib] [Content] Dynamic act content patching initialized for 5 act type(s).
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content registry] Applying 19 dynamic patch(es)...
-[INFO] [com.ritsukage.sts2-RitsuLib] [Patcher - content registry] Dynamic patch application complete: 19/19 succeeded
-[INFO] [com.ritsukage.sts2-RitsuLib] [Content] Dynamic character starter patching initialized for 9 character type(s).
-[INFO] [BaseLib] Starting custom enum generation for 5878 modded types
+[INFO] [BaseLib] Starting custom enum generation for 1258 modded types
 [INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Entities.Cards.TargetType with starting value 10 | IsFlag: False | Half-Size: 16
 [INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Entities.Cards.CardKeyword with starting value 8 | IsFlag: False | Half-Size: 16
 [INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Rewards.RewardType with starting value 7 | IsFlag: False | Half-Size: 16
@@ -227,231 +155,434 @@ Mod List:
 [INFO] [BaseLib] Registering RewardType CardUpgrade
 [INFO] [BaseLib] Registering CustomReward deserializer for BaseLib.Common.Rewards.RandomCardUpgradeReward
 [INFO] [BaseLib] Registering RewardType RandomCardUpgrade
-[ERROR] Encountered error on game startup! Attempting to show error dialog
-   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartupError()
-   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
-   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartupError()
-   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartupWrapper()
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task.FinishSlow(Boolean userDelegateExecute)
-   at System.Threading.Tasks.Task.TrySetException(Object exceptionObject)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetException(Exception exception, Task`1& taskField)
-   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartup()
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Helpers.OneTimeInitialization.ExecuteVeryEarly()
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Modding.ModManager.Initialize(IModManagerFileIo fileIo, ModSettings settings, SemanticVersion gameVersion)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Modding.ModManager.ReadSteamMods()
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Modding.ModManager.TryReadModFromSteam(PublishedFileId_t workshopItemId, List`1 newMods)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Modding.ModManager.CheckSteamBranchSupport(PublishedFileId_t workshopItemId, List`1 mods)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(TResult result)
-   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
-   at MegaCrit.Sts2.Core.Multiplayer.Transport.Steam.SteamCallResult`1.OnCallResult(T result, Boolean ioError)
-   at Steamworks.CallResult`1.OnRunCallResult(IntPtr pvParam, Boolean bFailed, UInt64 hSteamAPICall_)
-   at Steamworks.CallbackDispatcher.RunFrame(Boolean isGameServer)
-   at MegaCrit.Sts2.Core.Platform.Steam.SteamInitializer.RunCallbacksAsync(Node node)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
-
-[WARN] Asset not cached: res://scenes/ui/generic_popup.tscn
+[INFO] ModelIdSerializationCache initialized. Categories: 20 Entries: 1745 Epochs: 57 Hash: 1435443522
+[INFO] [BaseLib] Adjusting keys of custom message wrappers.
+[INFO] [BaseLib] Using IDs 128 and 129 for custom message wrappers.
+[INFO] Profile-scoped data path initialized: user://steam/76561198862905280/modded/profile1
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = CardStats.[142], Message = Unknown card ID: CARD.ASTROLUPINE-ITERATIVE_RETRIEVAL, IsFatal = False }
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = CardStats.[143], Message = Unknown card ID: CARD.ASTROLUPINE-MOUNT_HARD_DRIVE, IsFatal = False }
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = DiscoveredCards, Message = Unknown CardModel ID: CARD.ASTROLUPINE-MOUNT_HARD_DRIVE, IsFatal = False }
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = DiscoveredCards, Message = Unknown CardModel ID: CARD.ASTROLUPINE-ITERATIVE_RETRIEVAL, IsFatal = False }
+[INFO] [Sentry.NET] Is running modded
+[INFO] [Sentry.NET] Shutting down because event reporting is disabled.
+[INFO] [Sentry.NET] Shutting down
+[Sentry.GDExtension] Shutting down
+[INFO] [BaseLib] Adding 0 custom acts to act list.
+[INFO] [BaseLib] Result: ACT.OVERGROWTH (54831104),ACT.UNDERDOCKS (23717892),ACT.HIVE (12134444),ACT.GLORY (42101136)
 [INFO] AtlasManager: Loaded controller_atlas with 112 sprites
-[ERROR] System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
- ---> System.Exception: Model AstroLupine.Relics.BrandNewTerminalRelic must be marked with a PoolAttribute to determine which pool to add it to.
-   at BaseLib.Patches.Content.CustomContentDictionary.AddModel(Type modelType)
-   at BaseLib.Abstracts.CustomRelicModel..ctor(Boolean autoAdd)
-   at AstroLupine.Relics.BrandNewTerminalRelic..ctor()
-   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)
-   --- End of inner exception stack trace ---
-   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)
-   at MegaCrit.Sts2.Core.Models.ModelDb.Init_Patch9()
-   at MegaCrit.Sts2.Core.Helpers.OneTimeInitialization.ExecuteEssential_Patch1()
-   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartup()
-   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartupWrapper()
-   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
-   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task.FinishSlow(Boolean userDelegateExecute)
-   at System.Threading.Tasks.Task.TrySetException(Object exceptionObject)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetException(Exception exception, Task`1& taskField)
-   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartupWrapper()
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task.FinishSlow(Boolean userDelegateExecute)
-   at System.Threading.Tasks.Task.TrySetException(Object exceptionObject)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetException(Exception exception, Task`1& taskField)
-   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartup()
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Helpers.OneTimeInitialization.ExecuteVeryEarly()
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Modding.ModManager.Initialize(IModManagerFileIo fileIo, ModSettings settings, SemanticVersion gameVersion)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Modding.ModManager.ReadSteamMods()
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Modding.ModManager.TryReadModFromSteam(PublishedFileId_t workshopItemId, List`1 newMods)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
-   at MegaCrit.Sts2.Core.Modding.ModManager.CheckSteamBranchSupport(PublishedFileId_t workshopItemId, List`1 mods)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
-   at System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(TResult result)
-   at System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult result)
-   at MegaCrit.Sts2.Core.Multiplayer.Transport.Steam.SteamCallResult`1.OnCallResult(T result, Boolean ioError)
-   at Steamworks.CallResult`1.OnRunCallResult(IntPtr pvParam, Boolean bFailed, UInt64 hSteamAPICall_)
-   at Steamworks.CallbackDispatcher.RunFrame(Boolean isGameServer)
-   at MegaCrit.Sts2.Core.Platform.Steam.SteamInitializer.RunCallbacksAsync(Node node)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
-   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
-   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
-   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
-   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
-
+[INFO] SteamStatsManager: User stats received
+[INFO] SteamStatsManager: Global stats received (found=True), architect damage = 275018939223
+[INFO] Applying display settings...
+  FULLSCREEN: True
+  ASPECT_RATIO: (SixteenByNine)
+  TARGET_DISPLAY: (0)
+  WINDOW_SIZE: (1920, 1080)
+  POSITION: (-1, -1)
+[INFO] [Display] Min size: (64, 64) Max size: (16384, 16384)
+[INFO] [Display] Setting FULLSCREEN on Display: 1 of 2
+[INFO] Window changed! New size: (1918, 1080)
+[INFO] Window changed! New size: (1934, 1119)
+[INFO] Window changed! New size: (1920, 1080)
+[INFO] VSync: Adaptive
+[INFO] Preloading 'IntroLogo' assets... count=3 vfx=0
+[INFO] Preloading 'IntroLogo' Complete: assets=3 time_elapsed=30ms
+[INFO] Preloading 'MainMenuEssentials' assets... count=5 vfx=0
+[INFO] Preloading 'MainMenuEssentials' Complete: assets=5 time_elapsed=282ms
+[WARN] Asset not cached: res://debug_audio/SOTE_Logo_Echoing_ShortTail.mp3
+[INFO] [Startup] Time to main menu (Godot ticks): 12035ms
+[INFO] [BaseLib] Adding custom save data to SerializableRun.
+[INFO] [BaseLib] Added 0 new properties to SerializableRun
+[INFO] [BaseLib] Adding custom save data to SerializableCard.
+[INFO] [BaseLib] Added 1 new properties to SerializableCard
+[INFO] [BaseLib] Adding custom save data to SerializablePlayer.
+[INFO] [BaseLib] Added 0 new properties to SerializablePlayer
+[INFO] [BaseLib] Adding custom save data to SerializablePotion.
+[INFO] [BaseLib] Added 0 new properties to SerializablePotion
+[INFO] [BaseLib] Adding custom save data to SerializableRelic.
+[INFO] [BaseLib] Added 0 new properties to SerializableRelic
+[INFO] [BaseLib] Adding custom save data to SerializableReward.
+[INFO] [BaseLib] Added 0 new properties to SerializableReward
+[WARN] Asset not cached: res://AstroLupine/assets/texture/character/head_icon.png
 [INFO] MuteInBackground: environment [displayServer=Windows, os=Windows]
 [INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
-[INFO] MuteInBackground: FocusOut ignored (setting off or saves null)
 [INFO] Limiting background FPS to 30
-[INFO] MuteInBackground: FocusIn received [tween=False, msSinceFocusOut=1979, windowFocused=True]
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=17, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
 [INFO] Restored foreground FPS
-[INFO] Steamworks: shutting down...
-[INFO] Steamworks shutdown succeeded!
-[INFO] [Sentry.NET] Shutting down
-FMOD Sound System: System released
-WARNING: 1080 RIDs of type "CanvasItem" were leaked.
-   at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2678)
-ERROR: 1 RID allocations of type 'N26RendererEnvironmentStorage11EnvironmentE' were leaked at exit.
-ERROR: 5 shaders of type CanvasShaderRD were never freed
-   at: ~ShaderRD (servers/rendering/renderer_rd/shader_rd.cpp:1044)
-ERROR: 30 RID allocations of type 'N10RendererRD16ParticlesStorage9ParticlesE' were leaked at exit.
-ERROR: 1 shaders of type ParticlesShaderRD were never freed
-   at: ~ShaderRD (servers/rendering/renderer_rd/shader_rd.cpp:1044)
-ERROR: 30 RID allocations of type 'N10RendererRD11MeshStorage4MeshE' were leaked at exit.
-ERROR: 97 RID allocations of type 'N10RendererRD15MaterialStorage8MaterialE' were leaked at exit.
-ERROR: 6 RID allocations of type 'N10RendererRD15MaterialStorage6ShaderE' were leaked at exit.
-ERROR: 28 RID allocations of type 'N10RendererRD14TextureStorage7TextureE' were leaked at exit.
-WARNING: 187 RIDs of type "UniformBuffer" were leaked.
-   at: _free_rids (servers/rendering/rendering_device.cpp:6981)
-WARNING: 51 RIDs of type "Texture" were leaked.
-   at: finalize (servers/rendering/rendering_device.cpp:7191)
-ERROR: 360 RID allocations of type 'PN18TextServerAdvanced22ShapedTextDataAdvancedE' were leaked at exit.
-ERROR: 3 RID allocations of type 'PN18TextServerAdvanced12FontAdvancedE' were leaked at exit.
-ERROR: 3 RID allocations of type 'PN18TextServerAdvanced27FontAdvancedLinkedVariationE' were leaked at exit.
-WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
-   at: cleanup (core/object/object.cpp:2514)
-ERROR: 66 resources still in use at exit (run with --verbose for details).
-   at: clear (core/io/resource.cpp:795)
+[INFO] [Startup] Time to main menu: 12,293ms
+[INFO] [Startup] Resource stats (main menu loaded (essential)): StaticMem=0B, VRAM=465.6MB, Objects=8,754, Resources=669, Nodes=1,519, CachedAssets=12
+[INFO] AtlasManager: Loaded epoch_atlas with 57 sprites
+[INFO] AtlasManager: Loaded relic_atlas with 341 sprites
+[INFO] AtlasManager: Loaded relic_outline_atlas with 341 sprites
+[INFO] AtlasManager: Loaded power_atlas with 264 sprites
+[INFO] AtlasManager: Loaded card_atlas with 875 sprites
+[INFO] AtlasManager: Loaded potion_atlas with 63 sprites
+[INFO] AtlasManager: Loaded potion_outline_atlas with 63 sprites
+[INFO] AtlasManager: Loaded stats_screen_atlas with 16 sprites
+[INFO] AtlasManager: Loaded intent_atlas with 310 sprites
+[INFO] AtlasManager: Loaded era_atlas with 27 sprites
+[INFO] [BaseLib] Registered scene 'res://scenes/creature_visuals/astrolupine_visuals.tscn' for auto-conversion to NCreatureVisuals
+[INFO] [BaseLib] Registered scene 'res://scenes/rest_site/characters/ironclad_rest_site.tscn' for auto-conversion to NRestSiteCharacter
+[INFO] [BaseLib] Registered scene 'res://scenes/merchant/characters/ironclad_merchant.tscn' for auto-conversion to NMerchantCharacter
+[INFO] Unloading 5 missed cache assets
+[INFO] Preloading 'Common' assets... count=689 vfx=92
+[INFO] [Startup] Resource stats (main menu loaded (complete)): StaticMem=0B, VRAM=993MB, Objects=8,800, Resources=744, Nodes=1,517, CachedAssets=5
+[INFO] Wrote 76136 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 76136 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Continuing run with character: CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' assets... count=38 vfx=39
+[INFO] Preloading 'Common' Complete: assets=781 time_elapsed=4,292ms
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' Complete: assets=44 time_elapsed=1,800ms
+[INFO] Preloading 'Act=UNDERDOCKS' assets... count=8 vfx=0
+[INFO] Preloading 'Act=UNDERDOCKS' Complete: assets=8 time_elapsed=39ms
+[INFO] Preloading 'Combat Room' assets... count=13 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=13 time_elapsed=77ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=LAGAVULIN_MATRIARCH_BOSS.
+[INFO] [BaseLib] Auto-converted 'res://scenes/creature_visuals/astrolupine_visuals.tscn' from Node2D to NCreatureVisuals
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres
+[WARN] Asset not cached: res://images/powers/plating_power.png
+[WARN] Asset not cached: res://images/powers/asleep_power.png
+[WARN] Asset not cached: res://scenes/vfx/vfx_sleeping.tscn
+[WARN] Asset not cached: res://images/powers/missing_power.png
+[INFO] Player 1 playing card ASTROLUPINE-KINETIC_CONVERSION (no target)
+[AstroLupineSystemPower] Cached Block value: 12
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-KINETIC_CONVERSION. hasWrite = True
+[AstroLupineSystemPower] Checking Attack Overwrite for CARD.ASTROLUPINE-KINETIC_CONVERSION
+[AstroLupineSystemPower] Value not found in _cachedDamageValues for CARD.ASTROLUPINE-KINETIC_CONVERSION
+[AstroLupineSystemPower] Checking Defense Overwrite for CARD.ASTROLUPINE-KINETIC_CONVERSION
+[AstroLupineSystemPower] Executing defenseRegister.Write(12)
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 乐加维林族母 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster LAGAVULIN_MATRIARCH performing move SLEEP_MOVE
+[WARN] Asset not cached: res://AstroLupine/assets/texture/character/text_energy_icon.png
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-UNLOAD (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-UNLOAD. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 乐加维林族母 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[WARN] Asset not cached: res://images/atlases/intent_atlas.sprites/intent_stun.tres
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 乐加维林族母 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster LAGAVULIN_MATRIARCH performing move STUNNED
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd.CreateCardNodeAndUpdateVisuals(CardModel card, PileType targetPileType, Boolean owningPlayerIsLocal)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd+<Add>d__9.MoveNext_Patch2(<Add>d__9& this)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd.Add(IEnumerable`1 cards, CardPile newPile, CardPilePosition position, AbstractModel clonedBy, Boolean skipVisuals)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd.Add(CardModel card, CardPile newPile, CardPilePosition position, AbstractModel clonedBy, Boolean skipVisuals)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd+<Draw>d__16.MoveNext_Patch1(<Draw>d__16& this)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult result)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd.Add(CardModel card, CardPile newPile, CardPilePosition position, AbstractModel clonedBy, Boolean skipVisuals)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd+<Add>d__9.MoveNext_Patch2(<Add>d__9& this)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.TweenHelper.AwaitFinished(Tween tween, Node owner)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at Godot.GodotSynchronizationContext.ExecutePendingContinuations()
+   at Godot.Bridge.ScriptManagerBridge.FrameCallback()
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd+<Add>d__9.MoveNext_Patch2(<Add>d__9& this)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd.Add(IEnumerable`1 cards, CardPile newPile, CardPilePosition position, AbstractModel clonedBy, Boolean skipVisuals)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd.Add(CardModel card, CardPile newPile, CardPilePosition position, AbstractModel clonedBy, Boolean skipVisuals)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd+<Draw>d__16.MoveNext_Patch1(<Draw>d__16& this)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult result)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd.Add(CardModel card, CardPile newPile, CardPilePosition position, AbstractModel clonedBy, Boolean skipVisuals)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd+<Add>d__9.MoveNext_Patch2(<Add>d__9& this)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.TweenHelper.AwaitFinished(Tween tween, Node owner)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at Godot.GodotSynchronizationContext.ExecutePendingContinuations()
+   at Godot.Bridge.ScriptManagerBridge.FrameCallback()
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder._Ready()
+   at Godot.Node.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Control.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NCardHolder.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Bridge.CSharpInstanceBridge.Call(IntPtr godotObjectGCHandle, godot_string_name* method, godot_variant** args, Int32 argCount, godot_variant_call_error* refCallError, godot_variant* ret)
+   at Godot.NativeCalls.godot_icall_3_864(IntPtr method, IntPtr ptr, IntPtr arg1, godot_bool arg2, Int32 arg3)
+   at MegaCrit.Sts2.Core.Helpers.GodotTreeExtensions.AddChildSafely(Node parent, Node child)
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.AddCardHolder(NHandCardHolder holder, Int32 index)
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.Add(NCard card, Int32 index)
+   at MegaCrit.Sts2.Core.Commands.CardPileCmd.<>c__DisplayClass9_1.<Add>b__4()
+   at Godot.Callable.<From>g__Trampoline|1_0(Object delegateObj, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.DelegateUtils.InvokeWithVariantArgs(IntPtr delegateGCHandle, Void* trampoline, godot_variant** args, Int32 argc, godot_variant* outRet)
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.OnCombatStateChanged(CombatState state)
+   at MegaCrit.Sts2.Core.Combat.CombatStateTracker.CallCombatStateChangedDeferred()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.OnCombatStateChanged(CombatState state)
+   at MegaCrit.Sts2.Core.Combat.CombatStateTracker.CallCombatStateChangedDeferred()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.OnCombatStateChanged(CombatState state)
+   at MegaCrit.Sts2.Core.Combat.CombatStateTracker.CallCombatStateChangedDeferred()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.OnCombatStateChanged(CombatState state)
+   at MegaCrit.Sts2.Core.Combat.CombatStateTracker.CallCombatStateChangedDeferred()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.OnCombatStateChanged(CombatState state)
+   at MegaCrit.Sts2.Core.Combat.CombatStateTracker.CallCombatStateChangedDeferred()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.OnCombatStateChanged(CombatState state)
+   at MegaCrit.Sts2.Core.Combat.CombatStateTracker.CallCombatStateChangedDeferred()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.OnCombatStateChanged(CombatState state)
+   at MegaCrit.Sts2.Core.Combat.CombatStateTracker.CallCombatStateChangedDeferred()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.OnCombatStateChanged(CombatState state)
+   at MegaCrit.Sts2.Core.Combat.CombatStateTracker.CallCombatStateChangedDeferred()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+
+[ERROR] Localization formatting error! message=Error parsing format string: No source extension could handle the selector named "Magic" at 39
+获得 2 {energyPrefix:energyIcons(1)} 
+抽 {Magic:diff()} 张牌
+---------------------------------------^
+table=cards key=ASTROLUPINE-HARMONIC_FUNCTION.description variables={Cards:0,IfUpgraded:0,OnTable:True,InCombat:True,IsTargeting:False,TargetType:None,GainsBlock:False,IsOstyAlive:False,energyPrefix:CARD_POOL∴ASTROLUPINE-ASTRO_LUPINE_CARD_POOL,singleStarIcon:[img]res://images/packed/sprite_fonts/star_icon.png[/img]}
+   at MegaCrit.Sts2.Core.Localization.LocManager.SmartFormat(LocString locString, Dictionary`2 variables)
+   at MegaCrit.Sts2.Core.Models.CardModel.GetDescriptionForPile_Patch1(CardModel this, PileType pileType, DescriptionPreviewType previewType, Creature target)
+   at MegaCrit.Sts2.Core.Nodes.Cards.NCard.UpdateVisuals(PileType pileType, CardPreviewMode previewMode)
+   at MegaCrit.Sts2.Core.Nodes.Cards.Holders.NHandCardHolder.UpdateCard()
+   at MegaCrit.Sts2.Core.Nodes.Combat.NPlayerHand.OnCombatStateChanged(CombatState state)
+   at MegaCrit.Sts2.Core.Combat.CombatStateTracker.CallCombatStateChangedDeferred()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Threading.Tasks.AwaitTaskContinuation.RunCallback(ContextCallback callback, Object state, Task& currentTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil.AwaitProcessFrame(Node node, CancellationToken ct)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at Godot.SignalAwaiter.SignalCallback(IntPtr awaiterGCHandlePtr, godot_variant** args, Int32 argCount, godot_bool* outAwaiterIsNull)
+

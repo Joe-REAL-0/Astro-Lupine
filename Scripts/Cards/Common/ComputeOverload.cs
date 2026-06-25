@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using AstroLupine.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -15,11 +16,11 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new DamageVar(12m, ValueProp.Move),
-            new MagicVar(1m)
+            new DamageVar(10m, ValueProp.Move),
+            new CardsVar(1)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.DrawOverwrite};
 
         public ComputeOverload()
             : base(2, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
@@ -40,21 +41,13 @@ namespace AstroLupine.Cards.Common
                         .Execute(choiceContext);
                 }
 
-                // Write Attack Register
-                await WriteAttackRegister((int)this.DynamicVars.Damage.BaseValue);
-
-                // Draw 1 card
-                int drawAmount = (int)this.DynamicVars["Magic"].PreviewValue;
-                await CardPileCmd.Draw(choiceContext, drawAmount, Owner);
-
-                // Write Draw Register to 1
-                await WriteDrawRegister(1);
+                await PowerCmd.Apply<DrawOverwritePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
             }
         }
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Damage.UpgradeValueBy(2m);
+            this.DynamicVars.Damage.UpgradeValueBy(3m);
         }
     }
 }

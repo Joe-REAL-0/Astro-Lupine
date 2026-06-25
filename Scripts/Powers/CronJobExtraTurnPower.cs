@@ -14,6 +14,7 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/cron_job.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public override bool ShouldTakeExtraTurn(Player player)
         {

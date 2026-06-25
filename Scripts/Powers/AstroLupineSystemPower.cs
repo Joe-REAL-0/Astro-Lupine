@@ -20,9 +20,17 @@ namespace AstroLupine.Powers
 
         protected override bool IsVisibleInternal => false;
 
-        private Dictionary<CardModel, int> _cachedBlockValues = new Dictionary<CardModel, int>();
-        private Dictionary<CardModel, int> _cachedDamageValues = new Dictionary<CardModel, int>();
-        private Dictionary<CardModel, int> _cachedDrawValues = new Dictionary<CardModel, int>();
+        public Dictionary<CardModel, int> CachedBlockValues = new Dictionary<CardModel, int>();
+        public Dictionary<CardModel, int> CachedDamageValues = new Dictionary<CardModel, int>();
+        public Dictionary<CardModel, int> CachedDrawValues = new Dictionary<CardModel, int>();
+
+        protected override void DeepCloneFields()
+        {
+            base.DeepCloneFields();
+            CachedBlockValues = new Dictionary<CardModel, int>();
+            CachedDamageValues = new Dictionary<CardModel, int>();
+            CachedDrawValues = new Dictionary<CardModel, int>();
+        }
 
         public override async Task BeforeCardPlayed(CardPlay cardPlay)
         {
@@ -52,7 +60,7 @@ namespace AstroLupine.Powers
                     out _
                 );
                 int finalValue = (int)modifiedBase;
-                _cachedBlockValues[card] = finalValue;
+                CachedBlockValues[card] = finalValue;
                 Godot.GD.Print($"[AstroLupineSystemPower] Cached Block value: {finalValue}");
             }
             if (card.DynamicVars.ContainsKey("Damage"))
@@ -73,26 +81,17 @@ namespace AstroLupine.Powers
                     out _
                 );
                 int finalValue = (int)modifiedBase;
-                _cachedDamageValues[card] = finalValue;
+                CachedDamageValues[card] = finalValue;
                 Godot.GD.Print($"[AstroLupineSystemPower] Cached Damage value: {finalValue}");
             }
             if (card.DynamicVars.ContainsKey("Cards"))
             {
                 int finalValue = (int)card.DynamicVars["Cards"].BaseValue;
-                if (card.DynamicVars["Cards"] is AstroReadMagicVar)
+                if (card.DynamicVars["Cards"] is AstroReadCardsVar)
                 {
                     finalValue += card.Owner.Creature.GetPower<DrawRegisterPower>()?.Read() ?? 0;
                 }
-                _cachedDrawValues[card] = finalValue;
-            }
-            else if (card.DynamicVars.ContainsKey("Magic"))
-            {
-                int finalValue = (int)card.DynamicVars["Magic"].BaseValue;
-                if (card.DynamicVars["Magic"] is AstroReadMagicVar)
-                {
-                    finalValue += card.Owner.Creature.GetPower<DrawRegisterPower>()?.Read() ?? 0;
-                }
-                _cachedDrawValues[card] = finalValue;
+                CachedDrawValues[card] = finalValue;
             }
 
             await Task.CompletedTask;
@@ -128,23 +127,35 @@ namespace AstroLupine.Powers
                 return;
             }
 
+            var hyper = this.Owner.GetPower<HyperThreadingFormPower>();
+            bool isHyperTriggered = false;
+            int hyperMultiplier = 1;
+            if (hyper != null && !hyper.HasTriggeredThisTurn)
+            {
+                isHyperTriggered = true;
+                hyperMultiplier = (int)System.Math.Pow(2, hyper.Amount);
+                hyper.HasTriggeredThisTurn = true;
+                hyper.FlashMe();
+            }
+
             // Attack Register
             if (card.Keywords.Contains(AstroLupineKeywords.AttackOverwrite) || card.Type == CardType.Attack)
             {
                 Godot.GD.Print($"[AstroLupineSystemPower] Checking Attack Overwrite for {card.Id}");
-                if (_cachedDamageValues.TryGetValue(card, out int dmgValue))
+                if (CachedDamageValues.TryGetValue(card, out int dmgValue))
                 {
                     var attackRegister = this.Owner.GetPower<AttackRegisterPower>();
                     if (attackRegister != null)
                     {
+                        if (isHyperTriggered) dmgValue *= hyperMultiplier;
                         Godot.GD.Print($"[AstroLupineSystemPower] Executing attackRegister.Write({dmgValue})");
                         await attackRegister.Write(dmgValue, choiceContext);
                     }
-                    _cachedDamageValues.Remove(card);
+                    CachedDamageValues.Remove(card);
                 }
                 else
                 {
-                    Godot.GD.Print($"[AstroLupineSystemPower] Value not found in _cachedDamageValues for {card.Id}");
+                    Godot.GD.Print($"[AstroLupineSystemPower] Value not found in CachedDamageValues for {card.Id}");
                 }
             }
 
@@ -152,11 +163,12 @@ namespace AstroLupine.Powers
             if (card.Keywords.Contains(AstroLupineKeywords.DefenseOverwrite) || card.Type == CardType.Skill)
             {
                 Godot.GD.Print($"[AstroLupineSystemPower] Checking Defense Overwrite for {card.Id}");
-                if (_cachedBlockValues.TryGetValue(card, out int blkValue))
+                if (CachedBlockValues.TryGetValue(card, out int blkValue))
                 {
                     var defenseRegister = this.Owner.GetPower<DefenseRegisterPower>();
                     if (defenseRegister != null)
                     {
+                        if (isHyperTriggered) blkValue *= hyperMultiplier;
                         Godot.GD.Print($"[AstroLupineSystemPower] Executing defenseRegister.Write({blkValue})");
                         await defenseRegister.Write(blkValue, choiceContext);
                     }
@@ -164,29 +176,40 @@ namespace AstroLupine.Powers
                     {
                         Godot.GD.Print($"[AstroLupineSystemPower] ERROR: defenseRegister is null");
                     }
-                    _cachedBlockValues.Remove(card);
+                    CachedBlockValues.Remove(card);
                 }
                 else
                 {
-                    Godot.GD.Print($"[AstroLupineSystemPower] Value not found in _cachedBlockValues for {card.Id}");
+                    Godot.GD.Print($"[AstroLupineSystemPower] Value not found in CachedBlockValues for {card.Id}");
                 }
             }
 
             // Draw Register
             if (card.Keywords.Contains(AstroLupineKeywords.DrawOverwrite) || card.Type == CardType.Skill)
             {
-                if (_cachedDrawValues.TryGetValue(card, out int drawValue))
+                if (CachedDrawValues.TryGetValue(card, out int drawValue))
                 {
                     var drawRegister = this.Owner.GetPower<DrawRegisterPower>();
                     if (drawRegister != null)
                     {
+                        if (isHyperTriggered) drawValue *= hyperMultiplier;
                         await drawRegister.Write(drawValue, choiceContext);
                     }
-                    _cachedDrawValues.Remove(card);
+                    CachedDrawValues.Remove(card);
                 }
             }
+        }
 
-            await Task.CompletedTask;
+        public int TotalZeroDayAppliedThisCombat { get; set; } = 0;
+
+        public override async Task AfterPowerAmountChanged(MegaCrit.Sts2.Core.GameActions.Multiplayer.PlayerChoiceContext choiceContext, PowerModel power, decimal amount, MegaCrit.Sts2.Core.Entities.Creatures.Creature? applier, CardModel? cardSource)
+        {
+            if (power is ZeroDayExploitPower && amount > 0)
+            {
+                TotalZeroDayAppliedThisCombat += (int)amount;
+                Godot.GD.Print($"[AstroLupineSystemPower] ZeroDayExploit applied! Amount: {amount}. Total this combat: {TotalZeroDayAppliedThisCombat}");
+            }
+            await base.AfterPowerAmountChanged(choiceContext, power, amount, applier, cardSource);
         }
     }
 }

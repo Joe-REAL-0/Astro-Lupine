@@ -14,9 +14,9 @@ namespace AstroLupine.Characters
     {
         public const string CharacterId = "AstroLupine_Character";
 
-        public override int StartingHp => 60;
+        public override int StartingHp => 72;
         public override int StartingGold => 99;
-        public override Godot.Color NameColor => Godot.Color.FromHtml("#00FFCCFF");
+        public override Godot.Color NameColor => Godot.Color.FromHtml("#6D7596FF");
         
         public override CharacterGender Gender => default;
         

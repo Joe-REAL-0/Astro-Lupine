@@ -14,8 +14,8 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new DynamicVar("Debuff", 2m),
-            new AstroReadMagicVar(0m)
+            new MagicVar(2m),
+            new AstroReadCardsVar(0)
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.ZeroDayExploit };
@@ -29,14 +29,14 @@ namespace AstroLupine.Cards.Uncommon
         {
             if (cardPlay.Target != null && Owner?.Creature != null)
             {
-                await PowerCmd.Apply<ZeroDayExploitPower>(choiceContext, cardPlay.Target, this.DynamicVars["Debuff"].IntValue, Owner.Creature, this);
-                await DrawReadCards(choiceContext, this.DynamicVars["Magic"]);
+                await PowerCmd.Apply<ZeroDayExploitPower>(choiceContext, cardPlay.Target, this.DynamicVars["Magic"].IntValue, Owner.Creature, this);
+                await DrawReadCards(choiceContext, this.DynamicVars["Cards"]);
             }
         }
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars["Debuff"].UpgradeValueBy(1m);
+            this.DynamicVars["Magic"].UpgradeValueBy(1m);
         }
     }
 }

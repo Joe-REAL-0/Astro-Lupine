@@ -19,10 +19,12 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new AstroReadDamageVar(0m) 
+            new AstroReadDamageVar(6m) 
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.Write };
+
+        protected override bool ShouldGlowGoldInternal => CombatManager.Instance.History.CardPlaysStarted.Count(e => e.HappenedThisTurn(base.CombatState) && e.CardPlay.Card.Owner == base.Owner) == 0;
 
         private bool IsFirstCard => CombatManager.Instance.History.CardPlaysStarted.Count(e => e.HappenedThisTurn(base.CombatState) && e.CardPlay.Card.Owner == base.Owner) <= 1;
 

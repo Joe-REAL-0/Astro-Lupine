@@ -17,6 +17,7 @@ namespace AstroLupine.Powers
 
         // 临时占位：使用敏捷(Dexterity)图标
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/defense_register.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public DefenseRegisterPower() : base(5)
         {
@@ -24,7 +25,9 @@ namespace AstroLupine.Powers
 
         public override decimal ModifyBlockAdditive(Creature target, decimal block, ValueProp props, CardModel? cardSource, CardPlay? cardPlay)
         {
-            if (cardSource != null && cardSource.Keywords.Contains(AstroLupineKeywords.Read))
+            if (props.HasFlag(ValueProp.Unpowered)) return 0m;
+
+            if (cardSource != null && cardSource.DynamicVars.Values.Any(v => v is AstroReadBlockVar))
             {
                 decimal multiplier = 1m;
                 if (Owner?.CombatState != null)

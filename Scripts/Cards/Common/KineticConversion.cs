@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
+using AstroLupine.Powers;
 
 namespace AstroLupine.Cards.Common
 {
@@ -15,14 +16,14 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new BlockVar(12m, ValueProp.Move),
-            new DamageVar(5m, ValueProp.Move)
+            new BlockVar(14m, ValueProp.Move),
+            new DynamicVar("Magic", 8m)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.AttackOverwrite };
 
         public KineticConversion()
-            : base(1, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy)
+            : base(1, CardType.Skill, CardRarity.Common, TargetType.None)
         {
         }
 
@@ -32,28 +33,14 @@ namespace AstroLupine.Cards.Common
             {
                 // Gain 12 Block
                 await CreatureCmd.GainBlock(Owner.Creature, this.DynamicVars.Block.PreviewValue, ValueProp.Move, cardPlay);
-                
-                // Write Defense Register to block amount
-                await WriteDefenseRegister((int)this.DynamicVars.Block.PreviewValue);
-
-                // Deal 5 damage
-                if (cardPlay.Target != null)
-                {
-                    await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue)
-                        .FromCard(this)
-                        .Targeting(cardPlay.Target)
-                        .WithHitFx("vfx/vfx_attack_blunt")
-                        .Execute(choiceContext);
-                }
-
-                // Write Attack Register to 3
-                await WriteAttackRegister(5);
+                // Apply Attack Overwrite
+                await PowerCmd.Apply<AttackOverwritePower>(choiceContext, Owner.Creature, this.DynamicVars["Magic"].IntValue, Owner.Creature, this);
             }
         }
 
         protected override void OnUpgrade()
         {
-            this.AddKeyword(CardKeyword.Retain);
+            this.DynamicVars.Block.UpgradeValueBy(3m);
         }
     }
 }

@@ -16,6 +16,7 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/botnet.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
         {
@@ -24,7 +25,7 @@ namespace AstroLupine.Powers
                 int totalVirus = 0;
                 foreach (var enemy in combatState.HittableEnemies)
                 {
-                    var virus = enemy.GetPower<TrojanHorseVirusPower>();
+                    var virus = enemy.GetPower<ZeroDayExploitPower>();
                     if (virus != null)
                     {
                         totalVirus += virus.Amount;

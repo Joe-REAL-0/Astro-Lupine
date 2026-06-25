@@ -16,7 +16,7 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new MagicVar(6m) 
+            new MagicVar(5m) 
         };
 
         public FocusEnergy()

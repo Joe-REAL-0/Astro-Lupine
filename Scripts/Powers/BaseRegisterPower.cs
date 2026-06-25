@@ -24,7 +24,7 @@ namespace AstroLupine.Powers
         {
             if (this.Owner != null && this.Owner.GetPower<ReadOnlyLockPower>() != null)
             {
-                // 如果拥有内核加固Buff，则所有寄存器被锁定，无法写入
+                // 如果拥有只读锁定Buff，则所有寄存器被锁定，无法写入
                 return;
             }
 
@@ -33,15 +33,21 @@ namespace AstroLupine.Powers
                 var sandbox = this.Owner.GetPower<SandboxModePower>();
                 if (sandbox != null)
                 {
-                    await CreatureCmd.GainBlock(this.Owner, value * 2, MegaCrit.Sts2.Core.ValueProps.ValueProp.Move, null);
+                    int overwriteAmount = value * sandbox.Amount;
+                    
+                    if (this is AttackRegisterPower)
+                    {
+                        await PowerCmd.Apply<AttackOverwritePower>(choiceContext, this.Owner, overwriteAmount, this.Owner, null);
+                    }
+                    else if (this is DefenseRegisterPower)
+                    {
+                        await PowerCmd.Apply<DefenseOverwritePower>(choiceContext, this.Owner, overwriteAmount, this.Owner, null);
+                    }
+                    else if (this is DrawRegisterPower)
+                    {
+                        await PowerCmd.Apply<DrawOverwritePower>(choiceContext, this.Owner, overwriteAmount, this.Owner, null);
+                    }
                     return;
-                }
-
-                var hyper = this.Owner.GetPower<HyperThreadingFormPower>();
-                if (hyper != null && !hyper.HasTriggeredThisTurn)
-                {
-                    value *= 2;
-                    hyper.HasTriggeredThisTurn = true;
                 }
             }
 
@@ -49,10 +55,11 @@ namespace AstroLupine.Powers
             if (value < minVal) value = minVal;
 
             int oldAmount = this.Amount;
-            this.SetAmount(value);
+            int offset = value - oldAmount;
 
-            if (oldAmount != this.Amount)
+            if (offset != 0)
             {
+                await PowerCmd.ModifyAmount(choiceContext ?? new ThrowingPlayerChoiceContext(), this, offset, this.Owner, null);
                 OnAmountChanged();
                 await TriggerExceptionHandling(choiceContext);
             }
@@ -64,10 +71,12 @@ namespace AstroLupine.Powers
             int baseAmount = this.Amount;
             if (this.Owner != null && this.Owner.GetPower<RootPower>() != null)
             {
-                int atk = this.Owner.GetPower<AttackRegisterPower>()?.Amount ?? 0;
-                int def = this.Owner.GetPower<DefenseRegisterPower>()?.Amount ?? 0;
-                int drw = this.Owner.GetPower<DrawRegisterPower>()?.Amount ?? 0;
-                baseAmount = System.Math.Max(atk, System.Math.Max(def, drw));
+                if (this is AttackRegisterPower || this is DefenseRegisterPower)
+                {
+                    int atk = this.Owner.GetPower<AttackRegisterPower>()?.Amount ?? 0;
+                    int def = this.Owner.GetPower<DefenseRegisterPower>()?.Amount ?? 0;
+                    baseAmount = System.Math.Max(atk, def);
+                }
             }
 
             if (this.Owner != null && this.Owner.GetPower<ParallelProcessingPower>() != null)
@@ -91,10 +100,11 @@ namespace AstroLupine.Powers
             if (newVal < minVal) newVal = minVal;
 
             int oldAmount = this.Amount;
-            this.SetAmount(newVal);
+            int offset = newVal - oldAmount;
 
-            if (oldAmount != this.Amount)
+            if (offset != 0)
             {
+                await PowerCmd.ModifyAmount(choiceContext ?? new ThrowingPlayerChoiceContext(), this, offset, this.Owner, null);
                 OnAmountChanged();
                 await TriggerExceptionHandling(choiceContext);
             }

@@ -16,7 +16,7 @@ namespace AstroLupine.Cards.Common
         public const string CardId = "AstroLupine_Card_InterfaceExtension";
 
         public InterfaceExtension()
-            : base(2, CardType.Skill, CardRarity.Common, TargetType.None)
+            : base(1, CardType.Skill, CardRarity.Common, TargetType.None)
         {
         }
 
@@ -37,7 +37,7 @@ namespace AstroLupine.Cards.Common
 
         protected override void OnUpgrade()
         {
-            this.EnergyCost.SetCustomBaseCost(1);
+            this.EnergyCost.SetCustomBaseCost(0);
         }
     }
 }

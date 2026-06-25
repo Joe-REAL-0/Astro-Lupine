@@ -15,13 +15,13 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new DamageVar(10m, ValueProp.Move) 
+            new DamageVar(12m, ValueProp.Move) 
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
 
         public RewriteSmash()
-            : base(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+            : base(3, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
         {
         }
 
@@ -44,7 +44,7 @@ namespace AstroLupine.Cards.Common
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Damage.UpgradeValueBy(2m);
+            this.DynamicVars.Damage.UpgradeValueBy(4m);
         }
     }
 }

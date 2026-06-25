@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -14,7 +14,7 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new AstroReadMagicVar(0m) 
+            new AstroReadCardsVar(1) 
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read };
@@ -28,13 +28,13 @@ namespace AstroLupine.Cards.Common
         {
             if (Owner != null)
             {
-                await DrawReadCards(choiceContext, this.DynamicVars["Magic"]);
+                await DrawReadCards(choiceContext, this.DynamicVars["Cards"]);
             }
         }
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars["Magic"].UpgradeValueBy(1m);
+            this.DynamicVars["Cards"].UpgradeValueBy(1m);
         }
     }
 }

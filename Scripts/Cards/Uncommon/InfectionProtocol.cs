@@ -15,7 +15,7 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new MagicVar(2m)
+            new MagicVar(4m)
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.ZeroDayExploit, AstroLupineKeywords.TrojanHorseVirus };

@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -12,15 +12,14 @@ namespace AstroLupine.Cards.Uncommon
     {
         public const string CardId = "AstroLupine_Card_SystemUpgrade";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Ethereal };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new MagicVar(1m) 
+            new MagicVar(2m) 
         };
 
         public SystemUpgrade()
-            : base(2, CardType.Power, CardRarity.Uncommon, TargetType.None)
+            : base(1, CardType.Power, CardRarity.Uncommon, TargetType.None)
         {
         }
 
@@ -36,7 +35,7 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override void OnUpgrade()
         {
-            this.RemoveKeyword(CardKeyword.Ethereal);
+            this.AddKeyword(CardKeyword.Retain);
         }
     }
 }

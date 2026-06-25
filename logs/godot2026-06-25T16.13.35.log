@@ -1,0 +1,1138 @@
+MegaDot v4.5.1.m.12.mono.custom_build - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 5060 Ti
+WARNING: PSO caching is not implemented yet in the Direct3D 12 driver.
+   at: pipeline_cache_create (drivers/d3d12/rendering_device_driver_d3d12.cpp:4469)
+
+FMOD Sound System: Successfully initialized
+[INFO] Found release_info.json at: D:\SteamLibrary\steamapps\common\Slay the Spire 2\release_info.json
+[INFO] [Sentry.NET] Initialized: env=development, release=v0.107.1
+[INFO] Steamworks: attempting initialization...
+[INFO] Steam is running: True
+[INFO] Steamworks initialization succeeded!
+[INFO] Steam is enabled, we will write saves to steam storage. Enabled for account: True, app: True 
+[INFO] Registered 11 migrations
+[INFO] Current save versions: PrefsSave v2; ProfileSave v2; SerializableProgress v21; RunHistory v9; SerializableRun v16; SettingsSave v5
+[INFO] Looking for mods to load from Steam Workshop mod 3749124327 in D:\SteamLibrary\steamapps\workshop\content\2868840\3749124327 (size 92362167, last modified 1782345792)
+[INFO] Found mod manifest file D:\SteamLibrary\steamapps\workshop\content\2868840\3749124327\AstroLupine.json
+[Sentry.GDExtension] Initialized: env=playtesters, release=v0.107.1
+[INFO] MuteInBackground: FocusIn received [tween=False, msSinceFocusOut=3736, windowFocused=True]
+[INFO] Looking for mods to load from Steam Workshop mod 3737335127 in D:\SteamLibrary\steamapps\workshop\content\2868840\3737335127 (size 1022694, last modified 1782068851)
+[INFO] Found mod manifest file D:\SteamLibrary\steamapps\workshop\content\2868840\3737335127\BaseLib\BaseLib.json
+[INFO] === Godot OS Debug Information ===
+Timestamp: 06/25/2026 15:39:21
+OS: Windows
+OS Version: 10.0.26200
+Distribution Name: Windows
+Device Model: MS-Challenger B760M
+Is Debug Build: False
+Is Sandboxed: False
+Executable Path: D:/SteamLibrary/steamapps/common/Slay the Spire 2/SlayTheSpire2.exe
+Data Directory: C:/Users/Joe/AppData/Roaming
+User Data Directory: C:/Users/Joe/AppData/Roaming/SlayTheSpire2
+Command Line Args: 
+User Command Line Args: 
+OS Locale: zh_CN
+OS Language: zh
+Game Locale: zh_CN
+Is UserFS Persistent: True
+Is Stdout Verbose: False
+Is Low Processor Usage Mode: False
+Architecture: x86_64
+Engine Version: 4.5.1-m.12 (custom_build)
+Is Editor: False
+Release Version: v0.107.1
+Release Commit: 59260271
+Release Date: 06/18/2026 22:43:56
+Processor Count: 16
+Processor Name: Intel(R) Core(TM) i5-14400
+Main assembly hash: -1555940892
+Rendering device name: NVIDIA GeForce RTX 5060 Ti
+  Graphics adapter 0: NVIDIA GeForce RTX 5060 Ti
+  version: 32.0.15.0
+  Graphics adapter 1: NVIDIA GeForce RTX 5060 Ti
+  version: 32.0.15.0
+  Graphics adapter 2: Microsoft Basic Render Driver
+  version: 10.0.26100.0
+Screen info (primary 0):
+  Index 0: Size: (1920, 1080) Orientation: Landscape Scale: 1 DPI: 96 Refresh Rate: 60
+  Index 1: Size: (1080, 1920) Orientation: Landscape Scale: 1 DPI: 96 Refresh Rate: 60
+Video Memory Used: 0.0B
+Memory Info:
+  physical: 31.6GB
+  free: 21.1GB
+  available: 33.6GB
+  stack: 8.0MB
+  Static Memory Usage: 0.0B
+  Static Memory Peak Usage: 0.0B
+Disk Info:
+  Index 0: Name: C:\ Type: Fixed Format: NTFS Available: 171.2GB Total Free: 171.2GB Total Size: 476.0GB
+  Index 1: Name: D:\ Type: Fixed Format: NTFS Available: 475.7GB Total Free: 475.7GB Total Size: 1.0TB
+  Index 2: Name: E:\ Type: Fixed Format: NTFS Available: 0.7TB Total Free: 0.7TB Total Size: 0.9TB
+Important Environment Variables:
+  PATH: C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Bandizip;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\mingw64\bin;;C:\Program Files\GnuPG\bin;C:\Program Files\AskLink;%USERPROFILE%\miniconda3;%USERPROFILE%\miniconda3\Library\mingw-w64\bin;%USERPROFILE%\miniconda3\Library\usr\bin;%USERPROFILE%\miniconda3\Library\bin;%USERPROFILE%\miniconda3\Scripts;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;%USERPROFILE%\AppData\Local\Python\bin;%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin;%USERPROFILE%\.lmstudio\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.2\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;%USERPROFILE%\AppData\Local\Programs\Antigravity IDE\bin;%USERPROFILE%\.dotnet\tools
+  GODOT_ROOT_DIR: 
+  HOME: 
+  DYLD_LIBRARY_PATH: 
+  LD_LIBRARY_PATH: 
+
+[INFO] Mods have been re-sorted because we detected a change or dependency order was broken. New sorting order:
+[INFO]   0: BaseLib (BaseLib)
+[INFO]   1: 星际“狼”客 (AstroLupine)
+[WARN] Mod BaseLib does not declare min game version. Assuming that it is supported.
+[INFO] Loading assembly DLL D:\SteamLibrary\steamapps\workshop\content\2868840\3737335127\BaseLib\BaseLib.dll
+[INFO] Loading Godot PCK D:\SteamLibrary\steamapps\workshop\content\2868840\3737335127\BaseLib\BaseLib.pck
+[INFO] Calling initializer method of type BaseLib.BaseLibMain for BaseLib, Version=3.3.2.0, Culture=neutral, PublicKeyToken=null
+[INFO] [BaseLib] Created node factory for Control.
+[INFO] [BaseLib] Created node factory for NCreatureVisuals.
+[INFO] [BaseLib] Created node factory for NRestSiteCharacter.
+[INFO] [BaseLib] Created node factory for NMerchantCharacter.
+[INFO] [BaseLib] Created node factory for NEnergyCounter.
+[INFO] [BaseLib] Created node factory for NCustomTreasureRoomChest.
+[INFO] [BaseLib] Registered config for mod BaseLib
+[INFO] [BaseLib] Performing CustomPile patch
+[INFO] [BaseLib] Starting PatchAll for assembly BaseLib, Version=3.3.2.0, Culture=neutral, PublicKeyToken=null
+[INFO] [BaseLib] Patching state machine: MegaCrit.Sts2.Core.Nodes.Combat.NCreature+<AnimDie>d__105
+[INFO] [BaseLib] Adding new state 5 for method CustomAnimationPatch.WaitCustomAnim before Wait with result type None ()
+[INFO] [BaseLib] Patching state machine: MegaCrit.Sts2.Core.Hooks.Hook+<AfterCardPlayed>d__16
+[INFO] [BaseLib] Adding new state 2 for method AfterCardPlayedPatch.BeforeAfterPlayHooks before AfterCardPlayed with result type None ()
+[INFO] [BaseLib] Applied 245 patches successfully, 0 failed
+[INFO] Finished mod initialization for 'BaseLib' (BaseLib).
+[INFO] Loading assembly DLL D:\SteamLibrary\steamapps\workshop\content\2868840\3749124327\AstroLupine.dll
+[INFO] Loading Godot PCK D:\SteamLibrary\steamapps\workshop\content\2868840\3749124327\AstroLupine.pck
+[INFO] No ModInitializerAttribute detected. Calling Harmony.PatchAll for AstroLupine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[INFO] Finished mod initialization for '星际“狼”客' (AstroLupine).
+[INFO]  --- RUNNING MODDED! --- Loaded 2 mods (2 total)
+[Sentry.GDExtension] should_sample callable set
+[WARN] Asset not cached: res://scenes/debug/dev_console.tscn
+[INFO] Syncing cloud save files to the local save directory
+[WARN] Asset not cached: res://scenes/cards/card.tscn
+[WARN] Asset not cached: res://scenes/cards/holders/grid_card_holder.tscn
+[INFO] AtlasManager: Loaded ui_atlas with 102 sprites
+[INFO] AtlasManager: Loaded compressed with 45 sprites
+[INFO] [BaseLib] Performing post-mod init patch
+[INFO] [BaseLib] Mod AstroLupine that modifies gameplay has BaseLib dependency; gameplay modification enabled.
+[INFO] [BaseLib] Patching act types for custom encounters and events | DeprecatedAct | Glory | Hive | Overgrowth | Underdocks
+[INFO] [BaseLib] Generating interop methods and properties
+[INFO] [BaseLib] Found 0 SavedSpireFields.
+[INFO] Loading locale path=res://localization/eng
+[INFO] Found loc table from mod: eng ancients.json. Merging with base loc table
+[INFO] Found loc table from mod: eng card_keywords.json. Merging with base loc table
+[INFO] Found loc table from mod: eng card_keywords.json. Merging with base loc table
+[INFO] Found loc table from mod: eng card_selection.json. Merging with base loc table
+[INFO] Found loc table from mod: eng cards.json. Merging with base loc table
+[INFO] Found loc table from mod: eng characters.json. Merging with base loc table
+[INFO] Found loc table from mod: eng gameplay_ui.json. Merging with base loc table
+[INFO] Found loc table from mod: eng gameplay_ui.json. Merging with base loc table
+[INFO] Found loc table from mod: eng main_menu_ui.json. Merging with base loc table
+[INFO] Found loc table from mod: eng powers.json. Merging with base loc table
+[INFO] Found loc table from mod: eng powers.json. Merging with base loc table
+[INFO] Found loc table from mod: eng relics.json. Merging with base loc table
+[INFO] Found loc table from mod: eng settings_ui.json. Merging with base loc table
+[INFO] Found loc table from mod: eng static_hover_tips.json. Merging with base loc table
+[INFO] Loading locale path=res://localization/zhs
+[INFO] Found loc table from mod: zhs ancients.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs card_keywords.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs cards.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs characters.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs gameplay_ui.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs main_menu_ui.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs powers.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs powers.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs relics.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs settings_ui.json. Merging with base loc table
+[INFO] Found loc table from mod: zhs static_hover_tips.json. Merging with base loc table
+[INFO] [BaseLib] Starting custom enum generation for 1268 modded types
+[INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Entities.Cards.TargetType with starting value 10 | IsFlag: False | Half-Size: 16
+[INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Entities.Cards.CardKeyword with starting value 8 | IsFlag: False | Half-Size: 16
+[INFO] [BaseLib] Generated KeyGenerator for enum MegaCrit.Sts2.Core.Rewards.RewardType with starting value 7 | IsFlag: False | Half-Size: 16
+[INFO] [BaseLib] Registering CustomReward deserializer for BaseLib.Common.Rewards.CardTransformReward
+[INFO] [BaseLib] Registering RewardType CardTransform
+[INFO] [BaseLib] Registering CustomReward deserializer for BaseLib.Common.Rewards.CardUpgradeReward
+[INFO] [BaseLib] Registering RewardType CardUpgrade
+[INFO] [BaseLib] Registering CustomReward deserializer for BaseLib.Common.Rewards.RandomCardUpgradeReward
+[INFO] [BaseLib] Registering RewardType RandomCardUpgrade
+[WARN] Two AbstractModels AstroLupine.Powers.DefenseOverwritePower and AstroLupine.Powers.DefenseOverwritePower from mod AstroLupine share an ID! This might break multiplayer.
+[INFO] ModelIdSerializationCache initialized. Categories: 20 Entries: 1747 Epochs: 57 Hash: 356050037
+[INFO] [BaseLib] Adjusting keys of custom message wrappers.
+[INFO] [BaseLib] Using IDs 128 and 129 for custom message wrappers.
+[INFO] Profile-scoped data path initialized: user://steam/76561198862905280/modded/profile1
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = CardStats.[164], Message = Unknown card ID: CARD.ASTROLUPINE-OVERWRITE, IsFatal = False }
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = CardStats.[165], Message = Unknown card ID: CARD.ASTROLUPINE-ITERATIVE_RETRIEVAL, IsFatal = False }
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = DiscoveredCards, Message = Unknown CardModel ID: CARD.ASTROLUPINE-OVERWRITE, IsFatal = False }
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = DiscoveredCards, Message = Unknown CardModel ID: CARD.ASTROLUPINE-ITERATIVE_RETRIEVAL, IsFatal = False }
+[INFO] [Sentry.NET] Is running modded
+[INFO] [Sentry.NET] Shutting down because event reporting is disabled.
+[INFO] [Sentry.NET] Shutting down
+[Sentry.GDExtension] Shutting down
+ERROR: Sentry: Failed to close native SDK cleanly. Error code: 1
+   at: sentry::native::NativeSDK::close (src\sentry\native\native_sdk.cpp:489)
+   GDScript backtrace (most recent call first):
+       [0] shutdown (res://addons/sentry/SentryInit.gd:189)
+   C# backtrace (most recent call first):
+       [0] Godot.Variant Godot.GodotObject.Call(Godot.StringName, Godot.Variant[])
+       [1] void MegaCrit.Sts2.Core.Debug.SentryService.Shutdown()
+       [2] void MegaCrit.Sts2.Core.Debug.SentryService.AfterGameInit(string, string, Godot.Node)
+       [3] void MegaCrit.Sts2.Core.Nodes.NGame+<GameStartup>d__117.MoveNext()
+       [4] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [5] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [6] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [7] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [8] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [9] void System.Threading.Tasks.Task.RunContinuations(object)
+       [10] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [11] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
+       [12] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [13] void MegaCrit.Sts2.Core.Helpers.OneTimeInitialization+<ExecuteVeryEarly>d__7.MoveNext()
+       [14] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [15] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [16] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [17] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [18] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [19] void System.Threading.Tasks.Task.RunContinuations(object)
+       [20] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [21] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
+       [22] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [23] void MegaCrit.Sts2.Core.Modding.ModManager+<Initialize>d__22.MoveNext()
+       [24] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [25] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [26] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [27] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [28] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [29] void System.Threading.Tasks.Task.RunContinuations(object)
+       [30] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [31] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
+       [32] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [33] void MegaCrit.Sts2.Core.Modding.ModManager+<ReadSteamMods>d__29.MoveNext()
+       [34] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [35] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [36] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [37] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [38] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [39] void System.Threading.Tasks.Task.RunContinuations(object)
+       [40] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [41] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
+       [42] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [43] void MegaCrit.Sts2.Core.Modding.ModManager+<TryReadModFromSteam>d__30.MoveNext()
+       [44] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [45] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [46] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [47] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [48] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [49] void System.Threading.Tasks.Task.RunContinuations(object)
+       [50] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [51] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
+       [52] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+       [53] void MegaCrit.Sts2.Core.Modding.ModManager+<CheckSteamBranchSupport>d__31.MoveNext()
+       [54] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [55] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [56] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [57] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [58] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [59] void System.Threading.Tasks.Task.RunContinuations(object)
+       [60] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [61] bool System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(TResult)
+       [62] void System.Threading.Tasks.TaskCompletionSource`1.SetResult(TResult)
+       [63] void MegaCrit.Sts2.Core.Multiplayer.Transport.Steam.SteamCallResult`1.OnCallResult(T, bool)
+       [64] void Steamworks.CallResult`1.OnRunCallResult(nint, bool, ulong)
+       [65] void Steamworks.CallbackDispatcher.RunFrame(bool)
+       [66] void Steamworks.SteamAPI.RunCallbacks()
+       [67] void MegaCrit.Sts2.Core.Platform.Steam.SteamInitializer+<RunCallbacksAsync>d__22.MoveNext()
+       [68] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [69] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [70] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [71] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [72] void System.Threading.Tasks.AwaitTaskContinuation.RunCallback(System.Threading.ContextCallback, object, System.Threading.Tasks.Task&)
+       [73] void System.Threading.Tasks.Task.RunContinuations(object)
+       [74] bool System.Threading.Tasks.Task`1.TrySetResult(TResult)
+       [75] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(System.Threading.Tasks.Task`1[TResult], TResult)
+       [76] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)
+       [77] void MegaCrit.Sts2.Core.Nodes.GodotExtensions.NodeUtil+<AwaitProcessFrame>d__0.MoveNext()
+       [78] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(object)
+       [79] void System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, object)
+       [80] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(System.Threading.Thread)
+       [81] void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()
+       [82] void Godot.SignalAwaiter.SignalCallback(nint, Godot.NativeInterop.godot_variant**, int, Godot.NativeInterop.godot_bool*)
+[INFO] [BaseLib] Adding 0 custom acts to act list.
+[INFO] [BaseLib] Result: ACT.OVERGROWTH (21554506),ACT.UNDERDOCKS (59772830),ACT.HIVE (1084558),ACT.GLORY (9761029)
+[INFO] AtlasManager: Loaded controller_atlas with 112 sprites
+[WARN] SteamStatsManager: Global stats request failed with result k_EResultInvalidState
+[INFO] Applying display settings...
+  FULLSCREEN: True
+  ASPECT_RATIO: (SixteenByNine)
+  TARGET_DISPLAY: (0)
+  WINDOW_SIZE: (1920, 1080)
+  POSITION: (-1, -1)
+[INFO] [Display] Min size: (64, 64) Max size: (16384, 16384)
+[INFO] [Display] Setting FULLSCREEN on Display: 1 of 2
+[INFO] Window changed! New size: (1918, 1080)
+[INFO] Window changed! New size: (1934, 1119)
+[INFO] Window changed! New size: (1920, 1080)
+[INFO] VSync: Adaptive
+[INFO] MuteInBackground: environment [displayServer=Windows, os=Windows]
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] Preloading 'IntroLogo' assets... count=3 vfx=0
+[INFO] Preloading 'IntroLogo' Complete: assets=3 time_elapsed=102ms
+[INFO] Preloading 'MainMenuEssentials' assets... count=5 vfx=0
+[INFO] Preloading 'MainMenuEssentials' Complete: assets=5 time_elapsed=252ms
+[WARN] Asset not cached: res://debug_audio/SOTE_Logo_Echoing_ShortTail.mp3
+[INFO] [Startup] Time to main menu (Godot ticks): 23355ms
+[INFO] [Startup] Time to main menu: 23,431ms
+[INFO] [Startup] Resource stats (main menu loaded (essential)): StaticMem=0B, VRAM=565.2MB, Objects=8,842, Resources=667, Nodes=1,519, CachedAssets=11
+[INFO] AtlasManager: Loaded epoch_atlas with 57 sprites
+[INFO] AtlasManager: Loaded relic_atlas with 341 sprites
+[INFO] AtlasManager: Loaded relic_outline_atlas with 341 sprites
+[INFO] AtlasManager: Loaded power_atlas with 264 sprites
+[INFO] AtlasManager: Loaded card_atlas with 875 sprites
+[INFO] AtlasManager: Loaded potion_atlas with 63 sprites
+[INFO] AtlasManager: Loaded potion_outline_atlas with 63 sprites
+[INFO] AtlasManager: Loaded stats_screen_atlas with 16 sprites
+[INFO] AtlasManager: Loaded intent_atlas with 310 sprites
+[INFO] AtlasManager: Loaded era_atlas with 27 sprites
+[INFO] [BaseLib] Registered scene 'res://scenes/creature_visuals/astrolupine_visuals.tscn' for auto-conversion to NCreatureVisuals
+[INFO] [BaseLib] Registered scene 'res://scenes/rest_site/characters/ironclad_rest_site.tscn' for auto-conversion to NRestSiteCharacter
+[INFO] [BaseLib] Registered scene 'res://scenes/merchant/characters/ironclad_merchant.tscn' for auto-conversion to NMerchantCharacter
+[INFO] Unloading 4 missed cache assets
+[INFO] Preloading 'Common' assets... count=689 vfx=92
+[INFO] [Startup] Resource stats (main menu loaded (complete)): StaticMem=0B, VRAM=961MB, Objects=8,897, Resources=740, Nodes=1,517, CachedAssets=5
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=16131, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
+[INFO] Restored foreground FPS
+[WARN] Asset not cached: res://scenes/screens/singleplayer_submenu.tscn
+[INFO] Max ascension changed to 0
+[INFO] Max ascension changed to 0
+[INFO] [StartRunLobby (1)] CHARACTER.IRONCLAD has not revealed the Ascension Epoch, disabling Ascension.
+[INFO] Max ascension changed to 1
+[INFO] [StartRunLobby (1)] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER ascension set to preferred: 0
+[INFO] Preloading 'Common' Complete: assets=781 time_elapsed=6,151ms
+[INFO] [StartRunLobby (1)] Local player 1 is ready
+[INFO] Embarking on a singleplayer ASTROLUPINE-ASTRO_LUPINE_CHARACTER run. Ascension: 0 Seed: ZTXUMPV2V5
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' assets... count=38 vfx=6
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' Complete: assets=44 time_elapsed=336ms
+[INFO] Preloading 'Act=OVERGROWTH' assets... count=8 vfx=0
+[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=8 time_elapsed=35ms
+[INFO] Preloading 'Act=OVERGROWTH' assets... count=0 vfx=0
+[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=0 time_elapsed=12ms
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] [BaseLib] Adding custom save data to SerializableRun.
+[INFO] [BaseLib] Added 0 new properties to SerializableRun
+[INFO] [BaseLib] Adding custom save data to SerializableCard.
+[INFO] [BaseLib] Added 1 new properties to SerializableCard
+[INFO] [BaseLib] Adding custom save data to SerializablePlayer.
+[INFO] [BaseLib] Added 0 new properties to SerializablePlayer
+[INFO] [BaseLib] Adding custom save data to SerializablePotion.
+[INFO] [BaseLib] Added 0 new properties to SerializablePotion
+[INFO] [BaseLib] Adding custom save data to SerializableRelic.
+[INFO] [BaseLib] Added 0 new properties to SerializableRelic
+[INFO] [BaseLib] Adding custom save data to SerializableReward.
+[INFO] [BaseLib] Added 0 new properties to SerializableReward
+[INFO] Wrote 43318 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 43318 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'Event Room' assets... count=2 vfx=0
+[INFO] Preloading 'Event Room' Complete: assets=2 time_elapsed=200ms
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[INFO] [BaseLib] Checking for additional interactions with NEOW
+[WARN] Asset not cached: res://scenes/events/ancient_dialogue_line.tscn
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] Asset not cached: res://scenes/ui/card_hover_tip.tscn
+[WARN] Asset not cached: res://scenes/screens/compendium_submenu.tscn
+[WARN] Asset not cached: res://scenes/screens/card_library/card_library.tscn
+[WARN] Asset not cached: res://scenes/ui/selection_reticle.tscn
+[WARN] Asset not cached: res://scenes/screens/card_library/card_library_stats.tscn
+[WARN] Asset not cached: res://AstroLupine/assets/texture/character/text_energy_icon_20.png
+[INFO] AtlasManager: Loaded compressed_atlas with 55 sprites
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[INFO] Wrote 45498 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 45498 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (5, 1))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 45555 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 45555 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Unloading 7 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=9 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=9 time_elapsed=107ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=FUZZY_WURM_CRAWLER_WEAK.
+[INFO] [BaseLib] Auto-converted 'res://scenes/creature_visuals/astrolupine_visuals.tscn' from Node2D to NCreatureVisuals
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/attack_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/defense_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/draw_register.png
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 毛绒伏地虫 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 毛绒伏地虫 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster FUZZY_WURM_CRAWLER performing move FIRST_ACID_GOOP
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 毛绒伏地虫 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 毛绒伏地虫 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster FUZZY_WURM_CRAWLER performing move INHALE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 毛绒伏地虫 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster FUZZY_WURM_CRAWLER performing move ACID_GOOP
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 毛绒伏地虫 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 毛绒伏地虫 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[WARN] Warning: Packet writer is growing from 1024 bytes to 2048 bytes!
+[WARN] Warning: Packet writer is growing from 2048 bytes to 4096 bytes!
+[INFO] Wrote 46624 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 46624 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has won against encounter ENCOUNTER.FUZZY_WURM_CRAWLER_WEAK. That's 13 wins
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has killed a MONSTER.FUZZY_WURM_CRAWLER. That's 16 kills
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Card rarity: Rolled 0.22200656, need < -0.020000001 for rare (offset = -0.05)
+[INFO] Card rarity: Rolled 0.98336065, need < -0.01 for rare (offset = -0.04)
+[INFO] Card rarity: Rolled 0.2385853, need < 0 for rare (offset = -0.03)
+[INFO] Player 1 obtained 11 gold from reward
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.ASTROLUPINE-MIMIC_RENEW_SPIRIT from card reward
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (6, 2))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 48057 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 48057 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Unloading 5 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=6 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=6 time_elapsed=98ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=NIBBITS_WEAK.
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/attack_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/defense_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/draw_register.png
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster NIBBIT performing move BUTT_MOVE
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 小啃兽 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 小啃兽 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster NIBBIT performing move SLICE_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 小啃兽 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 小啃兽 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster NIBBIT performing move HISS_MOVE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-MIMIC_RENEW_SPIRIT (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-MIMIC_RENEW_SPIRIT. hasWrite = False
+[INFO] Monster NIBBIT performing move BUTT_MOVE
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 小啃兽 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 小啃兽 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster NIBBIT performing move SLICE_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 小啃兽 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster NIBBIT performing move HISS_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 小啃兽 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Wrote 49057 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 49057 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has won against encounter ENCOUNTER.NIBBITS_WEAK. That's 14 wins
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has killed a MONSTER.NIBBIT. That's 16 kills
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Card rarity: Rolled 0.7501128, need < 0.01 for rare (offset = -0.02)
+[INFO] Card rarity: Rolled 0.51153105, need < 0.02 for rare (offset = -0.01)
+[INFO] Card rarity: Rolled 0.35538208, need < 0.03 for rare (offset = 0)
+[INFO] Player 1 obtained 13 gold from reward
+[INFO] Player 1 obtained POTION.STRENGTH_POTION from potion reward
+[INFO] Player 1 selected card reward
+[WARN] Asset not cached: res://AstroLupine/assets/texture/character/text_energy_icon_20.png
+[INFO] Player 1 obtained CARD.ASTROLUPINE-OPERATOR_OVERLOADING from card reward
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (6, 3))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 50807 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 50807 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Unloading 6 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=6 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=6 time_elapsed=41ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=SLIMES_WEAK.
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/attack_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/defense_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/draw_register.png
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 树枝史莱姆（小） (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster TWIG_SLIME_S performing move TACKLE_MOVE
+[INFO] Monster TWIG_SLIME_M performing move STICKY_SHOT_MOVE
+[INFO] Monster LEAF_SLIME_S performing move TACKLE_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 树枝史莱姆（小） (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 树叶史莱姆（小） (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster TWIG_SLIME_M performing move POKEY_POUNCE_MOVE
+[INFO] Monster LEAF_SLIME_S performing move GOOP_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 树叶史莱姆（小） (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 树叶史莱姆（小） (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card SLIMED (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.SLIMED. hasWrite = False
+[INFO] Monster TWIG_SLIME_M performing move STICKY_SHOT_MOVE
+[INFO] Player 1 playing card SLIMED (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.SLIMED. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster TWIG_SLIME_M performing move POKEY_POUNCE_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 树枝史莱姆（中） (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster TWIG_SLIME_M performing move POKEY_POUNCE_MOVE
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 树枝史莱姆（中） (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 树枝史莱姆（中） (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster TWIG_SLIME_M performing move STICKY_SHOT_MOVE
+[INFO] SteamStatsManager: User stats received
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 树枝史莱姆（中） (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Wrote 51887 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 51887 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has won against encounter ENCOUNTER.SLIMES_WEAK. That's 9 wins
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has killed a MONSTER.TWIG_SLIME_S. That's 13 kills
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has killed a MONSTER.TWIG_SLIME_M. That's 5 kills
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has killed a MONSTER.LEAF_SLIME_S. That's 13 kills
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Card rarity: Rolled 0.11272653, need < 0.04 for rare (offset = 0.01)
+[INFO] Card rarity: Rolled 0.7702545, need < 0.049999997 for rare (offset = 0.02)
+[INFO] Card rarity: Rolled 0.84373146, need < 0.06 for rare (offset = 0.03)
+[INFO] Player 1 obtained 14 gold from reward
+[INFO] Player 1 selected card reward
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.ASTROLUPINE-MIMIC_IRON_WAVE from card reward
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (5, 4))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 53320 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 53320 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Unloading 4 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=4 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=4 time_elapsed=35ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=INKLETS_NORMAL.
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres
+[WARN] Asset not cached: res://images/powers/slippery_power.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/attack_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/defense_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/draw_register.png
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-MIMIC_IRON_WAVE (targeting 墨宝 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-MIMIC_IRON_WAVE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 墨宝 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster INKLET performing move JAB_MOVE
+[INFO] Monster INKLET performing move WHIRLWIND_MOVE
+[INFO] Monster INKLET performing move JAB_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 墨宝 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster INKLET performing move JAB_MOVE
+[INFO] Monster INKLET performing move WHIRLWIND_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-MIMIC_RENEW_SPIRIT (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-MIMIC_RENEW_SPIRIT. hasWrite = False
+[INFO] Monster INKLET performing move PIERCING_GAZE_MOVE
+[INFO] Monster INKLET performing move JAB_MOVE
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 墨宝 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster INKLET performing move JAB_MOVE
+[INFO] Monster INKLET performing move WHIRLWIND_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-MIMIC_IRON_WAVE (targeting 墨宝 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-MIMIC_IRON_WAVE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 墨宝 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster INKLET performing move JAB_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 墨宝 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster INKLET performing move WHIRLWIND_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-MIMIC_IRON_WAVE (targeting 墨宝 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-MIMIC_IRON_WAVE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 墨宝 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Wrote 54390 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 54390 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has won against encounter ENCOUNTER.INKLETS_NORMAL. That's 4 wins
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has killed a MONSTER.INKLET. That's 4 kills
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Card rarity: Rolled 0.8350254, need < 0.07 for rare (offset = 0.04)
+[INFO] Card rarity: Rolled 0.3148311, need < 0.08 for rare (offset = 0.049999997)
+[INFO] Card rarity: Rolled 0.3962198, need < 0.089999996 for rare (offset = 0.059999995)
+[INFO] Player 1 obtained 14 gold from reward
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.ASTROLUPINE-BUFFER_OVERFLOW from card reward
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (5, 5))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 55833 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 55833 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Card rarity: Rolled 0.33543682, need < 0.16 for rare (offset = 0.06999999)
+[INFO] Card rarity: Rolled 0.7142881, need < 0.16 for rare (offset = 0.06999999)
+[INFO] Card rarity: Rolled 0.8939017, need < 0.16 for rare (offset = 0.06999999)
+[INFO] Card rarity: Rolled 0.87211514, need < 0.16 for rare (offset = 0.06999999)
+[INFO] Card rarity: Rolled 0.8061261, need < 0.16 for rare (offset = 0.06999999)
+[INFO] Unloading 5 missed cache assets
+[INFO] Preloading 'Merchant Room' assets... count=1 vfx=0
+[INFO] Preloading 'Merchant Room' Complete: assets=1 time_elapsed=107ms
+[WARN] Asset not cached: res://AstroLupine/assets/texture/character/text_energy_icon_20.png
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (4, 6))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 59683 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 59683 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'Event Room' assets... count=2 vfx=0
+[INFO] Preloading 'Event Room' Complete: assets=2 time_elapsed=64ms
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (3, 7))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 61232 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 61232 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Preloading 'Event Room' assets... count=1 vfx=1
+[INFO] Preloading 'Event Room' Complete: assets=2 time_elapsed=49ms
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] Asset not cached: res://scenes/ui/card_hover_tip.tscn
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.titleObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.possessiveAdjective' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounObject' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounPossessive' not found in table 'characters'
+[WARN] [BaseLib] GetRawText: Key 'ASTROLUPINE-ASTRO_LUPINE_CHARACTER.pronounSubject' not found in table 'characters'
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (4, 8))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 62715 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 62715 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'RestSite Room' assets... count=3 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=5 time_elapsed=207ms
+[INFO] Player 1 chose cards [ASTROLUPINE-ROLLBACK]
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (3, 9))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 64136 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 64136 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Preloading 'Treasure Room' assets... count=2 vfx=0
+[INFO] Preloading 'Treasure Room' Complete: assets=2 time_elapsed=63ms
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (3, 10))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 65031 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 65031 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Preloading 'RestSite Room' assets... count=3 vfx=2
+[INFO] Preloading 'RestSite Room' Complete: assets=5 time_elapsed=142ms
+[INFO] Player 1 chose cards [ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE]
+[INFO] Player vote changed for 1: ->MapVote (gen: 1 coord: (3, 11))
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 65948 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 65948 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Preloading 'Combat Room' assets... count=11 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=11 time_elapsed=68ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=FOGMOG_NORMAL.
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres
+[WARN] Asset not cached: res://images/powers/dexterity_power.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/attack_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/defense_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/draw_register.png
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=3766, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
+[INFO] Restored foreground FPS
+[INFO] Player 1 playing card ASTROLUPINE-MIMIC_IRON_WAVE (targeting 雾菇 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-MIMIC_IRON_WAVE. hasWrite = False
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=15598, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
+[INFO] Restored foreground FPS
+[INFO] Unloading 5 missed cache assets
+[INFO] Preloading 'Common' assets... count=128 vfx=1
+[WARN] Warning: Packet writer is growing from 4096 bytes to 8192 bytes!
+[WARN] Asset not cached: res://scenes/screens/main_menu.tscn
+[INFO] [Startup] Time to main menu (Godot ticks): 503038ms
+[INFO] Preloading 'Common' Complete: assets=128 time_elapsed=708ms
+[INFO] Wrote 66212 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 66212 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Continuing run with character: CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' assets... count=38 vfx=6
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' Complete: assets=44 time_elapsed=300ms
+[INFO] Preloading 'Act=OVERGROWTH' assets... count=8 vfx=0
+[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=8 time_elapsed=35ms
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=11 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=11 time_elapsed=63ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=FOGMOG_NORMAL.
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres
+[WARN] Asset not cached: res://images/powers/dexterity_power.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/attack_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/defense_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/draw_register.png
+[INFO] Player 1 using potion STRENGTH_POTION (targeting 异界之狼 (index 0))
+[WARN] Asset not cached: res://images/powers/strength_power.png
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=2001, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=161096, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=18265, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=113931, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
+[INFO] Restored foreground FPS
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 雾菇 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 雾菇 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster FOGMOG performing move ILLUSION_MOVE
+[WARN] Asset not cached: res://scenes/creature_visuals/eye_with_teeth.tscn
+[WARN] Asset not cached: res://images/powers/illusion_power.png
+[WARN] Asset not cached: res://images/powers/minion_power.png
+[WARN] Asset not cached: res://images/atlases/intent_atlas.sprites/intent_status_card.tres
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=847165, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.59999996
+[INFO] Restored foreground FPS
+[INFO] Player 1 playing card ASTROLUPINE-BUFFER_OVERFLOW (targeting 雾菇 (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/attack_overwrite.png
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-BUFFER_OVERFLOW. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 雾菇 (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Unloading 11 missed cache assets
+[INFO] Preloading 'Common' assets... count=128 vfx=1
+[WARN] Warning: Packet writer is growing from 1024 bytes to 2048 bytes!
+[WARN] Warning: Packet writer is growing from 2048 bytes to 4096 bytes!
+[WARN] Warning: Packet writer is growing from 4096 bytes to 8192 bytes!
+[WARN] Asset not cached: res://scenes/screens/main_menu.tscn
+[INFO] [Startup] Time to main menu (Godot ticks): 1734189ms
+[INFO] Preloading 'Common' Complete: assets=128 time_elapsed=668ms
+[INFO] Wrote 66212 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 66212 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] Continuing run with character: CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' assets... count=38 vfx=6
+[INFO] Preloading 'characters=ASTROLUPINE-ASTRO_LUPINE_CHARACTER' Complete: assets=44 time_elapsed=367ms
+[INFO] Preloading 'Act=OVERGROWTH' assets... count=8 vfx=0
+[INFO] Preloading 'Act=OVERGROWTH' Complete: assets=8 time_elapsed=45ms
+[INFO] Unloading 1 missed cache assets
+[INFO] Preloading 'Combat Room' assets... count=11 vfx=0
+[INFO] Preloading 'Combat Room' Complete: assets=11 time_elapsed=83ms
+[INFO] Creating NCombatRoom with mode=ActiveCombat encounter=FOGMOG_NORMAL.
+[INFO] [BaseLib] Creating NEnergyCounter from resource CustomEnergyCounter
+[WARN] Asset not cached: res://themes/kreon_bold_shared.tres
+[WARN] Asset not cached: res://images/powers/dexterity_power.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/attack_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/defense_register.png
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/draw_register.png
+[INFO] Player 1 playing card ASTROLUPINE-MIMIC_IRON_WAVE (targeting 雾菇 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-MIMIC_IRON_WAVE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 雾菇 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 雾菇 (index 1))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster FOGMOG performing move ILLUSION_MOVE
+[WARN] Asset not cached: res://scenes/creature_visuals/eye_with_teeth.tscn
+[WARN] Asset not cached: res://images/powers/illusion_power.png
+[WARN] Asset not cached: res://images/powers/minion_power.png
+[WARN] Asset not cached: res://images/atlases/intent_atlas.sprites/intent_status_card.tres
+[INFO] Player 1 playing card ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE (targeting 雾菇 (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-ATTACK_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-BUFFER_OVERFLOW (targeting 雾菇 (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[WARN] Asset not cached: res://AstroLupine/assets/texture/power/attack_overwrite.png
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-BUFFER_OVERFLOW. hasWrite = False
+[INFO] Monster EYE_WITH_TEETH performing move DISTRACT_MOVE
+[INFO] Monster FOGMOG performing move SWIPE_MOVE
+[WARN] Asset not cached: res://images/powers/strength_power.png
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_cast
+[INFO] Player 1 playing card ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFENSE_INC_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-DEFEND_ASTRO_LUPINE (no target)
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-DEFEND_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 雾菇 (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster EYE_WITH_TEETH performing move DISTRACT_MOVE
+[INFO] Monster FOGMOG performing move SWIPE_RANDOM_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 雾菇 (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 雾菇 (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[INFO] Monster EYE_WITH_TEETH performing move DISTRACT_MOVE
+[INFO] Monster FOGMOG performing move HEADBUTT_MOVE
+[INFO] Player 1 playing card ASTROLUPINE-STRIKE_ASTRO_LUPINE (targeting 雾菇 (index 2))
+cannot find sfx path: event:/sfx/characters/astrolupine-astro_lupine_character/astrolupine-astro_lupine_character_attack
+cannot find sfx path: event:/sfx/enemy/enemy_attacks/eye_with_teeth/eye_with_teeth_die
+[WARN] Asset not cached: res://images/atlases/intent_atlas.sprites/intent_heal.tres
+[AstroLupineSystemPower] AfterCardPlayed for CARD.ASTROLUPINE-STRIKE_ASTRO_LUPINE. hasWrite = False
+[WARN] Warning: Packet writer is growing from 1024 bytes to 2048 bytes!
+[WARN] Warning: Packet writer is growing from 2048 bytes to 4096 bytes!
+[WARN] Warning: Packet writer is growing from 4096 bytes to 8192 bytes!
+[INFO] Wrote 67255 bytes to path=user://steam/76561198862905280/modded/profile1\saves\current_run.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 67255 bytes to modded/profile1/saves/current_run.save in steam remote store
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has won against encounter ENCOUNTER.FOGMOG_NORMAL. That's 2 wins
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has killed a MONSTER.FOGMOG. That's 2 kills
+[INFO] CHARACTER.ASTROLUPINE-ASTRO_LUPINE_CHARACTER has killed a MONSTER.EYE_WITH_TEETH. That's 2 kills
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Card rarity: Rolled 0.8306703, need < 0.099999994 for rare (offset = 0.06999999)
+[INFO] Card rarity: Rolled 0.48912513, need < 0.10999999 for rare (offset = 0.07999999)
+[INFO] Card rarity: Rolled 0.5519103, need < 0.11999999 for rare (offset = 0.08999999)
+[INFO] Player 1 obtained 16 gold from reward
+[INFO] Player 1 obtained POTION.SPEED_POTION from potion reward
+[INFO] Player 1 selected card reward
+[INFO] Player 1 obtained CARD.ASTROLUPINE-ENERGY_BARRIER from card reward
+[INFO] Unloading 12 missed cache assets
+[INFO] Preloading 'Common' assets... count=128 vfx=1
+[WARN] Asset not cached: res://scenes/screens/main_menu.tscn
+[INFO] [Startup] Time to main menu (Godot ticks): 1802234ms
+[INFO] Preloading 'Common' Complete: assets=128 time_elapsed=583ms
+[INFO] Quit button pressed
+[INFO] Quit confirmed
+[INFO] [BaseLib] NGame.Quit(): saving all ModConfigs
+[INFO] NGame.Quit called
+[INFO] Wrote 2517 bytes to path=user://steam/76561198862905280/settings.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 297 bytes to path=user://steam/76561198862905280/modded/profile1\saves\prefs.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 297 bytes to modded/profile1/saves/prefs.save in steam remote store
+[INFO] Wrote 91745 bytes to path=user://steam/76561198862905280/modded/profile1\saves\progress.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 91745 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 52 bytes to path=user://steam/76561198862905280/profile.save save_dir=user://steam/76561198862905280
+[INFO] Wrote 52 bytes to profile.save in steam remote store
+[INFO] Steamworks: shutting down...
+[INFO] Steamworks shutdown succeeded!
+FMOD Sound System: System released
+WARNING: 390 RIDs of type "CanvasItem" were leaked.
+   at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2678)
+ERROR: 1 RID allocations of type 'N26RendererEnvironmentStorage11EnvironmentE' were leaked at exit.
+ERROR: 6 shaders of type CanvasShaderRD were never freed
+   at: ~ShaderRD (servers/rendering/renderer_rd/shader_rd.cpp:1044)
+ERROR: 5 RID allocations of type 'N10RendererRD16ParticlesStorage9ParticlesE' were leaked at exit.
+ERROR: 1 shaders of type ParticlesShaderRD were never freed
+   at: ~ShaderRD (servers/rendering/renderer_rd/shader_rd.cpp:1044)
+ERROR: 5 RID allocations of type 'N10RendererRD11MeshStorage4MeshE' were leaked at exit.
+ERROR: 15 RID allocations of type 'N10RendererRD15MaterialStorage8MaterialE' were leaked at exit.
+ERROR: 7 RID allocations of type 'N10RendererRD15MaterialStorage6ShaderE' were leaked at exit.
+ERROR: 253 RID allocations of type 'N10RendererRD14TextureStorage7TextureE' were leaked at exit.
+WARNING: 23 RIDs of type "UniformBuffer" were leaked.
+   at: _free_rids (servers/rendering/rendering_device.cpp:6981)
+WARNING: 501 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:7191)
+ERROR: 133 RID allocations of type 'PN18TextServerAdvanced22ShapedTextDataAdvancedE' were leaked at exit.
+ERROR: 9 RID allocations of type 'PN18TextServerAdvanced12FontAdvancedE' were leaked at exit.
+ERROR: 3 RID allocations of type 'PN18TextServerAdvanced27FontAdvancedLinkedVariationE' were leaked at exit.
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+   at: cleanup (core/object/object.cpp:2514)
+ERROR: 262 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:795)

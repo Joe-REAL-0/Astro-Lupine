@@ -15,7 +15,7 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "ASTROLUPINE-DA_CONVERSION";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.AttackRegister };
+    public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.DefenseRegister, AstroLupineKeywords.AttackRegister };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new[]
         {
@@ -24,7 +24,7 @@ namespace AstroLupine.Cards.Rare
         };
 
         public DAConversion()
-            : base(2, CardType.Skill, CardRarity.Rare, TargetType.Self)
+            : base(1, CardType.Skill, CardRarity.Rare, TargetType.Self)
         {
         }
 
@@ -56,6 +56,11 @@ namespace AstroLupine.Cards.Rare
                 {
                     await PowerCmd.Apply<DexterityPower>(choiceContext, Owner.Creature, dexGain, Owner.Creature, this);
                 }
+
+                DrawRegisterPower? drawPower = Owner.Creature.GetPower<DrawRegisterPower>();
+                if (atkPower != null) await atkPower.Write(2, choiceContext);
+                if (defPower != null) await defPower.Write(2, choiceContext);
+                if (drawPower != null) await drawPower.Write(2, choiceContext);
             }
         }
 

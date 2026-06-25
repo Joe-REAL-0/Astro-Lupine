@@ -24,12 +24,12 @@ namespace AstroLupine.Cards.Rare
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-            new DamageVar(8m, ValueProp.Move),
+            new DamageVar(0m, ValueProp.Move),
             new DynamicVar("Increase", 2m)
         };
 
         public FormatStrike()
-            : base(1, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
+            : base(0, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
         {
             this.HasWriteTag = true;
         }
@@ -37,9 +37,6 @@ namespace AstroLupine.Cards.Rare
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             if (cardPlay.Target == null) return;
-
-            await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).FromCard(this).Targeting(cardPlay.Target).Execute(choiceContext);
-            await WriteAttackRegister((int)base.DynamicVars.Damage.BaseValue, choiceContext);
 
             var trojan = cardPlay.Target.GetPower<TrojanHorseVirusPower>();
             int layersRemoved = 0;
@@ -54,13 +51,22 @@ namespace AstroLupine.Cards.Rare
                 decimal increasePerLayer = base.DynamicVars["Increase"].BaseValue;
                 decimal totalIncrease = layersRemoved * increasePerLayer;
                 
+                var sysPower = Owner.Creature?.GetPower<AstroLupineSystemPower>();
+
                 IEnumerable<FormatStrike> allFormatStrikes = Owner.PlayerCombatState.AllCards.OfType<FormatStrike>();
                 foreach (FormatStrike strike in allFormatStrikes)
                 {
                     strike.DynamicVars.Damage.BaseValue += totalIncrease;
                     strike._extraDamage += totalIncrease;
+
+                    if (sysPower != null && sysPower.CachedDamageValues.ContainsKey(strike))
+                    {
+                        sysPower.CachedDamageValues[strike] = (int)strike.DynamicVars.Damage.BaseValue;
+                    }
                 }
             }
+
+            await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).FromCard(this).Targeting(cardPlay.Target).Execute(choiceContext);
         }
 
         protected override void OnUpgrade()

@@ -20,7 +20,7 @@ namespace AstroLupine.Cards.Rare
         };
 
         public KnowledgeGraph()
-            : base(3, CardType.Power, CardRarity.Rare, TargetType.Self)
+            : base(1, CardType.Power, CardRarity.Rare, TargetType.Self)
         {
         }
 
@@ -31,7 +31,7 @@ namespace AstroLupine.Cards.Rare
 
         protected override void OnUpgrade()
         {
-            base.EnergyCost.SetCustomBaseCost(2);
+            base.EnergyCost.SetCustomBaseCost(0);
         }
     }
 }

@@ -16,13 +16,13 @@ namespace AstroLupine.Cards.Uncommon
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
             new DamageVar(10m, ValueProp.Move),
-            new MagicVar(2m)
+            new MagicVar(3m)
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.ZeroDayExploit };
 
         public RhombusSlicer()
-            : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+            : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
         {
         }
 
@@ -43,7 +43,8 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Damage.UpgradeValueBy(4m);
+            this.DynamicVars.Damage.UpgradeValueBy(2m);
+            this.DynamicVars["Magic"].UpgradeValueBy(1m);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using MegaCrit.Sts2.Core.ValueProps;
+using MegaCrit.Sts2.Core.ValueProps;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
@@ -32,7 +32,14 @@ namespace AstroLupine.Cards.Uncommon
         {
             if (cardPlay.Target == null || Owner == null) return;
 
-            await DamageCmd.Attack(this.DynamicVars.Damage.IntValue)
+            decimal baseDmg = 0m;
+            var register = Owner.Creature.GetPower<DefenseRegisterPower>();
+            if (register != null)
+            {
+                baseDmg = register.Read();
+            }
+
+            await DamageCmd.Attack(baseDmg)
                 .FromCard(this)
                 .Targeting(cardPlay.Target)
                 .WithHitFx("vfx/vfx_attack_blunt")
@@ -55,15 +62,43 @@ namespace AstroLupine.Cards.Uncommon
 
         public override void UpdateCardPreview(CardModel card, CardPreviewMode previewMode, Creature? target, bool runGlobalHooks)
         {
-            base.UpdateCardPreview(card, previewMode, target, runGlobalHooks);
+            decimal num = 0m;
             if (card.Owner?.Creature != null)
             {
                 var register = card.Owner.Creature.GetPower<DefenseRegisterPower>();
                 if (register != null)
                 {
-                    this.PreviewValue += register.Read();
+                    num = register.Read();
                 }
             }
+
+            var enchantment = card.Enchantment;
+            if (enchantment != null)
+            {
+                num += enchantment.EnchantDamageAdditive(num, this.Props);
+                num *= enchantment.EnchantDamageMultiplicative(num, this.Props);
+                if (!card.IsEnchantmentPreview)
+                {
+                    this.EnchantedValue = num;
+                }
+            }
+
+            if (runGlobalHooks && card.Owner != null)
+            {
+                num = MegaCrit.Sts2.Core.Hooks.Hook.ModifyDamage(
+                    card.Owner.RunState, 
+                    card.CombatState ?? card.Owner.Creature.CombatState, 
+                    target, 
+                    card.Owner.Creature, 
+                    num, 
+                    this.Props, 
+                    card, 
+                    MegaCrit.Sts2.Core.Hooks.ModifyDamageHookType.All, 
+                    previewMode, 
+                    out _);
+            }
+            
+            this.PreviewValue = System.Math.Max(num, 0m);
         }
     }
 }

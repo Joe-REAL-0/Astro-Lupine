@@ -15,6 +15,7 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/hayper_threading_form.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public bool HasTriggeredThisTurn = false;
 
@@ -24,6 +25,11 @@ namespace AstroLupine.Powers
             {
                 HasTriggeredThisTurn = false;
             }
+        }
+
+        public void FlashMe()
+        {
+            this.Flash();
         }
     }
 }

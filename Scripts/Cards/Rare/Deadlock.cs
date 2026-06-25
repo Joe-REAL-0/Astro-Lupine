@@ -13,12 +13,12 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "ASTROLUPINE-DEADLOCK";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.ZeroDayExploit };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.TrojanHorseVirus };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-            new DamageVar(0m, ValueProp.Move),
-            new MagicVar(2m)
+            new DamageVar(6m, ValueProp.Move),
+            new MagicVar(1m)
         };
 
         public Deadlock()
@@ -30,11 +30,11 @@ namespace AstroLupine.Cards.Rare
         {
             if (cardPlay.Target == null || Owner == null) return;
 
-            int times = (int)this.DynamicVars["Magic"].BaseValue;
+            int times = 2;
             for (int i = 0; i < times; i++)
             {
-                int zeroDayStacks = cardPlay.Target.GetPower<ZeroDayExploitPower>()?.Amount ?? 0;
-                decimal bonus = zeroDayStacks * 2;
+                int trojanStacks = cardPlay.Target.GetPower<TrojanHorseVirusPower>()?.Amount ?? 0;
+                decimal bonus = trojanStacks * this.DynamicVars["Magic"].IntValue;
 
                 var tempDamageVar = new DamageVar(this.DynamicVars.Damage.BaseValue + bonus, ValueProp.Move);
                 await DealReadDamage(choiceContext, cardPlay, tempDamageVar, "vfx/vfx_attack_blunt");

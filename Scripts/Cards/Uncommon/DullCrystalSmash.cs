@@ -15,7 +15,8 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new AstroReadDamageVar(2m) 
+            new AstroReadDamageVar(0m), 
+            new MagicVar(10m)
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.AttackRegister };
@@ -28,7 +29,7 @@ namespace AstroLupine.Cards.Uncommon
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             int regAmount = Owner?.Creature?.GetPower<AttackRegisterPower>()?.Read() ?? 0;
-            int times = 1 + (regAmount / 8);
+            int times = 1 + (regAmount / this.DynamicVars["Magic"].IntValue);
 
             for (int i = 0; i < times; i++)
             {
@@ -38,7 +39,7 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Damage.UpgradeValueBy(2m);
+            this.DynamicVars["Magic"].UpgradeValueBy(-2m);
         }
     }
 }

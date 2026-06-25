@@ -18,10 +18,10 @@ namespace AstroLupine.Cards.Rare
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Read };
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => new[]
+        protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-            new BlockVar(17m, ValueProp.Move),
-            new DynamicVar("Magic", 2m)
+            new AstroReadBlockVar(14m, ValueProp.Move),
+            new MagicVar(2m)
         };
 
         public Redirect()
@@ -41,7 +41,7 @@ namespace AstroLupine.Cards.Rare
 
         protected override void OnUpgrade()
         {
-            base.DynamicVars.Block.UpgradeValueBy(4m);
+            base.DynamicVars.Block.UpgradeValueBy(3m);
         }
     }
 }

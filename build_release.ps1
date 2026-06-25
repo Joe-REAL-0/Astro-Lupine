@@ -1,8 +1,15 @@
 ﻿$ErrorActionPreference = "Stop"
 
-$Version = "1.1.0"
-# 每次发布前，请在此输入本次更新的描述信息 (Update Message)
-$UpdateMessage = "补全所有的卡面素材,"
+$Version = "1.2.2"
+# 从 changelog.txt 中读取更新日志，并将换行符替换为 JSON 格式的 \n
+$ChangelogPath = "changelog.txt"
+if (Test-Path $ChangelogPath) {
+    $RawChangelog = Get-Content $ChangelogPath -Raw -Encoding UTF8
+    $UpdateMessage = $RawChangelog.Trim() -replace '"', '\"' -replace '\r?\n', '\n'
+}
+else {
+    $UpdateMessage = "常规更新与修复。"
+}
 
 $ModName = "AstroLupine"
 $OutputDir = "release"

@@ -16,18 +16,29 @@ namespace AstroLupine.Powers
     {
         public const string PowerId = "AstroLupine_OpenSourceProtocol";
         public override PowerType Type => PowerType.Buff;
-        public override PowerStackType StackType => PowerStackType.Counter;
+        public override PowerStackType StackType => PowerStackType.Single;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/open_source_protocol.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
         
-        public async Task TriggerProtocol(PlayerChoiceContext? choiceContext = null)
+        public async Task TriggerProtocol(string registerType, int overwriteAmount, PlayerChoiceContext? choiceContext = null)
         {
             this.Flash();
-            var atk = this.Owner?.GetPower<AttackRegisterPower>();
-            var def = this.Owner?.GetPower<DefenseRegisterPower>();
-            
-            if (atk != null) await atk.Increment(this.Amount, choiceContext);
-            if (def != null) await def.Increment(this.Amount, choiceContext);
+            if (registerType == "Attack")
+            {
+                var atk = this.Owner?.GetPower<AttackRegisterPower>();
+                if (atk != null) await atk.Increment(overwriteAmount, choiceContext);
+            }
+            else if (registerType == "Defense")
+            {
+                var def = this.Owner?.GetPower<DefenseRegisterPower>();
+                if (def != null) await def.Increment(overwriteAmount, choiceContext);
+            }
+            else if (registerType == "Draw")
+            {
+                var draw = this.Owner?.GetPower<DrawRegisterPower>();
+                if (draw != null) await draw.Increment(overwriteAmount, choiceContext);
+            }
         }
     }
 }

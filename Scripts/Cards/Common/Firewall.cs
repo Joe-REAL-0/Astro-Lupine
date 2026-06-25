@@ -21,7 +21,7 @@ namespace AstroLupine.Cards.Common
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write };
 
         public Firewall()
-            : base(2, CardType.Skill, CardRarity.Common, TargetType.None)
+            : base(1, CardType.Skill, CardRarity.Common, TargetType.None)
         {
         }
 

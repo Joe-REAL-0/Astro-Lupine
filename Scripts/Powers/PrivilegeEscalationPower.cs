@@ -17,6 +17,7 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/privilege_escalatio.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
@@ -24,6 +25,14 @@ namespace AstroLupine.Powers
             {
                 Flash();
                 await PowerCmd.Decrement(this);
+            }
+        }
+
+        public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
+        {
+            if (side == base.Owner.Side)
+            {
+                await PowerCmd.Remove(this);
             }
         }
     }

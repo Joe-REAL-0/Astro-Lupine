@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -32,7 +32,7 @@ namespace AstroLupine.Cards.Common
             if (Owner != null)
             {
                 CardModel copy = this.CreateClone();
-                await CardPileCmd.AddGeneratedCardToCombat(copy, PileType.Discard, Owner);
+                CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(copy, PileType.Discard, Owner), 2.2f);
             }
         }
 

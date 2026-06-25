@@ -15,7 +15,8 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new DamageVar(20m, ValueProp.Move) 
+            new DamageVar(20m, ValueProp.Move) ,
+            new MagicVar(6m)
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.AttackOverwrite };
@@ -37,12 +38,13 @@ namespace AstroLupine.Cards.Uncommon
 
             await WriteAttackRegister(this.DynamicVars.Damage.IntValue);
 
-            await PowerCmd.Apply<AttackOverwritePower>(choiceContext, Owner.Creature, 6, Owner.Creature, this);
+            await PowerCmd.Apply<AttackOverwritePower>(choiceContext, Owner.Creature, this.DynamicVars["Magic"].IntValue, Owner.Creature, this);
         }
 
         protected override void OnUpgrade()
         {
             this.DynamicVars.Damage.UpgradeValueBy(6m);
+            this.DynamicVars["Magic"].UpgradeValueBy(2m);
         }
     }
 }

@@ -17,31 +17,12 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/operator_overloading.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
-        public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+        public async Task TriggerProtocol(PlayerChoiceContext? choiceContext = null)
         {
-            if (cardPlay.Card.Owner != null && cardPlay.Card.Owner.Creature == this.Owner)
-            {
-                bool hasWrite = false;
-                if (cardPlay.Card is BaseAstroLupineCard astroCard && astroCard.HasWriteTag) hasWrite = true;
-                if (cardPlay.Card.Keywords.Contains(AstroLupineKeywords.Write)) hasWrite = true;
-
-                if (hasWrite)
-                {
-                    Flash();
-                    var combatState = this.Owner?.CombatState;
-                    if (combatState != null && this.Owner != null)
-                    {
-                        await CreatureCmd.Damage(
-                            choiceContext,
-                            combatState.HittableEnemies,
-                            this.Amount,
-                            ValueProp.Unpowered,
-                            this.Owner,
-                            null);
-                    }
-                }
-            }
+            this.Flash();
+            await PowerCmd.Apply<MegaCrit.Sts2.Core.Models.Powers.VigorPower>(choiceContext, this.Owner, this.Amount, this.Owner, null);
         }
     }
 }

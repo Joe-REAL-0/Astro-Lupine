@@ -20,7 +20,7 @@ namespace AstroLupine.Cards.Common
 		public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.Write };
 
 		public StackProtection()
-			: base(1, CardType.Skill, CardRarity.Common, TargetType.None)
+			: base(0, CardType.Skill, CardRarity.Common, TargetType.None)
 		{
 		}
 

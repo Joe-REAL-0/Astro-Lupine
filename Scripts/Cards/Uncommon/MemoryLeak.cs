@@ -17,7 +17,7 @@ namespace AstroLupine.Cards.Uncommon
     {
         public const string CardId = "ASTROLUPINE-MEMORY_LEAK";
 
-        private int _currentDamage = 4;
+        private int _currentDamage = 0;
         private int _increasedDamage;
 
         [SavedProperty]

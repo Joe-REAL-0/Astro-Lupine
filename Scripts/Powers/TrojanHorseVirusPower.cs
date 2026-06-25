@@ -19,6 +19,7 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/torjan_horse_virus.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public override async Task AfterApplied(Creature? applier, CardModel? cardSource)
         {
@@ -47,8 +48,21 @@ namespace AstroLupine.Powers
                         Flash();
                         await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), base.Owner, dmg, ValueProp.Unpowered, null, null);
                     }
+
+                    var proliferate = player.Creature.GetPower<ProliferateAlgorithmPower>();
+                    if (proliferate != null && proliferate.Amount > 0)
+                    {
+                        await PowerCmd.Apply<TrojanHorseVirusPower>(new ThrowingPlayerChoiceContext(), base.Owner, proliferate.Amount, player.Creature, null);
+                    }
+                    else
+                    {
+                        await PowerCmd.Decrement(this);
+                    }
                 }
-                await PowerCmd.Decrement(this);
+                else
+                {
+                    await PowerCmd.Decrement(this);
+                }
             }
         }
     }

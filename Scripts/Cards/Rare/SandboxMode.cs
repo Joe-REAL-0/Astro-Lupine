@@ -30,13 +30,14 @@ namespace AstroLupine.Cards.Rare
         {
             if (Owner != null && Owner.Creature != null)
             {
-                await PowerCmd.Apply<SandboxModePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+                int amount = this.IsUpgraded ? 2 : 1;
+                await PowerCmd.Apply<SandboxModePower>(choiceContext, Owner.Creature, amount, Owner.Creature, this);
             }
         }
 
         protected override void OnUpgrade()
         {
-            base.EnergyCost.SetCustomBaseCost(1);
+            // Upgraded version gains 2x Overwrite effect, handled in OnPlay
         }
     }
 }

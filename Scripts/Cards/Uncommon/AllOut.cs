@@ -14,7 +14,7 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new DamageVar(30m, ValueProp.Move) 
+            new DamageVar(22m, ValueProp.Move) 
         };
 
         public AllOut()
@@ -35,7 +35,7 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Damage.UpgradeValueBy(12m);
+            this.DynamicVars.Damage.UpgradeValueBy(8m);
         }
     }
 }

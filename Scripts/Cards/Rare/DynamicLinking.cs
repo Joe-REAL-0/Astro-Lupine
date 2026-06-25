@@ -37,11 +37,11 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_DynamicLinking";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, CardKeyword.Ethereal, AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Read };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-            new MagicVar(0m),
+            new AstroReadCardsVar(0),
             new DynamicLinkingEnergyVar()
         };
 
@@ -54,7 +54,7 @@ namespace AstroLupine.Cards.Rare
         {
             if (Owner != null && Owner.PlayerCombatState != null)
             {
-                int drawnAmount = await DrawReadCards(choiceContext, base.DynamicVars["Magic"]);
+                int drawnAmount = await DrawReadCards(choiceContext, base.DynamicVars["Cards"]);
                 
                 int readCardsPlayed = MegaCrit.Sts2.Core.Combat.CombatManager.Instance.History.CardPlaysStarted.Count(e => e.HappenedThisTurn(this.CombatState) && e.CardPlay.Card.Owner == this.Owner && e.CardPlay.Card.Keywords.Contains(AstroLupineKeywords.Read));
                 
@@ -67,7 +67,7 @@ namespace AstroLupine.Cards.Rare
 
         protected override void OnUpgrade()
         {
-            this.RemoveKeyword(CardKeyword.Ethereal);
+            this.EnergyCost.UpgradeBy(-1);
         }
     }
 }

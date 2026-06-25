@@ -25,7 +25,7 @@ namespace AstroLupine.Cards.Rare
         };
 
         public SudoStrike()
-            : base(6, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
+            : base(9, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
         {
             this.HasWriteTag = true;
             

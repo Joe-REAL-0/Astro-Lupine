@@ -16,6 +16,7 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/cooling_architecture.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         protected override IEnumerable<MegaCrit.Sts2.Core.Localization.DynamicVars.DynamicVar> CanonicalVars => new MegaCrit.Sts2.Core.Localization.DynamicVars.DynamicVar[] { new AstroLupine.Cards.MagicVar(12) };
 

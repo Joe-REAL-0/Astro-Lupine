@@ -1,7 +1,7 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -13,10 +13,12 @@ namespace AstroLupine.Cards.Common
 {
     public class MountHardDrive : BaseAstroLupineCard
     {
-        public const string CardId = "AstroLupine_Card_MountHardDrive";
+        public const string CardId = "AstroLupine_Card_Overwrite";
+
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
 
         public MountHardDrive()
-            : base(1, CardType.Skill, CardRarity.Common, TargetType.None)
+            : base(0, CardType.Skill, CardRarity.Common, TargetType.None)
         {
         }
 
@@ -24,36 +26,19 @@ namespace AstroLupine.Cards.Common
         {
             if (Owner == null) return;
 
-            if (this.IsUpgraded)
+            var prefs = new CardSelectorPrefs(new LocString("gameplay_ui", "ASTROLUPINE-CHOOSE_CARD_TO_WRITE"), 1);
+            var selectedCards = await CardSelectCmd.FromHand(choiceContext, Owner, prefs, c => c != this && !c.Keywords.Contains(AstroLupineKeywords.Write), this);
+            
+            var targetCard = selectedCards.FirstOrDefault();
+            if (targetCard != null)
             {
-                // Upgrade: Select 1 card in hand to apply Write
-                var prefs = new CardSelectorPrefs(new LocString("gameplay_ui", "ASTROLUPINE-CHOOSE_CARD_TO_WRITE"), 1);
-                var selectedCards = await CardSelectCmd.FromHand(choiceContext, Owner, prefs, c => c != this && !c.Keywords.Contains(AstroLupineKeywords.Write), this);
-                
-                var targetCard = selectedCards.FirstOrDefault();
-                if (targetCard != null)
-                {
-                    CardCmd.ApplyKeyword(targetCard, AstroLupineKeywords.Write);
-                }
-            }
-            else
-            {
-                // Basic: Apply Write to a random card in hand
-                var validCards = Owner.PlayerCombatState.Hand.Cards.Where(c => c != this && !c.Keywords.Contains(AstroLupineKeywords.Write)).ToList();
-                if (validCards.Count > 0)
-                {
-                    var targetCard = validCards.TakeRandom(1, Owner.RunState.Rng.CombatCardSelection).FirstOrDefault();
-                    if (targetCard != null)
-                    {
-                        CardCmd.ApplyKeyword(targetCard, AstroLupineKeywords.Write);
-                    }
-                }
+                CardCmd.ApplyKeyword(targetCard, AstroLupineKeywords.Write);
             }
         }
 
         protected override void OnUpgrade()
         {
-            // Upgraded version affects all cards in hand. No cost or number change needed here, just logic branch in OnPlay.
+            this.AddKeyword(CardKeyword.Retain);
         }
     }
 }

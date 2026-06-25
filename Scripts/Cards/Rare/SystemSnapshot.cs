@@ -14,7 +14,7 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_SystemSnapshot";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Overwrite };
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[0];
 

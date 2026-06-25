@@ -17,6 +17,7 @@ namespace AstroLupine.Powers
 
         // 临时占位：使用力量(Strength)图标
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/attack_register.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public AttackRegisterPower() : base(6)
         {
@@ -24,7 +25,10 @@ namespace AstroLupine.Powers
 
         public override decimal ModifyDamageAdditive(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
         {
-            if (cardSource != null && cardSource.Keywords.Contains(AstroLupineKeywords.Read))
+            if (props.HasFlag(ValueProp.Unpowered)) return 0m;
+            if (target != null && target == this.Owner) return 0m;
+
+            if (cardSource != null && cardSource.DynamicVars.Values.Any(v => v is AstroReadDamageVar))
             {
                 decimal multiplier = 1m;
                 var runState = Owner?.Player?.RunState ?? Owner?.CombatState?.RunState;

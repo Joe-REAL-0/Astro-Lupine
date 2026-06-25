@@ -20,7 +20,7 @@ namespace AstroLupine.Cards.Common
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Read, AstroLupineKeywords.Write };
 
         public KineticIteration()
-            : base(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+            : base(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
         {
         }
 

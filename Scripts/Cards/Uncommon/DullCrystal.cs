@@ -14,20 +14,27 @@ namespace AstroLupine.Cards.Uncommon
         public const string CardId = "ASTROLUPINE-DULL_CRYSTAL";
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
-        { 
-            new DamageVar(14m, ValueProp.Move) 
+        {
+            new DamageVar(7m, ValueProp.Move),
+            new MagicVar(3m)
         };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.TrojanHorseVirus };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.Write, AstroLupineKeywords.AttackRegister, AstroLupineKeywords.TrojanHorseVirus };
 
         public DullCrystal()
-            : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+            : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
         {
         }
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
             if (cardPlay.Target == null || Owner == null) return;
+            int atkAmount = Owner.Creature.GetPower<AttackRegisterPower>()?.Amount ?? 0;
+            int buffStack = atkAmount / this.DynamicVars["Magic"].IntValue;
+            if (buffStack > 0)
+            {
+                await PowerCmd.Apply<TrojanHorseVirusPower>(choiceContext, cardPlay.Target, buffStack, Owner.Creature, this);
+            }
 
             await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue)
                 .FromCard(this)
@@ -36,13 +43,11 @@ namespace AstroLupine.Cards.Uncommon
                 .Execute(choiceContext);
 
             await WriteAttackRegister(this.DynamicVars.Damage.IntValue);
-
-            await PowerCmd.Apply<TrojanHorseVirusPower>(choiceContext, cardPlay.Target, 2, Owner.Creature, this);
         }
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars.Damage.UpgradeValueBy(4m);
+            this.DynamicVars["Magic"].UpgradeValueBy(-1m);
         }
     }
 }

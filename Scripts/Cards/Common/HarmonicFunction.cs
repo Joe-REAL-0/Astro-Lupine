@@ -16,13 +16,14 @@ namespace AstroLupine.Cards.Common
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new AstroReadMagicVar(0m)
+            new EnergyVar(1),
+            new AstroReadCardsVar(0)
         };
 
 
 
         public HarmonicFunction()
-            : base(1, CardType.Skill, CardRarity.Common, TargetType.None)
+            : base(0, CardType.Skill, CardRarity.Common, TargetType.None)
         {
         }
 
@@ -30,8 +31,8 @@ namespace AstroLupine.Cards.Common
         {
             if (Owner != null)
             {
-                await PlayerCmd.GainEnergy(2, Owner);
-                await DrawReadCards(choiceContext, this.DynamicVars["Magic"]);
+                await PlayerCmd.GainEnergy(1, Owner);
+                await DrawReadCards(choiceContext, this.DynamicVars["Cards"]);
             }
         }
 

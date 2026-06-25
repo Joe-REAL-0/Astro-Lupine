@@ -16,11 +16,11 @@ namespace AstroLupine.Cards.Rare
     {
         public const string CardId = "AstroLupine_Card_ConsoleAgent";
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust, AstroLupineKeywords.Read };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => new[]
+        protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
         {
-            new DynamicVar("Magic", 0m)
+            new CardsVar(0)
         };
 
         protected override bool HasEnergyCostX => true;
@@ -37,8 +37,8 @@ namespace AstroLupine.Cards.Rare
                 int xValue = ResolveEnergyXValue();
                 int bonusDraw = this.IsUpgraded ? 1 : 0;
                 
-                var tempMagicVar = new MagicVar(xValue + bonusDraw);
-                int drawnCards = await DrawReadCards(choiceContext, tempMagicVar);
+                var tempCardsVar = new CardsVar(xValue + bonusDraw);
+                int drawnCards = await DrawReadCards(choiceContext, tempCardsVar);
                 
                 if (drawnCards > 0)
                 {

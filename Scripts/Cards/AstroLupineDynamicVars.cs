@@ -33,26 +33,15 @@ namespace AstroLupine.Cards
         }
     }
 
-    public class MagicVar : IntVar
+    public class AstroReadCardsVar : CardsVar
     {
-        public MagicVar(decimal magic) : base("Magic", magic)
-        {
-        }
-
-        public MagicVar(string name, decimal magic) : base(name, magic)
-        {
-        }
-    }
-
-    public class AstroReadMagicVar : MagicVar
-    {
-        public AstroReadMagicVar(decimal magic) : base(magic)
+        public AstroReadCardsVar(int amount) : base(amount)
         {
         }
 
         public override void UpdateCardPreview(CardModel card, CardPreviewMode previewMode, Creature? target, bool runGlobalHooks)
         {
-            // Calculate base magic including normal modifiers
+            // Calculate base cards including normal modifiers
             base.UpdateCardPreview(card, previewMode, target, runGlobalHooks);
 
             // Apply register buff
@@ -64,6 +53,17 @@ namespace AstroLupine.Cards
                     this.PreviewValue += register.Read();
                 }
             }
+        }
+    }
+
+    public class MagicVar : IntVar
+    {
+        public MagicVar(decimal magic) : base("Magic", magic)
+        {
+        }
+
+        public MagicVar(string name, decimal magic) : base(name, magic)
+        {
         }
     }
 }

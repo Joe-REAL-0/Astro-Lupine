@@ -14,7 +14,7 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] 
         { 
-            new MagicVar(3m),
+            new CardsVar(3),
         };
 
         public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
@@ -28,7 +28,7 @@ namespace AstroLupine.Cards.Uncommon
         {
             if (Owner == null) return;
 
-            await CardPileCmd.Draw(choiceContext, this.DynamicVars["Magic"].IntValue, Owner);
+            await CardPileCmd.Draw(choiceContext, this.DynamicVars["Cards"].IntValue, Owner);
 
             if (Owner.Creature != null)
             {
@@ -39,7 +39,7 @@ namespace AstroLupine.Cards.Uncommon
 
         protected override void OnUpgrade()
         {
-            this.DynamicVars["Magic"].UpgradeValueBy(1m);
+            this.DynamicVars["Cards"].UpgradeValueBy(1m);
         }
     }
 }

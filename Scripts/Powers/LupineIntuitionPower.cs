@@ -12,6 +12,7 @@ namespace AstroLupine.Powers
         public override PowerStackType StackType => PowerStackType.Counter;
         
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/lupine_intuition.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public async Task TriggerIntuition()
         {

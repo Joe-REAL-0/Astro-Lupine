@@ -20,12 +20,13 @@ namespace AstroLupine.Powers
         
         // Use a placeholder icon, we can reuse generic shield or system icon
         public override string? CustomPackedIconPath => "res://AstroLupine/assets/texture/power/sandbox_mode.png";
+        public override string? CustomBigIconPath => CustomPackedIconPath;
 
         public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
         {
             if (side == CombatSide.Player && participants.Contains(base.Owner))
             {
-                await PowerCmd.Decrement(this);
+                await PowerCmd.Remove(this);
             }
         }
     }

@@ -12,11 +12,11 @@ namespace AstroLupine.Cards.Uncommon
     {
         public const string CardId = "ASTROLUPINE-BOTNET";
 
-        protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new MagicVar(1) };
+        protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new MagicVar(2) };
 
-        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.TrojanHorseVirus };
+        public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { AstroLupineKeywords.ZeroDayExploit };
 
-        public Botnet() : base(2, CardType.Power, CardRarity.Uncommon, TargetType.None) {}
+        public Botnet() : base(1, CardType.Power, CardRarity.Uncommon, TargetType.None) {}
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
         {
